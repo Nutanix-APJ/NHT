@@ -290,7 +290,7 @@ Click **Click here** to manually specify the MAC address of your assigned node.
 
  Method.1 Identify MAC Address (BMC MAC address) of Nodes (A, B, C) by accessing IPMI IP for each node
   
- Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: nutanix/4u for each node
+ Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: *default* for each node
   
 
 Access Node A IPMI through IP 10.21.xx.33 and ADMIN/ADMIN
