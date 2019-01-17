@@ -157,7 +157,7 @@ Fill out the following fields and click **Next**:
 
 - Select **Use SMB Protocol**
 - **Username** - Administrator@POCLAB.local
-- **Password** - nutanix/4u
+- **Password** - default
 - Select **Make this user a File Server admin**
 - Select **Use NFS Protocol**
 - **User Management and Authentication** - Unmanaged
