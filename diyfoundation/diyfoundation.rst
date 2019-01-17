@@ -18,17 +18,7 @@ In this exercise you will practice imaging a physical cluster with Foundation. I
 IPs for Nodes
 ..............
 
-+---------+---------------+----------------+---------------+
-|Node	  |IPMI IP        |Hypervisor IP   |CVM IP         |
-+=========+===============+================+===============+
-| A       |10.21.xx.33	  |10.21.xx.25     |10.21.xx.29    |
-+---------+---------------+----------------+---------------+
-|B        |10.21.xx.34	  |10.21.xx.26     |10.21.xx.30    |
-+---------+---------------+----------------+---------------+
-|C        |10.21.xx.35	  |10.21.xx.27     |10.21.xx.31    |
-+---------+---------------+----------------+---------------+
-|D        |10.21.xx.36	  |10.21.xx.28     |10.21.xx.32    |
-+---------+---------------+----------------+---------------+
+
 
 * IPMI User:ADMIN, Password:ADMIN
 * In following steps, you may replace xx with your assigned cluster ID
@@ -177,7 +167,7 @@ Select your **Foundation** VM and click **Power on**.
 
 Once the VM has started, click **Launch Console**.
 
-Once the VM has finished booting, click **nutanix**. Enter the default password *nutanix/4u* click **Log In**.
+Once the VM has finished booting, click **nutanix**. Enter the default password ** click **Log In**.
 
 
 .. image:: images/image006.png
