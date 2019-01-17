@@ -244,7 +244,7 @@ Open a terminal and ssh to foundation VM through foundation IP <10.21.xx.45>
   
 .. code-block:: bash
 
- ssh nutanix@10.21.xx.45      # provide default password of foundation VM : *nutanix/4u*
+ ssh nutanix@10.21.xx.45      # provide default password of foundation VM 
  cd foundation
  cd nos
  wget  https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
@@ -412,7 +412,7 @@ When all CVMs are ready, Foundation initiates the cluster creation process.
 Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the following credentials:
 
 - **Username** - admin
-- **Password** - Nutanix/4u
+- **Password** - *default*
 - **Change the Password** - techX2019!
 
 
