@@ -171,7 +171,7 @@ Once the VM has finished booting, click **nutanix**. Enter the default password 
   
    
    
-Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: nutanix/4u
+Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: *default*
 
 
 .. image:: images/image007.png  
