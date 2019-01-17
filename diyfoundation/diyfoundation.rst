@@ -18,9 +18,6 @@ In this exercise you will practice imaging a physical cluster with Foundation. I
 IPs for Nodes
 ..............
 
-
-
-* IPMI User:ADMIN, Password:ADMIN
 * In following steps, you may replace xx with your assigned cluster ID
 
 Cluster Details
