@@ -157,7 +157,7 @@ Fill out the following fields and click **Next**:
 
 - Select **Use SMB Protocol**
 - **Username** - Administrator@POCLAB.local
-- **Password** - default
+- **Password** - See record from the console
 - Select **Make this user a File Server admin**
 - Select **Use NFS Protocol**
 - **User Management and Authentication** - Unmanaged
