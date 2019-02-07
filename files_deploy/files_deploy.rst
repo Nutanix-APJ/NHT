@@ -27,7 +27,7 @@ Using the spreadsheet below, locate your **cluster ID** and corresponding detail
 Networks preparation
 +++++++++++++++++++++
 
-Launch a web browser and log into POCxx-ABC PRISM with IP 10.21.xx.37, User: admin, Password: techX2019!
+Launch a web browser and log into POCxx-ABC PRISM with IP 10.42.xx.37, User: admin, Password: techX2019!
 
 Firstly, we need to make sure a primary and a secondary network are created for File Service. 
 
@@ -48,7 +48,7 @@ Create AD VM for AD/LDAP connectivity
 
 In **Prism>Storage** , create a Storage Container called *Images* if there is no existing one of that name.
 
-Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
+Open a terminal and SSH to CVM, type ‘ssh nutanix@10.42.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
 
 *acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2*
 
@@ -92,7 +92,7 @@ In **Prism > File Server**, click **+ File Server**.
 
 
 Firstly, download Files 3.1.0.1 package, click Continue to install File Services Software on POCxx
-Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
+Secondly, add Data Services IP as 10.42.XX.38. Click Continue.
 
 
 .. image:: images/image009.png
@@ -117,10 +117,10 @@ Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Spec
 Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
-- **Gateway** – 10.21.xx.1
-- **IP** – **from** 10.21.xx.100 **to** 10.21.xx.102 (click **save** on the right)
-- **DNS** – 10.21.xx.yy (check AD VM IP address)
-- **NTP** – 10.21.253.10
+- **Gateway** – 10.42.xx.1
+- **IP** – **from** 10.42.xx.100 **to** 10.42.xx.102 (click **save** on the right)
+- **DNS** – 10.42.xx.yy (check AD VM IP address)
+- **NTP** – 10.42.196.10
 
 
 .. image:: images/image011.png
@@ -138,8 +138,8 @@ Select the **Secondary - Managed** VLAN for the Storage Network. Click **Next**.
 Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
-- **Gateway** – 10.21.xx.129
-- **IP** – **from** 10.21.xx.132 **to** 10.21.xx.135 (click **save** on the right)
+- **Gateway** – 10.42.xx.129
+- **IP** – **from** 10.42.xx.132 **to** 10.42.xx.135 (click **save** on the right)
 
 
 .. image:: images/image013.png
@@ -220,7 +220,7 @@ Review Summary tab and click **create**
 
 
 Login to https://citrixready.nutanix.com using your supplied credentials(see *Cluster details* )
-Select "Customers, Partners & Bootcamps" to access your virtual desktop, open file browser and type ‘\\10.21.xx.100’ (or any other IP of FSVM)
+Select "Customers, Partners & Bootcamps" to access your virtual desktop, open file browser and type ‘\\10.42.xx.100’ (or any other IP of FSVM)
 Login by administrator@poclab.local credential 
 
 
@@ -234,4 +234,4 @@ You can see home share after login successfully.
 
 
 
-You can also use domain name (\\POC04-Files.POClab.local) to access if you direct DNS of your desktop to AD VM IP(10.21.xx.yy).
+You can also use domain name (\\POC04-Files.POClab.local) to access if you direct DNS of your desktop to AD VM IP(10.42.xx.yy).
