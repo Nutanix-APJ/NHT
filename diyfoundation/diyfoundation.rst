@@ -42,7 +42,7 @@ A Hosted POC reservation provides a fully imaged cluster consisting of 4 nodes. 
 - Use Foundation to image Nodes A, B, and C and create a 3 node cluster
 
 
-Using an SSH client, connect to the **Node A CVM IP** <10.21.xx.29> in your assigned block using the following credentials:
+Using an SSH client, connect to the **Node A CVM IP** <10.42.xx.29> in your assigned block using the following credentials:
 
 - **Username** - nutanix
 - **Password** - *techX2019!*
@@ -63,12 +63,12 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 
 .. code-block:: bash
 
- ssh nutanix@10.21.xx.32
- cluster -s 10.21.xx.32 create       # Enter 'Y' when prompted to proceed
+ ssh nutanix@10.42.xx.32
+ cluster -s 10.42.xx.32 create       # Enter 'Y' when prompted to proceed
 
  ncli cluster edit-params new-name=POCxx-D
- ncli cluster add-to-name-servers servers=10.21.253.10
- ncli cluster set-external-ip-address external-ip-address=10.21.xx.40
+ ncli cluster add-to-name-servers servers=10.42.196.10
+ ncli cluster set-external-ip-address external-ip-address=10.42.xx.40
  ncli user reset-password user-name='admin' password=techX2019! 
 
 .. note::
@@ -80,7 +80,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 Install Foundation VM 
 ++++++++++++++++++++++
 
-Open \https://*<Node D CVM IP>*:9440 (\https://10.21.xx.32:9440) in your browser and log in with the following credentials:
+Open \https://*<Node D CVM IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
@@ -240,11 +240,11 @@ If downloading the AOS package within the Foundation VM, the .tar.gz package can
   
 To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
   
-Open a terminal and ssh to foundation VM through foundation IP <10.21.xx.45>
+Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.45>
   
 .. code-block:: bash
 
- ssh nutanix@10.21.xx.45      # provide default password of foundation VM 
+ ssh nutanix@10.42.xx.45      # provide default password of foundation VM 
  cd foundation
  cd nos
  wget  https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
@@ -266,9 +266,9 @@ On the **Start** page, click **Next**.
 - **network** – eth0
 - **Select your hardware platform**: Autodetect
 - **Netmask of Every Hypervisor and CVM** - 255.255.255.128
-- **Gateway of Every IPMI** - 10.21.xx.1
+- **Gateway of Every IPMI** - 10.42.xx.1
 - **Netmask of Every IPMI** - 255.255.255.128
-- **Gateway of Every Hypervisor and CVM** - 10.21.xx.1
+- **Gateway of Every Hypervisor and CVM** - 10.42.xx.1
 
 
 .. image:: images/image014.png
@@ -321,9 +321,9 @@ Fill in block information, choose **I will provide the IPMIs' MACs** and click *
 Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
 - **IPMI MAC** - the three your just recorded down
-- **IPMI IP** - 10.21.xx.33
-- **Hypervisor IP** - 10.21.xx.25
-- **CVM IP** - 10.21.xx.29
+- **IPMI IP** - 10.42.xx.33
+- **Hypervisor IP** - 10.42.xx.25
+- **CVM IP** - 10.42.xx.29
 - **Node A Hypervisor Hostname** – POCxx-1
 
 
@@ -337,12 +337,12 @@ Fill out the following fields and click **Next**:
 - **Cluster Name** - POCxx-ABC
 - **Timezone of Every Hypervisor and CVM** - *your local timezone*
 - **Cluster Redundancy Factor** - 2
-- **Cluster Virtual IP** - 10.21.xx.37
+- **Cluster Virtual IP** - 10.42.xx.37
 
   *Cluster Virtual IP needs to be within the same subnet as the CVM/hypervisor.*
 
-- **NTP Servers of Every Hypervisor and CVM** - 10.21.253.10
-- **DNS Servers of Every Hypervisor and CVM** - 10.21.253.10
+- **NTP Servers of Every Hypervisor and CVM** - 10.42.196.10
+- **DNS Servers of Every Hypervisor and CVM** - 10.42.196.10
 
   *DNS and NTP servers should be captured as part of install planning with the customer.*
 
