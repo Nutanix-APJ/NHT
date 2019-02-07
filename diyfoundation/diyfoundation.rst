@@ -202,9 +202,9 @@ Select **eth0** and press **Return**.
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields, select **OK** and press **Return**:
 
 - **Use DHCP** - Press **Space** to de-select
-- **Static IP** - 10.21.xx.45 (Foundation VM IP)
+- **Static IP** - 10.42.xx.45 (Foundation VM IP)
 - **Netmask** - 255.255.255.128
-- **Gateway** - 10.21.xx.1
+- **Gateway** - 10.42.xx.1
 
 
 
@@ -293,7 +293,7 @@ Click **Click here** to manually specify the MAC address of your assigned node.
  Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: *default* for each node
   
 
-Access Node A IPMI through IP 10.21.xx.33 and ADMIN/ADMIN
+Access Node A IPMI through IP 10.42.xx.33 and ADMIN/ADMIN
 
 
 .. image:: images/image101.png
