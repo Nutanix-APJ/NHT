@@ -73,7 +73,7 @@ Click **Create Network**. Using the `Cluster Details`_ spreadsheet, fill out the
 Creating X-Ray VM
 +++++++++++++++++
 
-Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.21.xx.40:9440) in your browser and log in with the following credentials:
+Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.40:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
@@ -126,7 +126,7 @@ Select **IPv4**. Using the `Cluster Details`_ spreadsheet, fill out the followin
 - **Address** - 10.42.xx.42
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.42.xx.1
-- **DNS** - 10.42.253.10
+- **DNS** - 10.42.196.10
 
 .. figure:: images/4.png
 
