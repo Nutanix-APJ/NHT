@@ -35,7 +35,7 @@ Open a terminal and SSH to Node-D CVM, enter CVM credentials then execute follow
   
 .. code-block:: bash
 
- ssh nutanix@10.21.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
+ ssh nutanix@10.42.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
 
  acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
  
@@ -44,7 +44,7 @@ Wait till you see X-Ray: Complete
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
 
-Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.21.xx.37:9440) in your browser and log in with the following credentials:
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - default
@@ -123,10 +123,10 @@ Select **Ethernet (eth0)** and click the **Gear Icon**.
 Select **IPv4**. Using the `Cluster Details`_ spreadsheet, fill out the following fields and click **Apply**:
 
 - **Addresses** - Manual
-- **Address** - 10.21.xx.42
+- **Address** - 10.42.xx.42
 - **Netmask** - 255.255.255.128
-- **Gateway** - 10.21.xx.1
-- **DNS** - 10.21.253.10
+- **Gateway** - 10.42.xx.1
+- **DNS** - 10.42.253.10
 
 .. figure:: images/4.png
 
@@ -139,7 +139,7 @@ Use the toggle switch to turn the **eth0** adapter **off** and back **on** to en
 Configuring X-Ray
 +++++++++++++++++
 
-Open \https://<*XRAY-VM-IP*>/ (https://10.21.xx.42) in a browser. Enter a password for the local secret score, such as your Prism cluster password, and click **Enter**.
+Open \https://<*XRAY-VM-IP*>/ (https://10.42.xx.42) in a browser. Enter a password for the local secret score, such as your Prism cluster password, and click **Enter**.
 
 .. figure:: images/7.png
 
@@ -174,7 +174,7 @@ Select **Targets** from the navigation bar and click **+ New Target**. Fill out 
 - **Power Management Type** - IPMI
 - **Username** - ADMIN
 - **Password** - ADMIN
-- **Prism Address** - *3-Node Cluster Virtual IP*<10.21.xx.37>
+- **Prism Address** - *3-Node Cluster Virtual IP*<10.42.xx.37>
 - **Username** - admin
 - **Password** - techX2019!
 
