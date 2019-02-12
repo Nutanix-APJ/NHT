@@ -48,9 +48,15 @@ Create AD VM for AD/LDAP connectivity
 
 In **Prism>Storage** , create a Storage Container called *Images* if there is no existing one of that name.
 
-Open a terminal and SSH to CVM, type ‘ssh nutanix@10.42.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
+Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
 
-*acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2*
+Username - nutanix
+Password - techX2019!
+Execute the following commands to upload AD image:
+
+.. code-block:: bash
+
+  acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2
 
 
 .. image:: images/image002.png
