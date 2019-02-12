@@ -45,6 +45,7 @@ then click **save**
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
+In Prism>Storage , create a Storage Container called Images if there is no existing one of that name.
 
 Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
 
