@@ -51,7 +51,9 @@ In **Prism>Storage** , create a Storage Container called *Images* if there is no
 Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
 
 Username - nutanix
+
 Password - techX2019!
+
 Execute the following commands to upload AD image:
 
 .. code-block:: bash
