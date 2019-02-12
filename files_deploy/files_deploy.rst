@@ -52,7 +52,7 @@ Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned
 
 Username - nutanix
 
-Password - techX2019!
+Password - *Nutanix default*
 
 Execute the following commands to upload AD image:
 
