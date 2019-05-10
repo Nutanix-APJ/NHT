@@ -57,10 +57,8 @@ Execute the following commands to upload AD image:
 
 .. code-block:: bash
 
-  acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2
+  acli image.create AutoDC container=Images image_type=kDiskImage source_url=https://s3.amazonaws.com/get-ahv-images/AutoDC2.qcow2
 
-
-.. image:: images/image002.png
 
 
 Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement of File Service.
