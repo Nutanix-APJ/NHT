@@ -26,14 +26,6 @@ Getting Started
 
 Welcome to Nutanix New Hire Training! Carefully review the **Overview** section of each lab before proceeding with the exercise.
 
-Cluster Details
-+++++++++++++++
-
-Using the spreadsheet below, locate your **Cluster ID** and corresponding details for your group's assigned cluster.
-
-.. raw:: html
-
-  <iframe src=https://docs.google.com/spreadsheets/d/1xwfiRAenIAjxMNGT7R-xsMC34e1UNzpB5cD36zXBPxQ/edit#gid=837182199; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
 
 Cluster Access
 ++++++++++++++
@@ -55,18 +47,21 @@ Launch GlobalProtect and configure **gp.nutanix.com** as the **Portal** address.
 
   You can also leverage the legacy VPN solution, Pulse Secure. Connect and download the client from https://sslvpn.nutanix.com.
 
-XenDesktop Access
+Virtual Desktop Access
 .................
 
 .. note::
 
+  
+20 x VDI/VPN User Accounts: PHX-POC0XX-User01, PHX-POC0XX-User02 … PHX-POC0XX-User20 etc.
+VDI/VPN User Password: techX2019!
+
+
+Parallels VDI
+1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials
+2. Select HTML5 (web browser) OR Install the Parallels Client
+3. Select a desktop or application of your choice.
   If you are attending NHT and in a non-SE role (e.g. CSM, Services) you DO NOT have NUTANIXDC.local credentials. Alternate credentials will be provided in class to access the HPOC XenDesktop environment.
 
-Download and install the `Citrix Workspace client <https://www.citrix.com/downloads/workspace-app/>`_. Do **NOT** enable Single Sign-On (SSO) during installation.
 
-In your browser, log in at https://citrixready.nutanix.com with your **NUTANIXDC.local** credentials. This username should match your Corp AD (Okta) username (first.last).
-
-The default password is **welcome123**. You will be prompted to change your password.
-
-.. image:: images/1.png
 
