@@ -112,7 +112,7 @@ Fill out the following fields and click **Save**:
 
   At the time of writing, Foundation 4.3 is the latest available version. The URL for the latest Foundation VM QCOW2 image can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/foundation>`_.
 
-  **Unless otherwise directed by support, always use the latest version of Foundation.**
+  **Unless otherwise directed by support, always use the latest version of Foundation in field installation.**
   
 
 After the image creation process completes, browse to **Prism > VM > Table** and click **Network Config**.
@@ -341,7 +341,7 @@ Fill out the following fields and click **Next**:
 
   *Cluster Virtual IP needs to be within the same subnet as the CVM/hypervisor.*
 
-- **NTP Servers of Every Hypervisor and CVM** - 10.42.196.10
+- **NTP Servers of Every Hypervisor and CVM** - 0.pool.ntp.org
 - **DNS Servers of Every Hypervisor and CVM** - 10.42.196.10
 
   *DNS and NTP servers should be captured as part of install planning with the customer.*
