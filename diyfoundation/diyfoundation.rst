@@ -355,6 +355,8 @@ To upload AOS or hypervisor files, click **Manage AOS Files**.
 
 After the upload completes, click **Close**. Click **Next**.
 
+Select **unless you want it** if it suggest you skip the AOS installaion process
+
 Since we have already upload our desired AOS through command line, just select it and click **Next**
 
 
