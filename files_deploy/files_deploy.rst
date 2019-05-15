@@ -94,8 +94,8 @@ Deploy Acropolis File Services
 In **Prism > File Server**, click **+ File Server**.
 
 
-Firstly, download Files 3.2.0.2 package, click Continue to install File Services Software on POCxx
-Secondly, add Data Services IP as 10.42.XX.38. Click Continue.
+Firstly, download Files 3.2.0.2 package, click **Continue** to install File Services Software on POCxx.
+Secondly, add Data Services IP as 10.42.xx.38. Click Continue.
 
 
 .. image:: images/image009.png

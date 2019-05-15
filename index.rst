@@ -67,7 +67,7 @@ If you are attending NHT and in a non-SE role (e.g. CSM, Services) you DO NOT ha
 20 x VDI/VPN User Accounts: PHX-POC0XX-User01, PHX-POC0XX-User02 … PHX-POC0XX-User20 etc.
 VDI/VPN User Password: techX2019!
 
-XX is your cluster ID
+xx is your cluster ID
 
 
 Parallels VDI
