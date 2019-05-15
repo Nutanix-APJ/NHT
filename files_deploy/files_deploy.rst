@@ -35,7 +35,7 @@ Click gear icon on top right to access configuration page and navigate to Networ
 
 - create ‘Rx-Automation-Network’ with VLAN 0
  
-- create vlan *z* (*z* should be replaced by xx1; eg. if your cluster ID xx is 4, then *z* is 41) named Secondary 
+- create vlan *z* (*z* should be replaced by xx1; eg. if your cluster ID xx is 4, then *z* is 41) named **Secondary** 
 
 then click **save**
 
@@ -45,13 +45,13 @@ then click **save**
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
-In Prism>Storage , create a Storage Container called Images if there is no existing one of that name.
+In Prism>Storage , create a Storage Container called **Images** if there is no existing one of that name.
 
 Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
 
 Username - nutanix
 
-Password - techX2019!
+Password - default
 
 Execute the following commands to upload AD image:
 
@@ -84,8 +84,6 @@ Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add*
 After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. This information will be used later.
 
 
-.. image:: images/image007.png
-
 
 .. image:: images/image008.png
 
@@ -96,7 +94,7 @@ Deploy Acropolis File Services
 In **Prism > File Server**, click **+ File Server**.
 
 
-Firstly, download Files 3.1.0.1 package, click Continue to install File Services Software on POCxx
+Firstly, download Files 3.2.0.2 package, click Continue to install File Services Software on POCxx
 Secondly, add Data Services IP as 10.42.XX.38. Click Continue.
 
 
@@ -106,7 +104,7 @@ Secondly, add Data Services IP as 10.42.XX.38. Click Continue.
 Fill out the following fields and click **Next**:
 
 - **Name** - *intials*-Files (e.g. POCxx-Files)
-- **Domain** - POCLAB.local
+- **Domain** - ntnxlab.local
 - **File Server Size** - 1 TiB
   
   
@@ -117,7 +115,7 @@ Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Spec
 
 .. note::
 
-  In order for the Files cluster to successfully find and join the **POCLAB.local** domain it is critical that the **DNS Resolver IP** is set to the **AD** VM IP **FOR YOUR CLUSTER**. By default, this field is set to the primary **Name Server** IP configured for the Nutanix cluster, **this value is incorrect and will not work**.
+  In order for the Files cluster to successfully find and join the **ntnxlab.local** domain it is critical that the **DNS Resolver IP** is set to the **AD** VM IP **FOR YOUR CLUSTER**. By default, this field is set to the primary **Name Server** IP configured for the Nutanix cluster, **this value is incorrect and will not work**.
 
 Fill out the following fields and click **Next**:
 
@@ -136,7 +134,7 @@ Fill out the following fields and click **Next**:
 
 .. note::
 
- AFS requires n (n, being the number of FSVMs) IP addresses on the Client network: 1 IP address per FSVM.
+ Files requires n (n, being the number of FSVMs) IP addresses on the Client network: 1 IP address per FSVM.
 
 Select the **Secondary - Managed** VLAN for the Storage Network. Click **Next**.
 
@@ -159,7 +157,7 @@ Fill out the following fields and click **Next**:
 Fill out the following fields and click **Next**:
 
 - Select **Use SMB Protocol**
-- **Username** - Administrator@POCLAB.local
+- **Username** - Administrator@ntnxlab.local
 - **Password** - See record from the console
 - Select **Make this user a File Server admin**
 - Select **Use NFS Protocol**
@@ -222,9 +220,9 @@ Review Summary tab and click **create**
 .. image:: images/image021.png
 
 
-Login to https://citrixready.nutanix.com using your supplied credentials(see *Cluster details* )
-Select "Customers, Partners & Bootcamps" to access your virtual desktop, open file browser and type ‘\\10.42.xx.100’ (or any other IP of FSVM)
-Login by administrator@poclab.local credential 
+Parallels VDI 1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials belowed 2. Select HTML5 (web browser) OR Install the Parallels Client 3. Select a desktop or application of your choice.
+
+20 x VDI/VPN User Accounts: PHX-POC0XX-User01, PHX-POC0XX-User02 … PHX-POC0XX-User20 etc. VDI/VPN User Password: techX2019!
 
 
 .. image:: images/image022.png
@@ -237,4 +235,4 @@ You can see home share after login successfully.
 
 
 
-You can also use domain name (\\POC04-Files.POClab.local) to access if you direct DNS of your desktop to AD VM IP(10.42.xx.yy).
+You can also use domain name (\\POCxx-Files.ntnxlab.local) to access if you direct DNS of your desktop to AD VM IP(10.42.xx.yy).
