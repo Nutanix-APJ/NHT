@@ -122,8 +122,8 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.1
 - **IP** – **from** 10.42.xx.100 **to** 10.42.xx.102 (click **save** on the right)
-- **DNS** – 10.42.xx.yy (check AD VM IP address)
-- **NTP** – 10.42.196.10
+- **DNS** – 10.42.xx.yz (check AD VM IP address)
+- **NTP** – 0.pool.ntp.org
 
 
 .. image:: images/image011.png
