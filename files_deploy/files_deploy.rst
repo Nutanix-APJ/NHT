@@ -222,7 +222,7 @@ Review Summary tab and click **create**
 
 Parallels VDI 1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials belowed 2. Select HTML5 (web browser) OR Install the Parallels Client 3. Select a desktop or application of your choice.
 
-20 x VDI/VPN User Accounts: PHX-POC0XX-User01, PHX-POC0XX-User02 … PHX-POC0XX-User20 etc. VDI/VPN User Password: techX2019!
+20 x VDI/VPN User Accounts: PHX-POC0xx-User01, PHX-POC0xx-User02 … PHX-POC0xx-User20 etc. VDI/VPN User Password: techX2019!
 
 
 .. image:: images/image022.png
