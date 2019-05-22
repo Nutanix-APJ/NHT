@@ -6,11 +6,13 @@
   :name: _labs
   :hidden:
 
-  Nutanix101/Nutanix101
-
   diyfoundation/diyfoundation
+
+  nutanix101/nutanix101
   
   xray/xray
+
+  volumes/volumes
   
   files_deploy/files_deploy
 
