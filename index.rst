@@ -6,6 +6,8 @@
   :name: _labs
   :hidden:
 
+  Nutanix101/Nutanix101
+
   diyfoundation/diyfoundation
   
   xray/xray
