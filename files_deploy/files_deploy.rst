@@ -15,14 +15,7 @@ In this exercise you will use Prism to deploy Files, a native, distributed file 
 
 In following steps, you may replace xx with your assigned cluster ID
 
-Cluster Details
-................
 
-Using the spreadsheet below, locate your **cluster ID** and corresponding details for your group's assigned cluster.
-
-.. raw:: html
-
-  <iframe src=https://docs.google.com/spreadsheets/d/1xwfiRAenIAjxMNGT7R-xsMC34e1UNzpB5cD36zXBPxQ/edit#gid=837182199; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
 
 Networks preparation
 +++++++++++++++++++++
@@ -40,7 +33,9 @@ Click gear icon on top right to access configuration page and navigate to Networ
 then click **save**
 
 
+
 .. image:: images/image001.png
+
 
   
 Create AD VM for AD/LDAP connectivity
@@ -66,7 +61,10 @@ Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement o
 In **Prism > VM**, click **+ Create VM**
 
 
+.. image:: images/image003.png
+
 .. image:: images/image004.png
+
 
    
 click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
@@ -82,7 +80,6 @@ Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add*
 
  
 After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. This information will be used later.
-
 
 
 .. image:: images/image008.png
@@ -129,7 +126,9 @@ Fill out the following fields and click **Next**:
 .. image:: images/image011.png
 
 
+
 .. image:: images/image012.png
+
 
 
 .. note::
@@ -143,6 +142,7 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
 - **IP** – **from** 10.42.xx.132 **to** 10.42.xx.135 (click **save** on the right)
+
 
 
 .. image:: images/image013.png
@@ -232,7 +232,6 @@ You can see home share after login successfully.
 
 
 .. image:: images/image023.png
-
 
 
 You can also use domain name (\\POCxx-Files.ntnxlab.local) to access if you direct DNS of your desktop to AD VM IP(10.42.xx.yy).

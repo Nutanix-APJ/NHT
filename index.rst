@@ -32,14 +32,6 @@ Welcome to Nutanix New Hire Training! Carefully review the **Overview** section 
 
 In following steps, you may replace xx with your assigned cluster ID
 
-Cluster Details
-................
-
-Using the spreadsheet below, locate your **cluster ID** and corresponding details for your group's assigned cluster.
-
-.. raw:: html
-
-  <iframe src=https://docs.google.com/spreadsheets/d/1xwfiRAenIAjxMNGT7R-xsMC34e1UNzpB5cD36zXBPxQ/edit#gid=837182199; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
 
 Cluster Access
 ++++++++++++++
