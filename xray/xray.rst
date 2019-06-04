@@ -37,7 +37,7 @@ Open a terminal and SSH to Node-D CVM, enter CVM credentials then execute follow
 
  ssh nutanix@10.42.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
 
- acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
+ acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.4.0/xray.qcow2
  
 Wait till you see X-Ray: Complete
 
