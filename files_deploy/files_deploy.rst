@@ -63,6 +63,7 @@ In **Prism > VM**, click **+ Create VM**
 
 .. image:: images/image003.png
 
+
 .. image:: images/image004.png
 
 
