@@ -39,6 +39,10 @@ Using an SSH client, connect to the **Node A CVM IP** <10.42.xx.29> in your assi
 - **Username** - nutanix
 - **Password** - *techX2019!*
 
+.. code-block:: bash
+
+  ssh nutanix@10.42.xx.29          # password: techX2019!
+
 Execute the following commands to power off any running VMs on the cluster, stop cluster services, and destroy the existing cluster:
 
 .. code-block:: bash
@@ -55,7 +59,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 
 .. code-block:: bash
 
- ssh nutanix@10.42.xx.32
+ ssh nutanix@10.42.xx.32           # password: techX2019!
  cluster -s 10.42.xx.32 create       # Enter 'Y' when prompted to proceed
 
  ncli cluster edit-params new-name=POCxx-D
@@ -81,7 +85,7 @@ Accept the EULA and Pulse prompts.
 
 In **Prism > Storage > Table > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
 
-Click **+ Storage Container** to create a new container named *Images*
+Check if there is a container named *Images*, if not, Click **+ Storage Container** to create a new container named *Images*
 
 
 .. image:: images/image001.png
@@ -94,7 +98,7 @@ Fill out the following fields and click **Save**:
 - **Image Type** - Disk
 - **Storage Container** Images
 - Select **From URL**
-- **Image Source** - http://download.nutanix.com/foundation/foundation-4.3/Foundation_VM-4.3-disk-0.qcow2
+- **Image Source** - http://download.nutanix.com/foundation/foundation-4.3.4/Foundation_VM-4.3.4-disk-0.qcow2
 
 
 .. image:: images/image002.png
@@ -182,7 +186,7 @@ Select **eth0** and press **Return**.
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields, select **OK** and press **Return**:
 
 - **Use DHCP** - Press **Space** to de-select
-- **Static IP** - 10.42.xx.45 (Foundation VM IP)
+- **Static IP** - 10.42.xx.yz (Foundation VM IP)
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.42.xx.1
 
@@ -220,20 +224,17 @@ If downloading the AOS package within the Foundation VM, the .tar.gz package can
   
 To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
   
-Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.45>
+Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
   
 .. code-block:: bash
 
- ssh nutanix@10.42.xx.45      # provide default password of foundation VM 
+ ssh nutanix@10.42.xx.yz      # provide default password of foundation VM 
  cd foundation
  cd nos
- wget  https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
- 
- 
-.. image:: images/image100.png
- 
- 
-When you see above result, AOS 5.8.2 package has been downloaded to ~/foundation/nos folder.
+ wget  http://download.nutanix.com/downloads/acropolis/euphrates-5.10.4.1-stable/nutanix_installer_package-release-euphrates-5.10.4.1-stable.tar.gz
+  
+
+When you see 100% finish, AOS 5.10.4.1 package has been downloaded to ~/foundation/nos folder.
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
@@ -391,7 +392,7 @@ When all CVMs are ready, Foundation initiates the cluster creation process.
 
 
 
-Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the following credentials:
+Open \https://*<Cluster Virtual IP >*:9440 (10.42.xx.37)in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - *default*

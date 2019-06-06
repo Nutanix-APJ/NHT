@@ -9,7 +9,6 @@ Overview
 
 **Estimated time to complete: 60 MINUTES**
 
-So you just started at Nutanix, this is the set of labs for you. This will give you an opportunity to get your hands dirty.
 
 This lab will introduce the Prism Element UI, and familiarize you with its layout and navigation.
 You will use Prism to perform a basic container, and network setup for the cluster.
@@ -20,16 +19,15 @@ As well as, learn how to set up protection domains, create VM snapshots, and res
 Prism Element
 +++++++++++++
 
-From the Firefox web browser (preferred), log into the Nutanix Prism GUI using the Cluster IP.
+From the Firefox or Chrome web browser (preferred), log into the Nutanix Prism GUI using the Cluster IP.
 
-Open https://<*NUTANIX-CLUSTER-IP*>:9440
+Open https://<*NUTANIX-CLUSTER-IP*>:9440 (10.42.xx.37)
+
 
 Fill out the following fields and click **Enter**:
 
 - **Username** - admin
-- **Password** - *HPOC Password*
-
-.. figure:: images/nutanix_tech_overview_01.png
+- **Password** - *techX2019!*
 
 After you log in to Prism Element, familiarize yourself with the Prism UI. Explore the information on the **Home** screen, as well as the other screens.
 
@@ -113,19 +111,6 @@ What page would show you the latest activity in the system? On this page, you ca
 
 First Way, In **Prism > Tasks**, click **Tasks**. Second Way, click :fa:`circle-o`.
 
-.. note::
-
-  In ESXi:
-
-  - The containers created in Prism appear as datastores in vCenter.
-
-  Example view of storage containers from Prism:
-
-  .. figure:: images/nutanix_tech_overview_13.png
-
-  Example view of storage containers (datastores) from vCenter:
-
-  .. figure:: images/nutanix_tech_overview_14.png
 
 Prism Element Storage Configuration Items
 +++++++++++++++++++++++++++++++++++++++++
