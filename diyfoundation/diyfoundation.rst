@@ -284,7 +284,7 @@ Fill in block information, choose **I will provide the IPMIs' MACs** and click *
  Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: *default* for each node
   
 
-Access Node A IPMI through IP 10.42.xx.33 and ADMIN/ADMIN
+Access Node A IPMI through IP 10.42.xx.33 with ADMIN/ADMIN
 
 
 .. image:: images/image101.png
@@ -293,9 +293,10 @@ Access Node A IPMI through IP 10.42.xx.33 and ADMIN/ADMIN
 .. image:: images/image102.png
 
 
-Record your NODE A BMC MAC address ( in above example , it is **ac:1f:6b:1e:95:eb** )
+Record your NODE A/B/C BMC MAC address ( in above example , it is **ac:1f:6b:1e:95:eb** )
 
-Doing the same with your other 2 nodes, and record all 3 BMC MAC addresses.
+
+Doing the same with your other 2 nodes B/C, access Node B and C IPMI through IP 10.42.xx.34/35 with ADMIN/ADMIN, record all 3 BMC MAC addresses.
 
 
 
