@@ -234,6 +234,8 @@ Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
  wget  https://ntnx-portal.s3.amazonaws.com/releases/euphrates-5.10.4-stable/nutanix_installer_package-release-euphrates-5.10.4-stable.tar.gz
 
 
+
+
 When you see 100% finish, AOS 5.10.4 package has been downloaded to ~/foundation/nos folder.
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
@@ -254,6 +256,16 @@ On the **Start** page, click **Next**.
 
 .. image:: images/image014.png
 
+In new foundation page, clear all auto discovered nodes and click **add nodes manually**
+
+
+.. image:: images/image0141.png
+
+
+Fill in block information, choose **I will provide the IPMIs' MACs** and click **Add**
+
+
+.. image:: images/image104.png
 
 .. note::
 
@@ -285,16 +297,6 @@ Record your NODE A BMC MAC address ( in above example , it is **ac:1f:6b:1e:95:e
 
 Doing the same with your other 2 nodes, and record all 3 BMC MAC addresses.
 
-In previous foundation page, clear all auto discovered nodes and click **add nodes manually**
-
-
-.. image:: images/image0141.png
-
-
-Fill in block information, choose **I will provide the IPMIs' MACs** and click **Add**
-
-
-.. image:: images/image104.png
 
 
 Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
