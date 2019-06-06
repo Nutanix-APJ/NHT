@@ -106,7 +106,7 @@ Fill out the following fields and click **Save**:
    
 .. note::
 
-  At the time of writing, Foundation 4.3 is the latest available version. The URL for the latest Foundation VM QCOW2 image can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/foundation>`_.
+  At the time of writing, Foundation 4.3.4 is the latest available version. The URL for the latest Foundation VM QCOW2 image can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/foundation>`_.
 
   **Unless otherwise directed by support, always use the latest version of Foundation in field installation.**
   
@@ -228,10 +228,12 @@ Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
   
 .. code-block:: bash
 
- ssh nutanix@10.42.xx.yz      # provide default password of foundation VM 
+ ssh nutanix@10.42.xx.yz      # provide default password 
  cd foundation
  cd nos
  wget  http://download.nutanix.com/downloads/acropolis/euphrates-5.10.4.1-stable/nutanix_installer_package-release-euphrates-5.10.4.1-stable.tar.gz
+https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
+
   
 
 When you see 100% finish, AOS 5.10.4.1 package has been downloaded to ~/foundation/nos folder.
@@ -255,7 +257,9 @@ On the **Start** page, click **Next**.
 .. image:: images/image014.png
 
    
-Click **Click here** to manually specify the MAC address of your assigned node.
+Click **Add Nodes Manually** in dropdown list from **Tools** to manually specify the MAC address of your assigned node.
+
+.. image:: images/image0141.png
 
 .. note::
 
@@ -313,7 +317,7 @@ Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replaci
 
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
-Fill out the following fields and click **Next**:
+Leave the first 2 options unselected, fill out the following fields and click **Next**:
 
 - **Cluster Name** - POCxx-ABC
 - **Timezone of Every Hypervisor and CVM** - *your local timezone*
@@ -330,12 +334,6 @@ Fill out the following fields and click **Next**:
 - **vRAM Allocation for Every CVM, in Gigabytes** - 32
 
   *Refer to AOS Release Notes > Controller VM Memory Configurations for guidance on CVM Memory Allocation.*
-
-
-.. image:: images/image016.png
-  
-   
-.. image:: images/image017.png
    
 
 To upload AOS or hypervisor files, click **Manage AOS Files**.
