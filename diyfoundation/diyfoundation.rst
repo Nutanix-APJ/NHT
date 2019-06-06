@@ -231,10 +231,8 @@ Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
  ssh nutanix@10.42.xx.yz      # provide default password 
  cd foundation
  cd nos
- wget  http://download.nutanix.com/downloads/acropolis/euphrates-5.10.4.1-stable/nutanix_installer_package-release-euphrates-5.10.4.1-stable.tar.gz
-https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
+ wget  https://ntnx-portal.s3.amazonaws.com/releases/euphrates-5.10.4-stable/nutanix_installer_package-release-euphrates-5.10.4-stable.tar.gz
 
-  
 
 When you see 100% finish, AOS 5.10.4.1 package has been downloaded to ~/foundation/nos folder.
 
