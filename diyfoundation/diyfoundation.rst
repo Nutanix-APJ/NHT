@@ -234,7 +234,7 @@ Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
  wget  https://ntnx-portal.s3.amazonaws.com/releases/euphrates-5.10.4-stable/nutanix_installer_package-release-euphrates-5.10.4-stable.tar.gz
 
 
-When you see 100% finish, AOS 5.10.4.1 package has been downloaded to ~/foundation/nos folder.
+When you see 100% finish, AOS 5.10.4 package has been downloaded to ~/foundation/nos folder.
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
