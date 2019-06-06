@@ -256,10 +256,6 @@ On the **Start** page, click **Next**.
 
 .. image:: images/image014.png
 
-   
-Click **Add Nodes Manually** in dropdown list from **Tools** to manually specify the MAC address of your assigned node.
-
-.. image:: images/image0141.png
 
 .. note::
 
@@ -294,7 +290,7 @@ Doing the same with your other 2 nodes, and record all 3 BMC MAC addresses.
 In previous foundation page, clear all auto discovered nodes and click **add nodes manually**
 
 
-.. image:: images/image103.png
+.. image:: images/image0141.png
 
 
 Fill in block information, choose **I will provide the IPMIs' MACs** and click **Add**
