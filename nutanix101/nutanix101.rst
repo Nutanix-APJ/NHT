@@ -209,10 +209,6 @@ Configure Network
 
 In this exercise, we intentionally use invalid VLANs so no communication is possible from VMs placed on the network.
 
-.. note::
-
-  This exercise is for demonstration purposes only. VMs connected to networks other than vlan 0 get a DHCP IP, but the network is not valid and does not transmit any traffic.
-
 Setup user VM network
 .....................
 
@@ -241,12 +237,12 @@ Create another network, but this time enable IPAM.
 Fill out the following fields and click **Save**:
 
 - **Name** - *initials*-Network_IPAM
-- **VLAN ID** - Something other than 0
+- **VLAN ID** - xx1
 - **Enable IP Address Management** - Checked
-- **Network IP Address / Prefix Length** - 10.0.0.0/24
-- **Gateway** - 10.0.0.1
+- **Network IP Address / Prefix Length** - 10.42.xx.128/25
+- **Gateway** - 10.42.xx.129
 - **Configure Domain Settings** - unchecked
-- **Create Pool** - 10.0.0.100-10.0.0.150
+- **Create Pool** - 10.42.xx.132-10.42.xx.254
 - **Override DHCP Server** - unchecked
 
 .. note::
