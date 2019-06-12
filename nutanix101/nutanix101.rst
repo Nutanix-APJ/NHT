@@ -241,8 +241,9 @@ Fill out the following fields and click **Save**:
 - **Enable IP Address Management** - Checked
 - **Network IP Address / Prefix Length** - 10.42.xx.128/25
 - **Gateway** - 10.42.xx.129
-- **Configure Domain Settings** - unchecked
-- **Create Pool** - 10.42.xx.132-10.42.xx.254
+- **Configure Domain Settings** - checked
+- **Domain Name Servers** - 10.42.196.10, others - leave blank
+- **Create Pool** --10.42.xx.132-10.42.xx.142
 - **Override DHCP Server** - unchecked
 
 .. note::
@@ -256,6 +257,15 @@ Creating a Linux VM
 ...................
 
 Deploy a Linux VM from Prism Element.
+
+Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
+Fill out the following fields and click **Save**:
+
+- **Name** - CentOS7.qcow2
+- **Image Type** - Disk
+- **Storage Container** *initials*-container
+- Select **From URL**
+- **Image Source** - http://10.42.194.11/workshop_staging/CentOS7.qcow2
 
 In **Prism Element > VM > Table**, click **+ Create VM**.
 
@@ -289,6 +299,24 @@ Deploy a Windows VM from Prism Element.
 .. note::
 
   Nutanix provides a set of guest tools and drivers comparable to VMware Tools. To install a Windows-based OS, the I/O drivers must be provided at install time. Nutanix provides a customized set of virtualized I/O drivers for Windows OS on AHV.
+
+Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
+Fill out the following fields and click **Save**:
+
+- **Name** - Windows2012R2.ISO
+- **Image Type** - Disk
+- **Storage Container** *initials*-container
+- Select **From URL**
+- **Image Source** - http://10.42.194.11/workshop_staging/Windows2012R2.iso
+
+Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
+Fill out the following fields and click **Save**:
+
+- **Name** - Nutanix VirtIO
+- **Image Type** - Disk
+- **Storage Container** *initials*-container
+- Select **From URL**
+- **Image Source** - http://10.42.194.11/workshop_staging/Nutanix-VirtIO-1.1.3.iso
 
 In **Prism Element > VM > Table**, click **+ Create VM**.
 
