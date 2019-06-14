@@ -17,7 +17,7 @@ In following steps, you may replace xx with your assigned cluster ID
 
 
 
-Networks preparation
+Networks preparation（skip this part if you have created them in XRay lab）
 +++++++++++++++++++++
 
 Launch a web browser and log into POCxx-ABC PRISM with IP 10.42.xx.37, User: admin, Password: techX2019!
@@ -41,6 +41,8 @@ then click **save**
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
 In Prism>Storage , create a Storage Container called **Images** if there is no existing one of that name.
+
+.. image:: images/image025.png
 
 Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
 

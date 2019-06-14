@@ -68,6 +68,8 @@ Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D
 - **Username** - admin
 - **Password** - techX2019!
 
+Configue the 2 network **Rx-Automation-Network** and **Secondary** as previous step, after that
+
 In **Prism > VM > Table** and click **+ Create VM**.
 
 Fill out the following fields and click **Save**:
