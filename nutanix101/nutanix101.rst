@@ -127,7 +127,7 @@ In **Prism Element> Storage**, click **Storage**, click **Table**, then click **
 Use the following specifications (with **Advance Settings**), and click **Save**:
 
 - **Name** - *initials*-container
-- **Advertised Capacity** - 5 GiB
+- **Advertised Capacity** - 0 GiB
 - **Compression** - Enabled (inline 0 mins)
 - **Deduplication** - Cache Only
 - **Erasure Coding** - Disabled
@@ -286,7 +286,7 @@ Fill out the following fields and click **Save**:
     - Select **Add**
 
 - Select **Add New NIC**
-    - **VLAN Name** - Primary
+    - **VLAN Name** - *initials*-Network_IPAM
     - Select **Add**
 
 Click **Save** to create the VM.
@@ -335,7 +335,7 @@ Fill out the following fields and click **Save**:
 - Select **+ Add New Disk**
     - **Type** - DISK
     - **Operation** - Allocate on Storage Container
-    - **Storage Container** - Default Container
+    - **Storage Container** - *initials*-container
     - **Size (GiB)** - 30 GiB
     - Select **Add**
 
@@ -346,7 +346,7 @@ Fill out the following fields and click **Save**:
     - Select **Add**
 
 - Select **Add New NIC**
-    - **VLAN Name** - Primary
+    - **VLAN Name** - *initials*-Network_IPAM
       - Select **Add**
 
 Click **Save** to create the VM.
@@ -386,13 +386,6 @@ After the drivers are loaded, the disk created in step 1 appears as an installat
 
 After the installation completes, the Windows install ISO can be unmounted and the additional CD-ROM used for the drivers can be removed from the VM.
 
-.. note::
-
-  In ESXi:
-
-  - After a VM is created via VMware vSphere, it appears in the Prism VMs list.
-  - Alternatively, if a VM is created via Prism, it appears in the VMware vSphere UI. An example is shown in the image below.
-  .. figure:: images/deploy_workloads_08.png
 
 Workload Management
 +++++++++++++++++++
@@ -426,37 +419,7 @@ Select the VM, then click **Launch Console**.
 
 .. figure:: images/manage_workloads_01.png
 
-.. note::
 
-  In ESX:
-
-  - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance registered to Prism.
-
-  .. figure:: images/manage_workloads_06.png
-
-Prism Search
-............
-
-The Prism search function makes it easier to identify problems or find feature documentation in Prism Central. Use Prism Central’s search capabilities by typing a few search queries to see how easy this can make the tasks above.
-
-
-Suggestions:
-
-- vm cpu > 1
-- vm mem > 2
-- vm iops
-- create vm
-- powered on
-- powered on cpu = 8
-
-In **Prism Central >** :fa:`search`.
-
-- Note the result types: Entity, Alerts, and Help.
-- Click the star icon to save a search.
-
-.. note::
-
-  The search hot key (a slash mark, or /) can be used from anywhere in the Prism Central UI to bring up the search function.
 
 Clone a VM
 ..........

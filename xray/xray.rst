@@ -19,14 +19,7 @@ In this lab, we will deploy X-Ray VM on POCxx-D, and evalutate cluster POCxx-ABC
 
 For environments where DHCP is unavailable (or there isn't a sufficiently large pool of addresses available), X-Ray supports `Link-local <https://en.wikipedia.org/wiki/Link-local_address>`_ or "Zero Configuration" networking, where the VMs communicate via self-assigned IPv4 addresses. In order to work, all of the VMs (including the X-Ray VM) need to reside on the same Layer 2 network. To use Link-local networking, your X-Ray VM's first NIC (eth0) should be on a network capable of communicating with your cluster. A second NIC (eth1) is added on a network without DHCP.
 
-Cluster Details
-................
 
-Using the spreadsheet below, locate your **cluster ID** and corresponding details for your group's assigned cluster.
-
-.. raw:: html
-
-  <iframe src=https://docs.google.com/spreadsheets/d/1xwfiRAenIAjxMNGT7R-xsMC34e1UNzpB5cD36zXBPxQ/edit#gid=837182199; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
   
 Create the X-ray image
 ++++++++++++++++++++++
@@ -47,10 +40,7 @@ Configuring Target Cluster Networks
 Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
-- **Password** - default
-- **Reset Password** - techX2019!
-
-Accept the EULA and Pulse prompts.
+- **Password** - techX2019!
 
 Open **Prism > VM > Table** and click **Network Config**.
 
@@ -63,17 +53,17 @@ Fill out the following fields and click **Save**:
 - **Name** - Rx-Automation-Network
 - **VLAD ID** - 0
 
-Click **Create Network**. Using the `Cluster Details`_ spreadsheet, fill out the following fields and click **Save**:
+Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 
 - **Name** - Secondary
-- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=39, Sencondary VLAN is 391)
+- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=90, Sencondary VLAN is 901)
 
 .. figure:: images/1.png
 
 Creating X-Ray VM
 +++++++++++++++++
 
-Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.40:9440) in your browser and log in with the following credentials:
+Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
@@ -104,7 +94,7 @@ Select your **XRay** VM and click **Power on**.
 
 .. note::
 
-  At the time of writing, X-Ray 3.3 is the latest available version. The URL for the latest X-Ray OVA & QCOW2 images can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/static/supportTools>`_.
+  At the time of writing, X-Ray 3.4 is the latest available version. The URL for the latest X-Ray OVA & QCOW2 images can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/static/supportTools>`_.
 
 Once the VM has started, click **Launch Console**.
 
@@ -120,10 +110,10 @@ Select **Ethernet (eth0)** and click the **Gear Icon**.
 
 .. figure:: images/3.png
 
-Select **IPv4**. Using the `Cluster Details`_ spreadsheet, fill out the following fields and click **Apply**:
+Select **IPv4**. Using the Cluster Details spreadsheet, fill out the following fields and click **Apply**:
 
 - **Addresses** - Manual
-- **Address** - 10.42.xx.42
+- **Address** - 10.42.xx.42 (IP of XRay)
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.42.xx.1
 - **DNS** - 10.42.196.10
@@ -134,7 +124,7 @@ Use the toggle switch to turn the **eth0** adapter **off** and back **on** to en
 
 .. raw:: html
 
-  <strong><font color="red">Close the XRay VM console. You will use the browser in your Citrix XenDesktop session for the remainder of the lab.</font></strong>
+  <strong><font color="red">Close the XRay VM console. You will use the browser for the remainder of the lab.</font></strong>
 
 Configuring X-Ray
 +++++++++++++++++
