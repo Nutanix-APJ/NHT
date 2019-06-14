@@ -80,7 +80,7 @@ Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add*
 .. image:: images/image006.png 
 
  
-After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. This information will be used later.
+After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. Record down them. The information will be used later.
 
 
 .. image:: images/image008.png
