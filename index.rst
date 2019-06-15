@@ -14,7 +14,7 @@
   
   files_deploy/files_deploy
 
-  volumes/volumes
+  Volumes/Volumes
 
 
 
