@@ -127,11 +127,6 @@ Fill out the following fields and click **Next**:
 .. image:: images/image011.png
 
 
-
-.. image:: images/image012.png
-
-
-
 .. note::
 
  Files requires n (n, being the number of FSVMs) IP addresses on the Client network: 1 IP address per FSVM.
@@ -142,7 +137,7 @@ Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
-- **IP** – **from** 10.42.xx.132 **to** 10.42.xx.135 (click **save** on the right)
+- **IP** – **from** 10.42.xx.152 **to** 10.42.xx.155 (click **save** on the right)
 
 
 

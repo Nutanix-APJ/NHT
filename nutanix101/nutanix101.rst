@@ -1,3 +1,5 @@
+
+
 .. _nutanix101:
 
 ------------------------
@@ -207,8 +209,6 @@ IP Address Management (IPAM)
 Configure Network
 +++++++++++++++++
 
-In this exercise, we intentionally use invalid VLANs so no communication is possible from VMs placed on the network.
-
 Setup user VM network
 .....................
 
@@ -221,7 +221,7 @@ Next click **VM Networks**, then click **+ Create Network**.
 Fill out the following fields and click **Save**:
 
 - **Name** - *initials*-Network
-- **VLAN ID** - Something other than 0
+- **VLAN ID** - Something other than 0 and xx1
 - **Enable IP Address Management** - unchecked
 
 The final result should look like the image below.

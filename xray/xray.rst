@@ -37,14 +37,37 @@ Wait till you see X-Ray: Complete
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
 
+We will use the Secondary network VLAN for communication between the X-Ray VM and X-Ray worker VMs. This is accomplished via “Zero Configuration” networking, as the 3-node cluster Secondary and 1-node cluster Secondary networks are the same Layer 2 network and there is no DHCP.
+
 Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
 
-Open **Prism > VM > Table** and click **Network Config**.
+Open **Prism > VM > Table** and click **Network Config**, then **Virtual Networks ** .
 
-Before creating the VM, we must first create a virtual network to assign to the X-Ray VM. The network will use the Native VLAN assigned to the physical uplinks for all 4 nodes in the block.
+Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
+
+- **Name** - Secondary
+- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=90, Sencondary VLAN is 901)
+
+.. Note::
+
+You can create the VLAN 0 network on this cluster as well, though it is not required for this exercise.
+
+Click **Create Network**. Fill out the following fields and click **Save**:
+
+- **Name** - Rx-Automation-Network
+- **VLAD ID** - 0
+
+.. figure:: images/1.png
+
+Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - techX2019!
+
+Configue the same 2 network **Rx-Automation-Network** and **Secondary** to 3 node cluster.
 
 Click **Virtual Networks > Create Network**.
 
@@ -58,17 +81,11 @@ Click **Create Network**. Using the Cluster Details spreadsheet, fill out the fo
 - **Name** - Secondary
 - **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=90, Sencondary VLAN is 901)
 
-.. figure:: images/1.png
 
 Creating X-Ray VM
 +++++++++++++++++
 
-Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
-
-- **Username** - admin
-- **Password** - techX2019!
-
-Configue the 2 network **Rx-Automation-Network** and **Secondary** as previous step, after that
+, after that
 
 In **Prism > VM > Table** and click **+ Create VM**.
 
