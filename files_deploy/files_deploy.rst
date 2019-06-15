@@ -15,28 +15,6 @@ In this exercise you will use Prism to deploy Files, a native, distributed file 
 
 In following steps, you may replace xx with your assigned cluster ID
 
-
-
-Networks preparation（skip this part if you have created them in XRay lab）
-+++++++++++++++++++++
-
-Launch a web browser and log into POCxx-ABC PRISM with IP 10.42.xx.37, User: admin, Password: techX2019!
-
-Firstly, we need to make sure a primary and a secondary network are created for File Service. 
-
-Click gear icon on top right to access configuration page and navigate to Network Configuration. Click **+Create Network** in **Virtual Networks** tab.
-
-- create ‘Rx-Automation-Network’ with VLAN 0
- 
-- create vlan *z* (*z* should be replaced by xx1; eg. if your cluster ID xx is 4, then *z* is 41) named **Secondary** 
-
-then click **save**
-
-
-
-.. image:: images/image001.png
-
-
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
@@ -57,15 +35,12 @@ Execute the following commands to upload AD image:
   acli image.create AutoDC container=Images image_type=kDiskImage source_url=https://s3.amazonaws.com/get-ahv-images/AutoDC2.qcow2
 
 
-
-Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement of File Service.
+Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement of File Service. This AD service is different from the AD service created from a Windows Server. We use it just to simplify the lab and you can take a brief view of file service deployment. 
 
 In **Prism > VM**, click **+ Create VM**
 
 
 .. image:: images/image003.png
-
-
 
    
 click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
@@ -109,7 +84,7 @@ Fill out the following fields and click **Next**:
 .. image:: images/image010.png
 
 
-Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Specify your cluster's **AutoDC** VM IP as the **DNS Resolver IP**. Click **Next**.
+Select the **Secondary - Managed** VLAN for the Client Network. Specify your cluster's **AutoDC** VM IP as the **DNS Resolver IP**. Click **Next**.
 
 .. note::
 
@@ -118,8 +93,8 @@ Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Spec
 Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
-- **Gateway** – 10.42.xx.1
-- **IP** – **from** 10.42.xx.100 **to** 10.42.xx.102 (click **save** on the right)
+- **Gateway** – 10.42.xx.129
+- **IP** – **from** 10.42.xx.152 **to** 10.42.xx.154 (click **save** on the right)
 - **DNS** – 10.42.xx.yz (check AD VM IP address)
 - **NTP** – 0.pool.ntp.org
 
@@ -137,12 +112,10 @@ Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
-- **IP** – **from** 10.42.xx.152 **to** 10.42.xx.155 (click **save** on the right)
-
+- **IP** – **from** 10.42.xx.155 **to** 10.42.xx.158 (click **save** on the right)
 
 
 .. image:: images/image013.png
-
 
 
 .. note::
@@ -180,7 +153,7 @@ Monitor deployment progress in **Prism > Tasks**.
 
 .. note::
 
-  If you receive a warning regarding DNS record validation failure, this can be safely ignored. The shared cluster does not use the same DNS servers as your Files cluster, and as a result is unable to resolve the DNS entries created when deploying Files.
+  If you receive a warning regarding DNS record validation failure, this can be safely ignored. The shared cluster does not use the same DNS servers as your Files cluster, and as a result is unable to resolve the DNS entries created when deploying Files. We will use FSVM IP to access the File service from test Windows VM
 
 Upon completion, select the **AFS** server and click **Protect**. Click **+Add schedule** to make a snapshot schedule you plan.
 
@@ -216,9 +189,7 @@ Review Summary tab and click **create**
 .. image:: images/image021.png
 
 
-Parallels VDI 1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials belowed 2. Select HTML5 (web browser) OR Install the Parallels Client 3. Select a desktop or application of your choice.
-
-20 x VDI/VPN User Accounts: PHX-POC0xx-User01, PHX-POC0xx-User02 … PHX-POC0xx-User20 etc. VDI/VPN User Password: techX2019!
+Login to your Windows VM created in Nutanix 101 lab, test the avaiability of the share you created. if **\\10.42.xx.152\home** is avaiable, use your domain administrator credential to login, then create a new folder named **marketing** under home share.
 
 
 .. image:: images/image022.png
