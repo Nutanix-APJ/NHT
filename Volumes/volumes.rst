@@ -245,3 +245,9 @@ Clone Volume Group and Attach to new VM
 14. Note that the VM now has an additional SCSI Disk attached
   
 .. figure:: images26.png
+
+
+
+
+
+
