@@ -44,7 +44,7 @@ Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your 
 - **Username** - admin
 - **Password** - techX2019!
 
-Open **Prism > VM > Table** and click **Network Config**, then **Virtual Networks ** .
+Open **Prism > VM > Table** and click **Network Config**, then **Virtual Networks** .
 
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 

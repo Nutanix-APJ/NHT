@@ -1,8 +1,10 @@
-.. _volumes_lab:
 
------
+.. _volumes:
+
+
+-------
 volumes
------
+-------
 
 Overview
 ++++++++
