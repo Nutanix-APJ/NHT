@@ -2,25 +2,38 @@
 .. _volumes:
 
 
--------
-Volumes
--------
+-----------------------
+Volumes(Block Services)
+-----------------------
 
 Overview
 ++++++++
 
 .. note::
 
-  Estimated time to complete: **60 Minutes**
+  Estimated time to complete: **30 Minutes**
 
-X-Ray is an automated testing application for virtualized infrastructure solutions. It is capable of running test scenarios end-to-end to evaluate system attributes in real-world use cases. In this exercise you will deploy and configure an X-Ray VM, run X-Ray tests, and analyze results.
+The Nutanix Volumes feature (previously know as Acropolis Volumes) exposes back-end DSF storage to external consumers (guest OS, physical hosts, containers, etc.) via iSCSI.
 
-As X-Ray powers down hosts for tests that evaluate availability and data integrity, it is best practice to run the X-Ray VM outside of the target cluster. Additionally, the X-Ray VM itself creates a small amount of storage and CPU overhead that could potentially skew results.
+This allows any operating system to access DSF and leverage its storage capabilities.  In this deployment scenario, the OS is talking directly to Nutanix bypassing any hypervisor. 
 
-In this lab, we will deploy X-Ray VM on POCxx-D, and evalutate cluster POCxx-ABC we just created.
+Core use-cases for Acropolis Volumes:
 
-For environments where DHCP is unavailable (or there isn't a sufficiently large pool of addresses available), X-Ray supports `Link-local <https://en.wikipedia.org/wiki/Link-local_address>`_ or "Zero Configuration" networking, where the VMs communicate via self-assigned IPv4 addresses. In order to work, all of the VMs (including the X-Ray VM) need to reside on the same Layer 2 network. To use Link-local networking, your X-Ray VM's first NIC (eth0) should be on a network capable of communicating with your cluster. A second NIC (eth1) is added on a network without DHCP.
+Shared Disks
+Oracle RAC, Microsoft Failover Clustering, etc.
+Disks as first-class entities
+Where execution contexts are ephemeral and data is critical
+Containers, OpenStack, etc.
+Guest-initiated iSCSI
+Bare-metal consumers
+Exchange on vSphere (for Microsoft Support)
 
+Qualified Operating Systems
+............................
+The solution is iSCSI spec compliant, the qualified operating systems are just those of which have been validated by QA.
+
+Microsoft Windows Server 2008 R2, 2012 R2
+Redhat Enterprise Linux 6.0+
 
   
 Configure Acropolis Block Services
