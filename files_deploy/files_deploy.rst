@@ -189,7 +189,7 @@ Review Summary tab and click **create**
 .. image:: images/image021.png
 
 
-Login to your Windows VM created in Nutanix 101 lab, test the avaiability of the share you created. if **\\10.42.xx.152\home** is avaiable, use your domain administrator credential to login, then create a new folder named **marketing** under home share.
+Login to your Windows VM created in Nutanix 101 lab, test the avaiability of the share you created. if **\\\10.42.xx.152\\home** is avaiable, use your domain administrator credential to login, then create a new folder named **marketing** under home share.
 
 
 .. image:: images/image022.png
@@ -200,5 +200,3 @@ You can see home share after login successfully.
 
 .. image:: images/image023.png
 
-
-You can also use domain name (\\POCxx-Files.ntnxlab.local) to access if you direct DNS of your desktop to AD VM IP(10.42.xx.yy).
