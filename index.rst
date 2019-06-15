@@ -14,8 +14,7 @@
   
   files_deploy/files_deploy
 
-  Volumes/Volumes
-
+  Volumes/volumes
 
 
 .. _getting_started:
