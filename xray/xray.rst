@@ -84,8 +84,10 @@ Click **Create Network**. Using the Cluster Details spreadsheet, fill out the fo
 
 Creating X-Ray VM
 +++++++++++++++++
+Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
 
-, after that
+- **Username** - admin
+- **Password** - techX2019!
 
 In **Prism > VM > Table** and click **+ Create VM**.
 
