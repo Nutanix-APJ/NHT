@@ -189,13 +189,13 @@ Review Summary tab and click **create**
 .. image:: images/image021.png
 
 
-Login to your **Windows VM** created in Nutanix 101 lab, test the avaiability of the share you created. If \\\\10.42.xx.152\\home is avaiable, use your domain administrator credential to login, then create a new folder named **marketing** under home share.
+Login to your **Windows VM** created in Nutanix 101 lab, add domain *ntnxlab.local*, restart this windows VM and test the avaiability of the share you created. If home share \\\\10.42.xx.152\\home is avaiable, create a new folder named **marketing** under home share.
 
 
 .. image:: images/image022.png
 
 
-You can see home share after login successfully.
+.. image:: images/image024.png
 
 
 .. image:: images/image023.png
