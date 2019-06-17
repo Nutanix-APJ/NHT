@@ -38,51 +38,44 @@ Redhat Enterprise Linux 6.0+
   
 Configure Acropolis Block Services
 ++++++++++++++++++++++
+
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - techX2019!
   
-Create Cluster External Data Services IP:
-1.  Login to Prism
-2.  Click the Cluster name in the upper left hand corner to access the Cluster Details 
-3.  Enter the Cluster External Data Services IP Address provided to you in your Assigned Cluster Details (if it is not already set).
+Create Cluster External Data Services IP: Click the Cluster name in the upper left hand corner to access the Cluster Details 
+，enter the Cluster External Data Services IP Address (10.42.xx.38) in your Assigned Cluster Details. Close Cluster Details and proceed to Configure Guests.
 
 .. figure:: images/1.png
-
-
-4.  Close Cluster Details and proceed to Configure Guests.
 
 Enable and Configure ABS in Prism for Windows
 +++++++++++++++++++++++++++++++++++
 
-Ensure that the Windows2012R2-Prod VM has access to the Network:
-1.  Login to Prism
-2.  Navigate to the VM Dashboard, Table View
-3.  Select Windows2012R2-Prod VM, and click Update       
-4.  Ensure that the VM has a NIC added, if it does not, add one now and attach it to VLAN0.
+Ensure that the *initials*-Windows_VM has access to the Network:
+Login to Prism, navigate to the VM Dashboard, Table View, select *initials*-Windows_VM, and click Update, ensure that the VM has a NIC added, if it does not, add one now and attach it to VLAN0.
 
 .. figure:: images/2.png
 
  
-5.  Save the VM Settings and continue to the next steps.
+Save the VM Settings and continue to the next steps.
 
 
 Login to the Windows Server guest VM to get the iSCSI iqn name:
 
-1.  Login to Windows2012R2-Prod on your assigned cluster with username “administrator” and password “nutanix/4u”
-2.  Click in the upper right hand corner of the desktop for the search window to appear.  It looks like a looking glass.  Click the Search icon.  Enter iscsi and “iscsi” and it will resolve to “iSCSI Initiator.”
+Login to *initials*-Windows_VM on your assigned cluster with username “administrator” and your password. Click in the upper right hand corner of the desktop for the search window to appear.  It looks like a looking glass.  Click the Search icon.  Enter iscsi and “iscsi” and it will resolve to “iSCSI Initiator.” Start the Windows iSCSI service.
 
 
 .. figure:: images/3.png
  
 
-3.  Click the “Configuration” tab to find the iqn.  Make a note of it for a later step.
+Click the “Configuration” tab to find the iqn.  Make a note of it for a later step.
  
 .. figure:: images/4.png
 
 
 Create a Volume Group in Prism:
-5.  Login to Prism
-6.  Navigate to the Storage Dashboard
-7.  Click “+ Volume Group” to create a new Volume Group
-8.  In the Volume Group Window give the volume group a name, Add a new disk and leave the default of “Allocate On Container” selected and the default container selected, and input a size for the disk of 60 and click Add.
+Go back to Prism UI, navigate to the Storage Dashboard, click “+ Volume Group” to create a new Volume Group, in the Volume Group Window give the volume group a name, add a new disk and leave the default of “Allocate On Container” selected and the default container selected, and input a size for the disk of 60 and click Add.
 
 9.  Click Save.
 
@@ -93,19 +86,18 @@ Create a Volume Group in Prism:
 Connect ABS disks to Windows VM:
 ................................
 
-1.  Click the VG again and find the volume group we previously created.  Click on our windows VG and click Update.
-2.  Under Access Control check the box and add the iqn previously recorded.
+Click the VG again and find the volume group we previously created.  Click on our windows VG and click Update. Under Access Control check the box and add the iqn previously recorded.
 
 .. figure:: images/6.png
 
 
-3.  Switch back to your windows VM.  In the console of your windows VM in the iSCSI initiator properties click on the Targets tab.  Type in the data services ip and click Quick Connect.  You will see the target volume group we previously created.
+Switch back to your windows VM.  In the console of your windows VM in the iSCSI initiator properties click on the Targets tab.  Type in the data services ip and click Quick Connect.  You will see the target volume group we previously created.
 
  .. figure:: images/7.png
 
 
-4.  Click Done.
-5.  Open diskmgmt.msc from the Search menu and see the raw disk we added.  Optionally, click the disk to format and choose drive letter.
+Click Done.
+Open diskmgmt.msc from the Search menu and see the raw disk we added.  Optionally, click the disk to format and choose drive letter.
 
  .. figure:: images/8.png
 
@@ -115,21 +107,7 @@ Enable and Configure ABS in Prism for Linux
 ++++++++++++++++++++++++++++++++++++++++++++
 
 Ensure that the CentOS VM has access to the Network:
-1.  Login to Prism
-2.  Navigate to the VM Dashboard, Table View
-3.  Select the CentOS VM, and click Update       
-4.  Ensure that the VM has a NIC added, if it does not, add one now and attach it to VLAN0.
- 
-Ensure that the CentOS VM has access to the Network:
-1.  Login to Prism
-2.  Navigate to the VM Dashboard, Table View
-3.  Select the CentOS VM, and click Update       
-4.  Ensure that the VM has a NIC added, if it does not, add one now and attach it to VLAN0.
- 
- .. figure:: images/9.png
-
-
-5.  Save the VM Settings and continue to the next steps.
+Login to Prism, navigate to the VM Dashboard, Table View, select the CentOS VM, and click Update, ensure that the VM has a NIC added, if it does not, add one now and attach it to VLAN0. Save the VM Settings and continue to the next steps.
 
 Login to the Linux guest VM to get the iSCSI iqn name:
 
