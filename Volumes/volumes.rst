@@ -228,7 +228,7 @@ Clone Volume Group and Attach to new VM
 .. figure:: images/26.png
 
 
-
+15. Test the new iscsi disk from your Windows VM
 
 
 
