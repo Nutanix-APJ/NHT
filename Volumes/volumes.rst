@@ -173,7 +173,7 @@ Example:
 9.  Check the status session of the target by running “iscsiadm - -mode session - -op show
 
 
- .. figure:: images/28.png
+ .. figure:: images/23.png
 
 
 10. Run “lsscsi” again to verify you now see the new Nutanix vdisk on /dev/sdb
@@ -224,7 +224,7 @@ Clone Volume Group and Attach to new VM
 15. Test the new iscsi disk from your Windows VM
 
 
- .. figure:: images/27.png
+ .. figure:: images/23.png
 
 
 
