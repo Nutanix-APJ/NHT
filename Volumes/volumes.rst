@@ -172,6 +172,7 @@ Example:
  
 9.  Check the status session of the target by running “iscsiadm - -mode session - -op show
 
+
  .. figure:: images/171.png
 
 
@@ -220,13 +221,8 @@ Clone Volume Group and Attach to new VM
 12. Click Close
 13. Navigate back to VM Dashboard, Select Windows Server VM and click Update
 14. Note that the VM now has an additional SCSI Disk attached
-
-  
-.. figure:: images/26.png
-
-
 15. Test the new iscsi disk from your Windows VM
 
 
-
+.. figure:: images/27.png
 
