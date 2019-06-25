@@ -187,12 +187,8 @@ Clone Volume Group and Attach to new VM
 1.  Navigate to VM Dashboard
 2.  Select the Windows VM and Click Update
 3.  Scroll Down and Make note of the Disks currently attached to VM
-
-.. figure:: images/19.png
-
- 
 4.  Navigate to the Storage Dashboard
-5.  Select your Volume Group and Click Clone
+5.  Select your Volume Group for Windows and Click Clone
 
 .. figure:: images/20.png
 
@@ -230,8 +226,6 @@ Clone Volume Group and Attach to new VM
 
 
 15. Test the new iscsi disk from your Windows VM
-
-
 
 
 
