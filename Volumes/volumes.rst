@@ -171,8 +171,11 @@ Example:
 
  
 9.  Check the status session of the target by running “iscsiadm --mode session --op show
+
+.. figure:: images/171.png
+
 10. Run “lsscsi” again to verify you now see the new Nutanix vdisk on /dev/sdb
-e the browser for the remainder of the lab.</font></strong>
+e the browser for the remainder of the lab.
 
  .. figure:: images/18.png
 
@@ -181,7 +184,7 @@ Clone Volume Group and Attach to new VM
 ++++++++++++++++++++++++++++++++++++++++
 
 1.  Navigate to VM Dashboard
-2.  Select the Server2012R2-Dev VM and Click Update
+2.  Select the Windows VM and Click Update
 3.  Scroll Down and Make note of the Disks currently attached to VM
 
 .. figure:: images/19.png
@@ -199,22 +202,20 @@ Clone Volume Group and Attach to new VM
 
  
 7.  Click Save
-8.  Select Volume Group and Click 
+
+8.  Select Volume Group and Click Update
 
 .. figure:: images/22.png
 
  
-9.  Attach the Volume Group Clone to the Server2012R2-Dev VM
+9.  Attach the Volume Group Clone to the Windows VM
 
 .. figure:: images/23.png
 
  
-10. Select Server2012R2-Dev from the Drop down list and click the Attach button
+10. Select Windows from the Drop down list and click the Attach button
 
-.. figure:: images/24.png
-
-
-11. Note that Volume Group has been attached to the Server2012R2-Dev VM
+11. Note that Volume Group has been attached to the Windows VM
 
 .. figure:: images/25.png
 
@@ -224,7 +225,7 @@ Clone Volume Group and Attach to new VM
 14. Note that the VM now has an additional SCSI Disk attached
 
   
-.. figure:: images26.png
+.. figure:: images/26.png
 
 
 
