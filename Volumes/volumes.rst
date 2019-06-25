@@ -165,7 +165,7 @@ Example:
  .. figure:: images/16.png
 
  
-8.  Now login to the ABS iSCSI LUN with the target iqn you copied from the previous step.  “iscsiadm  --mode node --targetname <Nutanix.iqn.name.from.step.above> --portal <DataServicesIP> --login
+8.  Now login to the ABS iSCSI LUN with the target iqn you copied from the previous step.  “iscsiadm  - -mode node - -targetname <Nutanix.iqn.name.from.step.above> - -portal <DataServicesIP> - -login
 
  .. figure:: images/17.png
 
