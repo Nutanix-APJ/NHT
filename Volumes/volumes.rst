@@ -75,7 +75,7 @@ Click the “Configuration” tab to find the iqn.  Make a note of it for a late
 
 
 Create a Volume Group in Prism:
-Go back to Prism UI, navigate to the Storage Dashboard, click “+ Volume Group” to create a new Volume Group, in the Volume Group Window give the volume group a name, add a new disk and leave the default of “Allocate On Container” selected and the default container selected, and input a size for the disk of 60 and click Add.
+Go back to Prism UI, navigate to the Storage Dashboard, click “+ Volume Group” to create a new Volume Group, in the Volume Group Window give the volume group a name "mywindowsvg", add a new disk and select default container, input a size for the disk of 60 and click Add.
 
 9.  Click Save.
 
@@ -113,7 +113,7 @@ Login to the Linux guest VM to get the iSCSI iqn name:
 
 1.  Login to CentOS on your assigned cluster with username “root” and password “nutanix/4u”
 2.  Install ISCSI Tools: If not already installed, run “yum –y install iscsi-initiator-utils” 
-3.  Install lsscsi tools: If not already installed, run “yum –y install lsscsci” 
+3.  Install lsscsi tools: If not already installed, run “yum –y install lsscsi” 
 4.  To find the iqn name run “cat /etc/iscsi/initiatorname.iscsi”
 5.  Copy down the iqn name of the iSCSI client initiator
  
@@ -121,11 +121,12 @@ Login to the Linux guest VM to get the iSCSI iqn name:
 
 
 Create a Volume Group in Prism:
+
 1.  Login to Prism
 2.  Navigate to the Storage Dashboard
 3.  Click “+ Volume Group” to create a new Volume Group
-4.  In the Volume Group Window give the volume group a name, Add a new disk and leave the default of “Allocate On Container” selected and the default container selected, and input a size for the disk of 60 and click Add.
-5.  In the Initiators section enter the iqn name of the Linux iSCSI initiator you copied down in step 4 of the previous section and click Add.
+4.  In the Volume Group Window give the volume group a name "mylinuxvg", Add a new disk and select default container, input a size for the disk of 60 and click Add.
+5.  In the Initiators section , click "Add New client", enter the iqn name of the Linux iSCSI initiator you copied down in step 5 of the previous section and click Add.
 6.  Then click Save.
 
 Connect ABS disks to Linux VM:
