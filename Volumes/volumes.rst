@@ -170,9 +170,10 @@ Example:
  .. figure:: images/17.png
 
  
-9.  Check the status session of the target by running “iscsiadm --mode session --op show
+9.  Check the status session of the target by running “iscsiadm - -mode session - -op show
 
-.. figure:: images/171.png
+ .. figure:: images/171.png
+
 
 10. Run “lsscsi” again to verify you now see the new Nutanix vdisk on /dev/sdb
 e the browser for the remainder of the lab.
