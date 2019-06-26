@@ -304,7 +304,7 @@ Go to configuration page and navigate to **Image Configuration**, click **+Uploa
 Fill out the following fields and click **Save**:
 
 - **Name** - Windows2012R2.ISO
-- **Image Type** - Disk
+- **Image Type** - ISO
 - **Storage Container** *initials*-container
 - Select **From URL**
 - **Image Source** - http://10.42.194.11/workshop_staging/Windows2012R2.iso
@@ -313,7 +313,7 @@ Go to configuration page and navigate to **Image Configuration**, click **+Uploa
 Fill out the following fields and click **Save**:
 
 - **Name** - Nutanix VirtIO
-- **Image Type** - Disk
+- **Image Type** - ISO
 - **Storage Container** *initials*-container
 - Select **From URL**
 - **Image Source** - http://10.42.194.11/workshop_staging/Nutanix-VirtIO-1.1.3.iso
