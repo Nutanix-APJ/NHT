@@ -224,10 +224,6 @@ Fill out the following fields and click **Save**:
 - **VLAN ID** - Something other than 0 and xx1
 - **Enable IP Address Management** - unchecked
 
-The final result should look like the image below.
-
-.. figure:: images/network_config_04.png
-
 Setup user VM network with IPAM
 ...............................
 
