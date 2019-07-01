@@ -2,7 +2,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: NHT Labs
+  :caption: NHT lab Basic
   :name: _labs
   :hidden:
 
@@ -14,7 +14,24 @@
   
   files_deploy/files_deploy
 
-  Volumes/volumes
+   Volumes/volumes
+
+  :maxdepth: 2
+  :caption:  NHT lab Advanced
+  :name: _labs
+  :hidden:
+
+  Calm/Calm_Linux
+
+  Frame/Frame
+
+  BCA/BCA
+
+  .. toctree::
+  :maxdepth: 2
+  :caption: Appendix
+  :name: _labs
+  :hidden:
 
 
 .. _getting_started:
