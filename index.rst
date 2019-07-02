@@ -7,25 +7,21 @@
   :hidden:
 
   diyfoundation/diyfoundation
-  
   xray/xray
-  
   files_deploy/files_deploy
+  Volumes/volumes
 
-  volumes/volumes
-
+.. toctree::
   :maxdepth: 2
   :caption:  NHT lab Advanced
   :name: _labs
   :hidden:
 
   Calm/Calm_Linux
-
   Frame/Frame
-
   BCA/BCA
 
-  .. toctree::
+.. toctree::
   :maxdepth: 2
   :caption: Appendix
   :name: _labs

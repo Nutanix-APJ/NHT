@@ -2,7 +2,7 @@
 .. _Xi Frame:
 
 -------------
-Example Lab 3
+Xi Frame
 -------------
 
 Overview

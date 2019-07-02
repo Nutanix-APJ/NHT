@@ -2,7 +2,7 @@
 .. _BCA:
 
 -------------
-Example Lab 1
+BCA
 -------------
 
 Overview
