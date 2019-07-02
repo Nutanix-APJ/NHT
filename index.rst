@@ -17,7 +17,7 @@
   :name: _labs
   :hidden:
 
-  calm/calm
+  calm_linux/calm_linux
   Frame/Frame
   BCA/BCA
 
