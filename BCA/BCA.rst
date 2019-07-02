@@ -6,6 +6,41 @@ BCA
 -------------
 
 
+Getting Started
+++++++++++++++++
+
+This workshop is for quick apply Microsoft SQL Server 2012 (SQL 2014 and SQL 2016 will be less practice to apply) best practice step by step base on SQL on Nutanix best practice for SE or partner training.
+I found most of technical persons read the best practice guide but still can’t apply these parameter or settings.
+That why I wrote this workshop material for who doesn't have any Microsoft SQL Server technical background but still want apply SQL Server best practice on Nutanix for POC or testing purpose.
+It’s a quick way to apply those best practice. I still suggest you must read our Nutanix best guide to understand why we need to change some parameters and configuration to get best performance.
+After you learned, You can apply this to your POC or when customer want running Microsoft SQL Server on Nutanix.
+In this guide , we didn't mention about how to install Microsoft SQL Server.
+If you want learn how to installed Microsoft SQL Server , you can find ”how to” in these links.
+
+- Microsoft SQL Server installation page :
+https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-2017
+
+
+Lab Environment
+---------------
+
+-Software :
+
+ - Microsoft Windows Server download -
+
+ https://www.microsoft.com/en-us/download/windows.aspx
+
+ - Microsoft SQL Server download -
+
+ https://www.microsoft.com/en-us/download/windows.aspx
+
+ - Recommend using Microsoft SQL Server 2012 database version or above for this lab
+
+After finish foundation, you can create a VM that content Oracle Linux OS. Install Oracle database follow this link -
+
+https://www.youtube.com/watch?v=CwHetPzsQBY
+
+
 Lab 1: Running HammerDB
 +++++++++++++++++++++++++++++++
 
