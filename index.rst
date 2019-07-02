@@ -17,7 +17,7 @@
   :name: _labs
   :hidden:
 
-  Calm/Calm
+  calm/calm
   Frame/Frame
   BCA/BCA
 
