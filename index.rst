@@ -7,14 +7,12 @@
   :hidden:
 
   diyfoundation/diyfoundation
-
-  nutanix101/nutanix101
   
   xray/xray
   
   files_deploy/files_deploy
 
-   Volumes/volumes
+  volumes/volumes
 
   :maxdepth: 2
   :caption:  NHT lab Advanced
@@ -32,6 +30,9 @@
   :caption: Appendix
   :name: _labs
   :hidden:
+
+  tools_vms/windows_tools_vm
+  tools_vms/linux_tools_vm
 
 
 .. _getting_started:
