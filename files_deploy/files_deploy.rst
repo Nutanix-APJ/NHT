@@ -95,7 +95,7 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
 - **IP** – **from** 10.42.xx.152 **to** 10.42.xx.154 (click **save** on the right)
-- **DNS** – 10.42.xx.yz (check AD VM IP address)
+- **DNS** – 10.42.xx.51 (AD VM IP address)
 - **NTP** – 0.pool.ntp.org
 
 
@@ -106,13 +106,13 @@ Fill out the following fields and click **Next**:
 
  Files requires n (n, being the number of FSVMs) IP addresses on the Client network: 1 IP address per FSVM.
 
-Select the **Secondary - Managed** VLAN for the Storage Network. Click **Next**.
+Select the **Rx-Automation-Network** VLAN for the Storage Network. Click **Next**.
 
 Fill out the following fields and click **Next**:
 
 - **Subnet Mask** – 255.255.255.128
-- **Gateway** – 10.42.xx.129
-- **IP** – **from** 10.42.xx.155 **to** 10.42.xx.158 (click **save** on the right)
+- **Gateway** – 10.42.xx.1
+- **IP** – **from** 10.42.xx.100 **to** 10.42.xx.103 (click **save** on the right)
 
 
 .. image:: images/image013.png
