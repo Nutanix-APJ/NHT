@@ -49,7 +49,7 @@ click **+ Add New Disk** , choose **Clone from Image Service** and image ‘Auto
 .. image:: images/image005.png
 
 
-Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add**.
+Click **+Add new NIC** and choose **Secondary**, click **Add**.
 
 
 .. image:: images/image006.png 
@@ -95,8 +95,8 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
 - **IP** – **from** 10.42.xx.152 **to** 10.42.xx.154 (click **save** on the right)
-- **DNS** – 10.42.xx.51 (AD VM IP address)
-- **NTP** – 0.pool.ntp.org
+- **DNS** – 10.42.xx.157 (AD VM IP address)
+- **NTP** – 0.pool.ntp.org,0.au.pool.ntp.org,2.au.pool.ntp.org,0.sg.pool.ntp.org,1.sg.pool.ntp.org
 
 
 .. image:: images/image011.png
@@ -161,7 +161,7 @@ Upon completion, select the **AFS** server and click **Protect**. Click **+Add s
 .. image:: images/image018.png
 
 
-Observe the default Self Service Restore schedules, this feature controls the snapshot schedule for Windows' Previous Versions functionality. Supporting Previous Versions allows end users to roll back changes to files without engaging storage or backup administrators. Note these local snapshots do not protect the file server cluster from local failures and that replication of the entire file server cluster can be performed to remote Nutanix clusters. Click **Close**.
+Observe the default Self Service Restore schedules, this feature controls the snapshot schedule functionality. Supporting Previous Versions allows end users to roll back changes to files without engaging storage or backup administrators. Note these local snapshots do not protect the file server cluster from local failures and that replication of the entire file server cluster can be performed to remote Nutanix clusters. Click **Close**.
 
 Configuring SMB Home Share
 +++++++++++++++++++++++++++

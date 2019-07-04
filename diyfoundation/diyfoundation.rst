@@ -47,7 +47,6 @@ Execute the following commands to power off any running VMs on the cluster, stop
 
 .. code-block:: bash
 
-  acli -y vm.off \*
   cluster stop        # Enter 'Y' when prompted to proceed
   cluster destroy     # Enter 'Y' when prompted to proceed
 
@@ -98,7 +97,7 @@ Fill out the following fields and click **Save**:
 - **Image Type** - Disk
 - **Storage Container** Images
 - Select **From URL**
-- **Image Source** - http://download.nutanix.com/foundation/foundation-4.3.4/Foundation_VM-4.3.4-disk-0.qcow2
+- **Image Source** - https://ntnx-portal.s3.amazonaws.com/foundation/foundation-4.4.1/Foundation_VM-4.4.1-disk-0.qcow2
 
 
 .. image:: images/image002.png
@@ -323,7 +322,7 @@ Leave the first 2 options unselected, fill out the following fields and click **
 
   *Cluster Virtual IP needs to be within the same subnet as the CVM/hypervisor.*
 
-- **NTP Servers of Every Hypervisor and CVM** - 0.pool.ntp.org
+- **NTP Servers of Every Hypervisor and CVM** - 0.pool.ntp.org,0.au.pool.ntp.org,2.au.pool.ntp.org,0.sg.pool.ntp.org,1.sg.pool.ntp.org
 - **DNS Servers of Every Hypervisor and CVM** - 10.42.196.10
 
   *DNS and NTP servers should be captured as part of install planning with the customer.*

@@ -45,7 +45,7 @@ Lab 1: Running HammerDB
 +++++++++++++++++++++++++++++++
 
 1.1 Download the HammerDB
-..........................
+-----------------------------------------
 
 HammerDB is an open source database load testing and benchmarking tool for Oracle Database,
 Microsoft SQL Server, IBM DB2, TimesTen, MySQL, MariaDB,  PostgreSQL,Postgres Plus Advanced Server,
@@ -60,7 +60,7 @@ http://www.hammerdb.com/hammerdb_quickstart_mssql.pdf
 
 
 1.2 Install HammerDB
-..........................
+-----------------------------------------
 
 Install HammerDB is very easy , download the package from the website , and follow the Windows installation.
 Next-> Next or you can reference the installation guide that provide by
@@ -69,7 +69,7 @@ http://www.hammerdb.com/hammerdb_install_guide.pdf
 
 
 1.3 Start the TPCC testing
-..........................
+-----------------------------------------
 
 Once the HammerDB application is open, in the Benchmark pane, select TPC-C
 
@@ -82,7 +82,7 @@ In the Benchmark Options box, select MSSQL Server and TPC-C and then click OK
 
 
 1.4 Build testing schema
-..........................
+-----------------------------------------
 
 First all, you need build a schema for the whole testing . Some of the vender will create a small schema like 1GB or maybe less than 100 MB . This is not a correct testing . When they create such small database schema . The data always on the database buffer , so the performance look so great . Suggest should be same size of customer current database or great than database’s buffer size .
 Steps-  Below TPC-C, click Schema Build and then double-click Options.
@@ -93,7 +93,7 @@ After you fill up all the parameter , then click “OK”
 
 
 1.5 Size of warehouse
-..........................
+-----------------------------------------
 
 When you choose the warehouse , that means the size of the schema. Please check the table below –
 
@@ -106,7 +106,7 @@ If your VM have multiple vCPU, you can choose multiple virtual users help to acc
 .. figure:: images/sql04.png
 
 1.6 Create the driver script
-..........................
+-----------------------------------------
 
 Driver create is to generate the script for testing and setup “how long we need to test and rampup time” .  Here are steps -
 
@@ -131,7 +131,7 @@ Note - If you need to run a test with SQL 2008, use SQL Server Native Client 10.
 .. figure:: images/sql06.png
 
 1.7 Configure the virtual users
-................................
+-----------------------------------------
 
 Configure how many users you need to run concurrent in the system. In my example,
 I show 100 users running concurrently. But you can try different users and see if the TPM is go up?
@@ -162,7 +162,7 @@ or total iterations value, inside the Driver Script.
 
 
 1.8 Metrics provide by HammerDB
-................................
+-----------------------------------------
 
 After you installed the hammnerDB , you can find in your folder have three files cslled “hdbagent.bat”, “hdbagent.tcl”, “ mpstat”.
 These files are for monitoring the CPU resources in the testing VM .
@@ -183,52 +183,6 @@ Double click the Options , then it will show the “Connect to Agent Options” 
 
 
 .. figure:: images/sql11.png
-
-
-Overview
-++++++++
-
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
-
------------------------------------------------------
-
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
-
-.. figure:: images/1.png
-
-Click **Network Config > User VM Interfaces > + Create Network**.
-
-.. figure:: images/2.png
-
-Select **Enable IP Address Management** and fill out the following fields:
-
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
-
-.. figure:: images/3.png
-
-Click **Submit > Save**.
-
-Takeaways
-............
-
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
 
 
 Lab 2: Apply Microsoft SQL best practice
