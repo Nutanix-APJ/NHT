@@ -192,7 +192,7 @@ Review Summary tab and click **create**
 Login to your **Windows tool VM** , add domain *ntnxlab.local*, restart this windows VM and login in with AD administrator credentials, test the avaiability of the share you created. If home share \\\\10.42.xx.152\\home is avaiable, create a new folder named **marketing** under home share.
 
 
-.. image:: images/image024.png
+.. image:: images/24.png
 
 
 
