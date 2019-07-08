@@ -218,21 +218,18 @@ While X-Ray offers many testing options that evaluate critical Day 2+ scenarios,
 
 Select **Tests** from the navigation bar and select **Four Corners Microbenchmark**.
 
-Review the test description, then select your **POCxx-ABC** under **Targets** and click **Add to Queue**.
+Review the test description, then select your **POCxx-ABC** under **Targets** and click **Run test**.
 
-.. figure:: images/17.png
 
 .. note::
 
   X-Ray can run one test per target at a time. Many tests can be queued for a single target, allowing X-Ray to automatically run through multiple tests without requiring manual intervention. Through automation, X-Ray can drastically decrease the amount of time to conduct a POC.
 
-Select **Results** from the navigation bar and select the **Four Corners Microbenchmark** under **In Progress Tests**.
+Select **Results** from the navigation bar and select the **POCxx-ABC** in result list.
 
 .. figure:: images/19.png
 
-Click **In progress** for additional details on the running test.
-
-When the test reaches the **Run** phase, log into Prism on your 3-node cluster to monitor VM performance during the test.
+When the test reaches the **Running** phase, log into Prism on your 3-node cluster to monitor VM performance during the test.
 
 .. figure:: images/20.png
 
@@ -240,7 +237,7 @@ When the test reaches the **Run** phase, log into Prism on your 3-node cluster t
 
   High storage latency is expected during the "pre-filling" stage prior to running the target workloads as X-Ray worker VMs are writing sequential 1MB blocks to their disks to ensure the tests do not read only zeroes.
 
-Upon completion of the test, select the **POC-Cluster Four Corners Microbenchmark** now located under **Completed Tests**.
+Upon completion of the test, review the belowing report graphs.
 
 .. figure:: images/21.png
 
