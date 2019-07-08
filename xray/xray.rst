@@ -259,7 +259,7 @@ Download the following exported X-Ray test results:
 - :download:`Competitor Big Data Ingest Results<xray-big-data-competitor.zip>`
 - :download:`Nutanix Big Data Ingest Results<xray-big-data-nutanix.zip>`
 
-Select :fa:`cog` **> Import Test Results** from the navigation bar.
+Select :fa:`cog` **> Import Test Result Bundle** from the navigation bar.
 
 Click **Choose File** and select the Nutanix test results .zip file previously downloaded. Click **Import**.
 
@@ -267,11 +267,9 @@ Click **Choose File** and select the Nutanix test results .zip file previously d
 
 Repeat to import the Competitor test results .zip file.
 
-Select **Analyses** from the navigation bar and click **Create Analysis**.
+Select **Result** from the navigation bar and click **All Result**.
 
-.. figure:: images/24.png
-
-Select the 2 **BigData Ingestion** results and click **Create**.
+Select the 2 **BigData Ingestion** results and click **Create Comparison**.
 
 .. figure:: images/25.png
 
