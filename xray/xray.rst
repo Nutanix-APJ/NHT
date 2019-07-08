@@ -49,7 +49,7 @@ Open **Prism > VM > Table** and click **Network Config**, then **Virtual Network
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 
 - **Name** - Secondary
-- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=90, Sencondary VLAN is 901)
+- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=114, Sencondary VLAN is 1141)
 
 .. Note::
 
@@ -162,7 +162,7 @@ Select **I have read and agree to the terms and conditions** and click **Accept*
 
 .. figure:: images/9.png
 
-Click **Log in** and specify your my.nutanix.com credentials. Fill out the following fields and click **Generate Token**:
+Click **My Nutanix Log in** and specify your my.nutanix.com credentials. Fill out the following fields and click **Generate Token**:
 
 - **Customer Name** - Nutanix Sales Enablement
 - **Opportunity ID** - New Hire Training
@@ -191,8 +191,6 @@ Select **Targets** from the navigation bar and click **+ New Target**. Fill out 
 
 .. figure:: images/11.png
 
-.. figure:: images/110.png
-
 Select **Secondary** under **Network** and click **Next**.
 
 .. figure:: images/12.png
@@ -220,7 +218,7 @@ While X-Ray offers many testing options that evaluate critical Day 2+ scenarios,
 
 Select **Tests** from the navigation bar and select **Four Corners Microbenchmark**.
 
-Review the test description, then select your **POC-Cluster** under **Targets** and click **Add to Queue**.
+Review the test description, then select your **POCxx-ABC** under **Targets** and click **Add to Queue**.
 
 .. figure:: images/17.png
 
