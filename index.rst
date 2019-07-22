@@ -2,24 +2,59 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: NHT lab Basic
+  :caption: DIY the enviroment
   :name: _labs
   :hidden:
 
   diyfoundation/diyfoundation
   xray/xray
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Storage 
+  :name: _labs
+  :hidden:
+
   files_deploy/files_deploy
   Volumes/volumes
 
 .. toctree::
   :maxdepth: 2
-  :caption:  NHT lab Advanced
+  :caption: Prism Central
+  :name: _prism_central
+  :hidden:
+
+  prism_central_overview/prism_central_overview
+  prism_central_dashboards_reports/prism_central_dashboards_reports
+  prism_central_resource_planning/prism_central_resource_planning
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Calm
+  :name: _calm
+  :hidden:
+
+  calm_enable/calm_enable
+  calm_projects/calm_projects
+  calm_linux/calm_linux
+  calm_win/calm_win
+  calm_day2/calm_day2
+
+.. toctree::
+  :maxdepth: 2
+  :caption:  BCA
   :name: _labs
   :hidden:
 
-  calm_linux/calm_linux
-  Frame/Frame
   BCA/BCA
+
+  .. toctree::
+  :maxdepth: 2
+  :caption: Frame
+  :name: _labs
+  :hidden:
+
+   Frame/Frame
 
 .. toctree::
   :maxdepth: 2
