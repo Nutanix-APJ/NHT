@@ -41,11 +41,12 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption:  BCA
+  :caption: SQL Hands on Labs
   :name: _labs
   :hidden:
 
-  BCA/BCA
+  SQLLAB01/sqllab01
+  SQLLAB02/sqllab02
 
 .. toctree::
   :maxdepth: 2
@@ -61,7 +62,7 @@
   :name: _labs
   :hidden:
 
-   Frame/Frame
+   Frame/frame
 
 .. toctree::
   :maxdepth: 2

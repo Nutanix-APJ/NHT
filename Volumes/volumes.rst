@@ -3,7 +3,7 @@
 
 
 -----------------------
-Volumes(Block Services)
+Volumes
 -----------------------
 
 Overview
