@@ -2,7 +2,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: DIY the enviroment
+  :caption: Installation and performance test
   :name: _labs
   :hidden:
 
@@ -11,12 +11,11 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Storage 
+  :caption: Files 
   :name: _labs
   :hidden:
 
   files_deploy/files_deploy
-  Volumes/volumes
 
 .. toctree::
   :maxdepth: 2
@@ -48,9 +47,17 @@
 
   BCA/BCA
 
-  .. toctree::
+.. toctree::
   :maxdepth: 2
-  :caption: Frame
+  :caption: Block Service
+  :name: _labs
+  :hidden:
+
+  Volumes/volumes
+
+.. toctree::
+  :maxdepth: 2
+  :caption: VDI
   :name: _labs
   :hidden:
 
