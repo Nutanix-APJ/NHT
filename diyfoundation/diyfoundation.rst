@@ -15,8 +15,6 @@ Overview
 Foundation is used to automate the installation of the hypervisor and Controller VM on one or more nodes. 
 In this exercise you will practice imaging a physical cluster with Foundation. In order to keep the lab self-contained, you will create a single node "cluster" on which you will deploy your Foundation VM. That Foundation instance will be used to image and create a cluster from the remaining 3 nodes in the Block.
 
-IPs for Nodes
-..............
 
 * In following steps, you may replace xx with your assigned cluster ID
 
@@ -63,7 +61,6 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 
  ncli cluster edit-params new-name=POCxx-D
  ncli cluster add-to-name-servers servers=10.42.196.10
- ncli cluster set-external-ip-address external-ip-address=10.42.xx.40
  ncli user reset-password user-name='admin' password=techX2019! 
 
 .. note::
