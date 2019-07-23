@@ -51,6 +51,13 @@ Click **Create Network**. Using the Cluster Details spreadsheet, fill out the fo
 - **Name** - Secondary
 - **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=114, Sencondary VLAN is 1141)
 
+You can create the VLAN 0 network on this cluster as well, though it is not required for this exercise.
+
+Click Create Network. Fill out the following fields and click Save:
+
+Name - Rx-Automation-Network
+VLAD ID - 0
+
 .. figure:: images/1.png
 
 Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.42.xx.32:9440) in your browser and log in with the following credentials:
