@@ -55,7 +55,7 @@ You can create the VLAN 0 network on this cluster as well, though it is not requ
 
 Click Create Network. Fill out the following fields and click Save:
 
-Name - Rx-Automation-Network
+Name - Primary
 VLAD ID - 0
 
 .. figure:: images/1.png
@@ -65,13 +65,13 @@ Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D
 - **Username** - admin
 - **Password** - techX2019!
 
-Configue the same 2 network **Rx-Automation-Network** and **Secondary** to 3 node cluster.
+Configue the same 2 network **Primary** and **Secondary** to 3 node cluster.
 
 Click **Virtual Networks > Create Network**.
 
 Fill out the following fields and click **Save**:
 
-- **Name** - Rx-Automation-Network
+- **Name** - Primary
 - **VLAD ID** - 0
 
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
@@ -102,7 +102,7 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 - Select **Add New NIC**
 
-  - **VLAN Name** - Rx-Automation-Network
+  - **VLAN Name** - Primary
   - Select **Add**
 - Select **+ Add New NIC**
 

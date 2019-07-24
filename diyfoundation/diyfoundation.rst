@@ -9,7 +9,7 @@ Overview
 
 .. note::
 
-  Estimated time to complete: **90 Minutes**
+  Estimated time to complete: **60 Minutes**
 
 
 Foundation is used to automate the installation of the hypervisor and Controller VM on one or more nodes. 
@@ -107,7 +107,7 @@ Fill out the following fields and click **Save**:
   **Unless otherwise directed by support, always use the latest version of Foundation in field installation.**
   
 
-After the image creation process completes, browse to **Prism > VM > Table** and click **Network Config**.
+Go to configuration page and navigate to **Network Config**.
 
 Before creating the VM, we must first create a virtual network to assign to the Foundation VM. The network will use the Native VLAN assigned to the physical uplinks for all 4 nodes in the block.
 
@@ -115,7 +115,7 @@ Click **Virtual Networks > Create Network**.
 
 Fill out the following fields and click **Save**:
 
-- **Name** - Rx-Automation-Network
+- **Name** - Primary
 - **VLAD ID** - 0
 
 In **Prism > VM > Table** and click **+ Create VM**.
@@ -133,7 +133,7 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 - Select **Add New NIC**
 
-  - **VLAN Name** - Rx-Automation-Network
+  - **VLAN Name** - Primary
   - Select **Add**
 
 
@@ -182,7 +182,7 @@ Select **eth0** and press **Return**.
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields, select **OK** and press **Return**:
 
 - **Use DHCP** - Press **Space** to de-select
-- **Static IP** - 10.42.xx.yz (Foundation VM IP)
+- **Static IP** - 10.42.xx.45 (Foundation VM IP)
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.42.xx.1
 
@@ -220,25 +220,22 @@ If downloading the AOS package within the Foundation VM, the .tar.gz package can
   
 To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
   
-Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.yz>
+Open a terminal and ssh to foundation VM through foundation IP <10.42.xx.45>
   
 .. code-block:: bash
 
- ssh nutanix@10.42.xx.yz      # provide default password 
+ ssh nutanix@10.42.xx.45      # provide default password 
  cd foundation
  cd nos
  wget  https://ntnx-portal.s3.amazonaws.com/releases/euphrates-5.10.4-stable/nutanix_installer_package-release-euphrates-5.10.4-stable.tar.gz
-
-
+ ..
 
 
 When you see 100% finish, AOS 5.10.4 package has been downloaded to ~/foundation/nos folder.
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
-.. note::
-
- Foundation can be accessed via any browser at \http://*<Foundation VM IP>*:8000/gui/index.html
+Access foundation UI via any browser at \http://*<Foundation VM IP 10.42.xx.45>*:8000/gui/index.html
 
 On the **Start** page, click **Next**.
 
