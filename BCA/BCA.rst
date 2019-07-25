@@ -2,7 +2,7 @@
 .. _BCA:
 
 -------------
-BCA
+SQL BP on Nutanix
 -------------
 
 

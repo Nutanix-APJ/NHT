@@ -65,7 +65,7 @@ Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D
 - **Username** - admin
 - **Password** - techX2019!
 
-Configue the same 2 network **Primary** and **Secondary** to 3 node cluster.
+Configue the  **Primary** and **Secondary** networks to 1 node cluster.
 
 Click **Virtual Networks > Create Network**.
 
@@ -77,7 +77,7 @@ Fill out the following fields and click **Save**:
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 
 - **Name** - Secondary
-- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=90, Sencondary VLAN is 901)
+- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=114, Sencondary VLAN is 1141)
 
 
 Creating X-Ray VM
