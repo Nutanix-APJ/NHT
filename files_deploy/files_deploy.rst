@@ -18,6 +18,11 @@ In following steps, you may replace xx with your assigned cluster ID
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - techX2019!
+
 In Prism>Storage , create a Storage Container called **Images** if there is no existing one of that name.
 
 .. image:: images/image025.png
@@ -67,7 +72,7 @@ Deploy Acropolis File Services
 In **Prism > File Server**, click **+ File Server**.
 
 
-Firstly, download Files 3.2.0.2 package, click **Continue** to install File Services Software on POCxx.
+Firstly, download Files 3.5.1 package, click **Continue** to install File Services Software on POCxx.
 Secondly, add Data Services IP as 10.42.xx.38. Click Continue.
 
 
@@ -95,7 +100,7 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.42.xx.129
 - **IP** – **from** 10.42.xx.152 **to** 10.42.xx.154 (click **save** on the right)
-- **DNS** – 10.42.xx.157 (AD VM IP address)
+- **DNS** – 10.42.xx.yz (AD VM IP address)
 - **NTP** – 0.pool.ntp.org,0.au.pool.ntp.org,2.au.pool.ntp.org,0.sg.pool.ntp.org,1.sg.pool.ntp.org
 
 
@@ -147,15 +152,12 @@ Fill out the following fields and click **Create**:
 
 Monitor deployment progress in **Prism > Tasks**.
 
-
-.. image:: images/image017.png
+Upon completion, select the **AFS** server and click **Protect**. Click **+Add schedule** to make a snapshot schedule you plan.
 
 
 .. note::
 
   If you receive a warning regarding DNS record validation failure, this can be safely ignored. The shared cluster does not use the same DNS servers as your Files cluster, and as a result is unable to resolve the DNS entries created when deploying Files. We will use FSVM IP to access the File service from test Windows VM
-
-Upon completion, select the **AFS** server and click **Protect**. Click **+Add schedule** to make a snapshot schedule you plan.
 
 
 .. image:: images/image018.png
