@@ -1,7 +1,7 @@
 .. _prism_central_dashboards_reports:
 
 -------------------------------------
-Prism Central: Deploy
+PC: Deploy
 -------------------------------------
 
 Overview
