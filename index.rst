@@ -22,8 +22,8 @@
   :caption: Prism Central
   :name: _prism_central
   :hidden:
-
-  prism_central_overview/prism_central_overview
+  
+  prism_central_deploy/prism_central_deploy
   prism_central_dashboards_reports/prism_central_dashboards_reports
   prism_central_resource_planning/prism_central_resource_planning
 

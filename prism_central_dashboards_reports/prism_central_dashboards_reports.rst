@@ -25,7 +25,7 @@ Create a Custom Dashboard
 
 Dashboards can also be customized.
 
-#. #. In **Prism Central > :fa:`fa-navicon` > Dashboard**, or click the **Home X**
+#. In **Prism Central > :fa:`fa-navicon` > Dashboard**, or click the **Home X**
 
 The main dashboard is the first dashboard presented when the system first installed.
 
@@ -37,9 +37,8 @@ The main dashboard is the first dashboard presented when the system first instal
 
 #. Enter "Dashboard-*intials*" for the name and click **Save**.
 
-.. figure:: images/510PC2.png
-
-#. Now let’s add some Widgets.
+ 
+ Now let’s add some Widgets.
 
 .. note::
 
