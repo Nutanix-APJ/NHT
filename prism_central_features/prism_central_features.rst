@@ -7,6 +7,10 @@ PC: Dashboards, Reports and Plannning
 Overview
 ++++++++
 
+.. note::
+
+  Estimated time to complete: **15 Minutes**
+
 This lab will introduce Prism Central’s Dashboards, reporting and resource planning features.
 
 Prism Central Dashboards

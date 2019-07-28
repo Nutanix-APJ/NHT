@@ -7,6 +7,10 @@ PC: Deployment
 Overview
 ++++++++
 
+.. note::
+
+  Estimated time to complete: **30 Minutes**
+
 This lab will introduce Prism Central’s One-Click deploy process
 
 Prism Central Deploy
