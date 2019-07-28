@@ -15,7 +15,8 @@
   :name: _labs
   :hidden:
 
-  files_deploy/files_deploy
+   files_deploy/files_deploy
+   files_smb/files_smb
 
 .. toctree::
   :maxdepth: 2

@@ -1,7 +1,7 @@
 .. _files_deploy:
 
 ---------------
- File Services
+ Deploy File Services
 ---------------
 
 Overview
