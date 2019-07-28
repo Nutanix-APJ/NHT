@@ -26,17 +26,24 @@ Configure kubeconfig using Linux
 
 Click on “Copy the Command to Clipboard”
 
+
 .. image:: images/karbon_deploy_application_31.png
+
 
 In Calm, look at the IP address of the provisioned Kubectl client.  Putty using the IP address
 
+
 .. image:: images/karbon_deploy_application_32.png
+
 
 Paste the command into the shell
 
+
 .. image:: images/karbon_deploy_application_33.png
 
+
 Run this command to verify the successful connection to the Kubernetes cluster in Karbon.
+
 
 .. image:: images/karbon_deploy_application_34.png
 
