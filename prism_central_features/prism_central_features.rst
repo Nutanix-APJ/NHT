@@ -29,13 +29,11 @@ Create a Custom Dashboard
 
 Dashboards can also be customized.
 
-#. In **Prism Central > :fa:`fa-navicon` > Dashboard**, or click the **Home X**
-
-The main dashboard is the first dashboard presented when the system first installed.
+#. In **Prism Central > Dashboard**, or click the **Home X**. The main dashboard is the first dashboard presented when the system first installed.
 
 #. This dashboard can be customized as well, but instead we will each create new dashboard.
 
-#. Click on **:fa: `fa-gear` Manage Dashboards** to open the Manage Dashboards window.
+#. Click on **Manage Dashboards** to open the Manage Dashboards window.
 
 #. Once there click on **+ New Dashboard**
 
@@ -52,19 +50,15 @@ The main dashboard is the first dashboard presented when the system first instal
 
 #. Click **Add Widgets**.
 
-#. From the list of available Widgets on the left hand side, notice there are three types of Widgets:
-
-- CUSTOM WIDGETS
-- CLUSTER WIDGETS
-- APP WIDGETS
+#. From the list of available Widgets on the left hand side, notice there are different types of Widgets.
 
 #. Choose any widget that may interest you in the **CUSTOM WIDGETS** section, and note that a custom set of parameters appears on the right hand side to specify.
 
 #. Select amongst the options as desired and click **Add to Dashboard**.
 
-.. figure:: images/510PC4.png
-
 #. Next select another widget, now from the **CLUSTER WIDGETS** list. This time click on **Or, Add & Return to Dashboard.** to return to your newly created dashboard.
+
+.. figure:: images/510PC4.png
 
 .. note::
 
@@ -83,58 +77,48 @@ Such reports can include resource consumption, abnormal behavior, and other valu
 
 These reports can be manually generated or they can be automated from Prism Central to be sent out via email when it’s most convenient.
 
-#. In **Prism Central > :fa:`fa-navicon` > Operations > Reports**.
-
-#. There you will see the two pre-defined reports available for you to use immediately:
+In **Prism Central > Operations > Reports**, there you will see the two pre-defined reports available for you to use immediately:
 
 - Cluster Efficiency Summary
 - Environment Summary
 
 .. figure:: images/510reports1.png
 
-#. Lets run the **Cluster Efficiency Summary** report.
-
-#. Select **Cluster Efficiency Summary**, then click **Run** from the **Actions** drop-down menu.
+Lets run the **Cluster Efficiency Summary** report. Select **Cluster Efficiency Summary**, then click **Run** from the **Actions** drop-down menu.
 
 .. figure:: images/monitoring_01.png
 
-#. Next, fill out the following fields and click **Run** from the **Actions** dropdown:
+Next, fill out the following fields and click **Run** from the **Actions** dropdown, Click **Run**.
 
 - **Report instance Name** - *initials* - Cluster Efficiency 
 - **Time Period for Report** - Last 24 Hours
 
-#. Click **Run**.
+ Now lets run the **Environment Summary** report. Select **Environment Summary**, then click **Run** from the **Actions** drop-down menu.
 
-#. Now lets run the **Environment Summary** report.
-
-#. Select **Environment Summary**, then click **Run** from the **Actions** drop-down menu.
-
-#. Next, fill out the following fields and click **Run**:
+ Next, fill out the following fields and click **Run**:
 
 - **Report instance Name** - *initials* - Environment Summary
 - **Time Period for Report** - Last 24 Hours
 
-#. Click **Run**.
+Once the reports are complete, select each report, and do the following:
 
-#. Once the reports are complete, select each report, and do the following:
-
-#. Click **View Instances.** from the **Actions** drop-down menu.
+Click **View Instances.** from the **Actions** drop-down menu.
 
 - To view the report in a separate tab, click the name of the report.
 - To download the report, select its check box, then click **Download** at the upper right of the screen.
 
-#. Review the contents of the reports you created in this exercise.
+Review the contents of the reports you created in this exercise.
 
 Create a Custom Report
 ......................
 
-#. To create a new custom report, click **+ New Report**.
+To create a new custom report, click **+ New Report**.
 
-#. Change the name of the report from **New Report** to *initials*-**Report**
+Change the name of the report from **New Report** to *initials*-**Report**
 
 .. figure:: images/510reports3.png
 
-#. From the **CUSTOM VIEWS** menu on the left, click **Line Chart** and fill in the following:
+From the **CUSTOM VIEWS** menu on the left, click **Line Chart** and fill in the following, Click **Add**.
 
 - **Entity Type** - Cluster
 - **Metric** - Memory Usage
@@ -142,19 +126,15 @@ Create a Custom Report
 - **Number of Entities** – 10
 - **Sort Order** - Ascending
 
-#. Click **Add**
-
 .. figure:: images/510reports2.png
 
-#. From the **PRE-DEFINED VIEWS**, click on any entities that look interesting to you.
+From the **PRE-DEFINED VIEWS**, click on any entities that look interesting to you.
 
 .. note::
 
   Since these are pre-defined, there are no extra configuration steps needed and they get added to the report immediately.
 
-#. Click on the **Add Schedule** button in the top right corner to add an automatic schedule to process the reports.
-
-#. Select any desired frequency, time, and duration to run the report.
+Click on the **Add Schedule** button in the top right corner to add an automatic schedule to process the reports. Select any desired frequency, time, and duration to run the report. Click **Add**
 
 .. figure:: images/510reports4.png
 
@@ -162,11 +142,7 @@ Create a Custom Report
 
   If SMTP is configured appropriately in Prism Central, this automated report can also get sent to any valid email address entered.
 
-#. Click **Save** when done customizing your report.
-
-#. Now your report has been saved, but note that there are no instances of it. This is because we have not run the report yet.
-
-#. To run the report, click on **Run** from the top right corner.
+Click **Save** when done customizing your report. Now your report has been saved, but note that there are no instances of it. This is because we have not run the report yet. To run the report, click on **Run** from the top right corner.
 
 .. figure:: images/510reports5.png
 
@@ -174,13 +150,7 @@ Create a Custom Report
 
   Cloning a report is useful to leverage an existing report and edit it to customize it further.
 
-#. When the report finishes, you will see the first instance of this reported available for viewing by clicking **PDF** under Download.
-
-#. Then click on the X on the top right corner to exit.
-
-#. If you leave the report as is, it will get automatically run and sent to a provided email address at the specific frequency and time set.
-
-#. The reports themselves can also be customized under **Report Settings** if different colors or logos are desired.
+When the report finishes, you will see the first instance of this reported available for viewing by clicking **PDF** under Download. Then click on the X on the top right corner to exit. If you leave the report as is, it will get automatically run and sent to a provided email address at the specific frequency and time set. The reports themselves can also be customized under **Report Settings** if different colors or logos are desired.
 
 Prism Central Resource Planning
 +++++++++++++++++++++++++++++++
@@ -192,12 +162,12 @@ Capacity Runway
 
 Use Prism Central’s Capacity Runway feature to learn about cluster resource planning and recommendations.
 
-#. In **Prism Central > Planning > Capacity Runway**.
+In **Prism Central > Planning > Capacity Runway**.
 
 - Note the runway summaries showing the days left for each cluster.
 - How long does the current cluster has before it runs out of memory, CPU, and storage?
 
-#. Click one of the clusters.
+Click one of the clusters.
 
 .. note::
 
@@ -207,28 +177,28 @@ Use Prism Central’s Capacity Runway feature to learn about cluster resource pl
 
   Clicking Storage, CPU, or Memory Runway displays the chart for that resource.
 
-#. Click **Optimize Resources** to see a list of recommended management tasks for reallocating resources, such as optimizing over-provisioned VMs, deleting inactive VMs, or adding resources to constrained VMs.
+Click **Optimize Resources** to see a list of recommended management tasks for reallocating resources, such as optimizing over-provisioned VMs, deleting inactive VMs, or adding resources to constrained VMs.
 
-#. Close the Capacity Runway view.
+Close the Capacity Runway view.
 
 What If Planning
 ................
 
-#. Push the initial guess of the capacity planning task to add hypothetical workloads and see how the prediction changes.
+Push the initial guess of the capacity planning task to add hypothetical workloads and see how the prediction changes.
 
-#. In **Prism Central > Planning > Scenarios**, then click **New Scenario**.
+In **Prism Central > Planning > Scenarios**, then click **New Scenario**.
 
-#. Next, fill out the following fields:
+Next, fill out the following fields:
 
 - **Cluster** - Select a Cluster Model
 - **Target** - 6 months
 - **Vendor Type** - Nutanix
 
-#. Now lets add a 150 seat Citrix XenDesktop workload..
+Now lets add a 150 seat Citrix XenDesktop workload..
 
-#. Click **+ Add Workload**.
+Click **+ Add Workload**.
 
-#. Next, fill out the following fields and click **Add Workload**:
+Next, fill out the following fields and click **Add Workload**:
 
 - **Workload** - VDI
 - **Vendor** - XenDesktop
@@ -237,20 +207,14 @@ What If Planning
 - **Number of Users** - 150
 - **On** - One Month from now
 
-#. Repeat this process, adding workloads until the runway falls short of the six-month target.
+Repeat this process, adding workloads until the runway falls short of the six-month target. **Save** this scenario. Note the **Resources** section, which shows the existing hardware. Click **Recommend** to see a suggested NX configuration to extend the runway.
 
-#. **Save** this scenario.
-
-#. #. Note the **Resources** section, which shows the existing hardware.
-
-#. Click **Recommend** to see a suggested NX configuration to extend the runway.
-
-#. Now lets experiment with changing the target and workloads and generating recommendations:
+Now lets experiment with changing the target and workloads and generating recommendations:
 
 - Additional 150 seats in three months.
 - Change in demand every three months.
 
-#. Generate a PDF report to see detailed capacity planning information.
+Generate a PDF report to see detailed capacity planning information.
 
 Takeaways
 +++++++++
