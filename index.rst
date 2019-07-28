@@ -18,7 +18,7 @@
   prism_central_deploy/prism_central_deploy
   prism_central_features/prism_central_features
 
-  .. toctree::
+.. toctree::
   :maxdepth: 2
   :caption: BCA
   :name: _labs
@@ -43,7 +43,7 @@
   :hidden:
   
   karbon_deploy_vm/karbon_deploy_vm
-  karbon_create_cluster/arbon_create_cluster
+  karbon_create_cluster/karbon_create_cluster
   karbon_deploy_application/karbon_deploy_application
   karbon_delete_application/karbon_delete_application
 
