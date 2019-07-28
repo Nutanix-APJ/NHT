@@ -48,12 +48,6 @@ Run this command to verify the successful connection to the Kubernetes cluster i
 .. image:: images/karbon_deploy_application_34.png
 
 
-Configure kubeconfig Using Windows
-..................................
-
-
-Verify that the output of the last command shows 1 master node, and 3 worker nodes.
-
 Use kubectl command
 +++++++++++++++++++
 
