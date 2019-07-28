@@ -33,7 +33,7 @@
   :hidden:
 
   calm_enable/calm_enable
-  calm_marketplace/marketplace
+  calm_marketplace/calm_marketplace
   calm_windows_blueprint/calm_windows_blueprint
  
 .. toctree::
