@@ -25,7 +25,7 @@ Choose the first **Deploy** option.
 
 .. figure:: images/2.png
 
-Download the latest version and deploy 1-VM PC
+Download the latest version and click **deploy 1-VM PC**
 
 .. figure:: images/3.png
 
