@@ -11,8 +11,8 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Prism Central
-  :name: _prism_central
+  :caption: Prism Pro
+  :name: _prism_Pro
   :hidden:
   
   prism_central_deploy/prism_central_deploy

@@ -1,8 +1,8 @@
 .. _prism_central_dashboards_reports:
 
--------------------------------------
-PC: Dashboards, Reports and Plannning
--------------------------------------
+-------------------
+Prism Pro features
+-------------------
 
 Overview
 ++++++++
