@@ -7,22 +7,14 @@ Calm: Enable
 Overview
 ++++++++
 
-.. note::
-
-  Review :ref:`calm_basics` before proceeding with the lab to familiarize yourself with the UI and common terminology used in Nutanix Calm.
-
-  Estimated time to complete: **170 MINUTES**
-
-In this exercise you will enable Nutanix Calm and configure a Project to contain your Blueprints and Applications created throughout the Workshop.
+  Estimated time to complete: **5 MINUTES**
 
 Enabling App Management
 +++++++++++++++++++++++
 
-In this exercise you will enable Nutanix Calm and configure a Project to contain your Blueprints and Applications created throughout the Workshop.
-
 Open \https://*<Prism-Central-IP>*:9440/ in a browser and log in.
 
-From the navigation bar, select **Calm** (if you're running PC <5.8.1, then select **Apps**).
+From the navigation bar, select **Service > Calm** 
 
 Click **Enable**.
 

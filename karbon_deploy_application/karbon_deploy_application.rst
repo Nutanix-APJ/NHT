@@ -21,45 +21,28 @@ In this lab we will download the kubeconfig, interact with our cluster from the 
 	All the screenshots have been created using a Windows machine. This due to the fact that most of the tools that are used for this module are not easy to be installed/used. Also the directory in which is being run from commands is the Downloads directory of the logged in user.
 
 
-Set up Kubeconfig
+Configure kubeconfig using Linux
 +++++++++++++++++
 
-In this task you will download your Karbon Kubernetes cluster’s kubeconfig file and apply that file to **kubectl** to enable you to control your Kubernetes cluster.
+Click on “Copy the Command to Clipboard”
 
-Navigate back to the Karbon UI.  If your session has timed out, log back in with your Prism Central credentials.
+.. image:: images/karbon_deploy_application_31.png
 
-Select the cluster that you deployed, and click **Download kubeconfig**.
+In Calm, look at the IP address of the provisioned Kubectl client.  Putty using the IP address
 
-.. image:: images/karbon_deploy_application_1.png
+.. image:: images/karbon_deploy_application_32.png
 
-Configure kubeconfig Using Mac
-..............................
+Paste the command into the shell
 
-From Terminal, run the following commands to setup your **kubeconfig**:
+.. image:: images/karbon_deploy_application_33.png
 
-.. code-block:: bash
+Run this command to verify the successful connection to the Kubernetes cluster in Karbon.
 
-  cd ~
-  mkdir .kube
-  cd .kube
-  mv ~/Downloads/kubectl* config
-  kubectl get nodes
+.. image:: images/karbon_deploy_application_34.png
 
-
-Verify that the output of the last command shows 1 master node, and 3 worker nodes.
 
 Configure kubeconfig Using Windows
 ..................................
-
-From PowerShell, run the following commands to setup your **kubeconfig**:
-
-.. code-block:: bash
-
-  cd ~
-  mkdir .kube
-  cd .kube
-  mv ~\Downloads\kubectl* config
-  kubectl get nodes
 
 
 Verify that the output of the last command shows 1 master node, and 3 worker nodes.
