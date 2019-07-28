@@ -142,15 +142,13 @@ Click on the **Add Schedule** button in the top right corner to add an automatic
 
   If SMTP is configured appropriately in Prism Central, this automated report can also get sent to any valid email address entered.
 
-Click **Save** when done customizing your report. Now your report has been saved, but note that there are no instances of it. This is because we have not run the report yet. To run the report, click on **Run** from the top right corner.
-
-.. figure:: images/510reports5.png
+Click **Save** when done customizing your report. Now your report has been saved, but note that there are no instances of it. This is because we have not run the report yet. To run the report, click on **Run** from **Action** dropdown.
 
 .. note::
 
   Cloning a report is useful to leverage an existing report and edit it to customize it further.
 
-When the report finishes, you will see the first instance of this reported available for viewing by clicking **PDF** under Download. Then click on the X on the top right corner to exit. If you leave the report as is, it will get automatically run and sent to a provided email address at the specific frequency and time set. The reports themselves can also be customized under **Report Settings** if different colors or logos are desired.
+When the report finishes, you will see the first instance of this reported available for viewing by clicking **PDF** under Download. Then click on the **X** on the top right corner to exit. If you leave the report as is, it will get automatically run and sent to a provided email address at the specific frequency and time set. The reports themselves can also be customized under **Report Settings** if different colors or logos are desired.
 
 Prism Central Resource Planning
 +++++++++++++++++++++++++++++++
@@ -171,11 +169,7 @@ Click one of the clusters.
 
 .. note::
 
-  The most constrained resource is highlighted on the left side.
-
-.. note::
-
-  Clicking Storage, CPU, or Memory Runway displays the chart for that resource.
+  The most constrained resource is highlighted on the left side. Clicking Storage, CPU, or Memory Runway displays the chart for that resource.
 
 Click **Optimize Resources** to see a list of recommended management tasks for reallocating resources, such as optimizing over-provisioned VMs, deleting inactive VMs, or adding resources to constrained VMs.
 
