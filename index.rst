@@ -11,21 +11,20 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Files 
-  :name: _labs
-  :hidden:
-
-  files_deploy/files_deploy
-  files_smb/files_smb
-
-.. toctree::
-  :maxdepth: 2
   :caption: Prism Central
   :name: _prism_central
   :hidden:
   
   prism_central_deploy/prism_central_deploy
   prism_central_features/prism_central_features
+
+  .. toctree::
+  :maxdepth: 2
+  :caption: BCA
+  :name: _labs
+  :hidden:
+
+  BCA/BCA
 
 .. toctree::
   :maxdepth: 2
@@ -34,18 +33,28 @@
   :hidden:
 
   calm_enable/calm_enable
-  calm_projects/calm_projects
-  calm_linux/calm_linux
-  calm_win/calm_win
-  calm_day2/calm_day2
+  calm_marketplace/marketplace
+  calm_windows_blueprint/calm_windows_blueprint
+ 
+.. toctree::
+  :maxdepth: 2
+  :caption: Karbon
+  :name: _Karbon
+  :hidden:
+  
+  karbon_deploy_vm/karbon_deploy_vm
+  karbon_create_cluster/arbon_create_cluster
+  karbon_deploy_application/karbon_deploy_application
+  karbon_delete_application/karbon_delete_application
 
 .. toctree::
   :maxdepth: 2
-  :caption: BCA
+  :caption: Files 
   :name: _labs
   :hidden:
 
-  BCA/BCA
+  files_deploy/files_deploy
+  files_smb/files_smb
 
 .. toctree::
   :maxdepth: 2
