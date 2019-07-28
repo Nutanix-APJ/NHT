@@ -24,8 +24,7 @@
   :hidden:
   
   prism_central_deploy/prism_central_deploy
-  prism_central_dashboards_reports/prism_central_dashboards_reports
-  prism_central_resource_planning/prism_central_resource_planning
+  prism_central_features/prism_central_features
 
 .. toctree::
   :maxdepth: 2

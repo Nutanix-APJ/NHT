@@ -1,7 +1,7 @@
 .. _prism_central_dashboards_reports:
 
 -------------------------------------
-PC: Dashboards and Reports
+PC: Dashboards, Reports and Plannning
 -------------------------------------
 
 Overview
