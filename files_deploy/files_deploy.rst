@@ -9,65 +9,18 @@ Overview
 
 .. note::
 
-  Estimated time to complete: **1 HOUR**
+  Estimated time to complete: **45 mins**
 
 In this exercise you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters. You will configure SMB share, and familiarize yourself with new features of the AFS offering.
-
-In following steps, you may replace xx with your assigned cluster ID
-
-  
-Create AD VM for AD/LDAP connectivity
-+++++++++++++++++++++++++++++++++++++++++
-Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
-
-- **Username** - admin
-- **Password** - techX2019!
-
-In Prism>Storage , create a Storage Container called **Images** if there is no existing one of that name.
-
-.. image:: images/image025.png
-
-Using an SSH client, connect to the Node A CVM IP <10.42.xx.29> in your assigned block using the following credentials:
-
-Username - nutanix
-
-Password - default
-
-Execute the following commands to upload AD image:
-
-.. code-block:: bash
-
-  acli image.create AutoDC container=Images image_type=kDiskImage source_url=https://s3.amazonaws.com/get-ahv-images/AutoDC2.qcow2
-
-
-Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement of File Service. This AD service is different from the AD service created from a Windows Server. We use it just to simplify the lab and you can take a brief view of file service deployment. 
-
-In **Prism > VM**, click **+ Create VM**
-
-
-.. image:: images/image003.png
-
-   
-click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
-
-
-.. image:: images/image005.png
-
-
-Click **+Add new NIC** and choose **Secondary**, click **Add**.
-
-
-.. image:: images/image006.png 
-
- 
-After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. Record down them. The information will be used later.
-
-
-.. image:: images/image008.png
 
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
+
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - techX2019!
 
 In **Prism > File Server**, click **+ File Server**.
 
@@ -81,7 +34,7 @@ Secondly, add Data Services IP as 10.42.xx.38. Click Continue.
 
 Fill out the following fields and click **Next**:
 
-- **Name** - *intials*-Files (e.g. POCxx-Files)
+- **Name** - *POCxx*-Files 
 - **Domain** - ntnxlab.local
 - **File Server Size** - 1 TiB
   

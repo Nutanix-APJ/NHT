@@ -2,20 +2,21 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Installation and performance test
+  :caption: Installation and deployment
   :name: _labs
   :hidden:
 
   diyfoundation/diyfoundation
-  xray/xray
+  prism_central_deploy/prism_central_deploy
+  AD/AD
 
 .. toctree::
   :maxdepth: 2
-  :caption: Prism Pro
-  :name: _prism_Pro
+  :caption: Performance test and Prism Pro
+  :name: _labs
   :hidden:
-  
-  prism_central_deploy/prism_central_deploy
+
+  xray/xray
   prism_central_features/prism_central_features
 
 .. toctree::
@@ -49,19 +50,12 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Files 
+  :caption: Files and block service
   :name: _labs
   :hidden:
 
   files_deploy/files_deploy
   files_smb/files_smb
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Block Service
-  :name: _labs
-  :hidden:
-
   Volumes/volumes
 
 .. toctree::
