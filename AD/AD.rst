@@ -73,13 +73,13 @@ click **+ Add New Disk** , choose **Clone from Image Service** and image ‘Auto
 .. image:: images/image005.png
 
 
-Click **+Add new NIC** and choose **Secondary**, click **Add**.
+Click **+Add new NIC** and choose **Primary**, click **Add**.
 
 
 .. image:: images/image006.png 
 
  
-After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. Record down them. The information will be used later.
+After AD VM is created successfully, power on AD VM, then launch console to see **domain name, IP Address and credentials of AD**. Record down them, your AD's IP is unique and has a pattern of 10.42.xx.yz. These information will be used later.
 
 
 .. image:: images/image008.png

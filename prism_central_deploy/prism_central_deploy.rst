@@ -54,7 +54,11 @@ After Prism Central VM is successfully deployed, open \https://*<PC VM IP>*:9440
 Prism Central Registration
 +++++++++++++++++++++
 
-Go back to POCxx-ABC Cluster  (\https://10.42.xx.37:9440), navigate to **Home** page and click **Register or create new** in Prism Central widget. 
+Go back to POCxx-ABC Cluster  (\https://10.42.xx.37:9440), navigate to **Home** page and click cluster name **POCxx-ABC** and provide a cluster data service ip **10.42.xx.38**
+
+.. figure:: images/9.png
+
+Click **Register or create new** in Prism Central widget. 
 
 .. figure:: images/1.png
 
