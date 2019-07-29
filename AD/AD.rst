@@ -1,25 +1,48 @@
 .. _AD_deploy:
 
----------------
-AD depolyment
----------------
+---------------------------------
+Network setting and AD depolyment
+---------------------------------
 
 Overview
 ++++++++
 
 .. note::
 
-  Estimated time to complete: **10min**
+  Estimated time to complete: **15min**
 
-  
-Create AD VM for AD/LDAP connectivity
-+++++++++++++++++++++++++++++++++++++++++
+
+Create Primary and Secondary networks
++++++++++++++++++++++++++++++++++++++
+
+.. note::
+
+The secondary network is requried in X-Ray and Files lab
+
 Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
 
-In Prism>Storage , create a Storage Container called **Images** if there is no existing one of that name.
+Navigate to **Prism > Configuration** and click **Network Configuration**, then **Virtual Networks** .
+
+Click **Create Network**. Fill out the following fields and click **Save**:
+
+Name - Primary
+VLAD ID - 0
+
+Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
+
+- **Name** - Secondary
+- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=114, Sencondary VLAN is 1141)
+
+.. figure:: images/image001.png
+
+  
+Create AD VM for AD/LDAP connectivity
++++++++++++++++++++++++++++++++++++++++++
+
+In **Prism > Storage** , create a Storage Container called **Images**.
 
 .. image:: images/image025.png
 

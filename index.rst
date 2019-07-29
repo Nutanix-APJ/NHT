@@ -7,8 +7,9 @@
   :hidden:
 
   diyfoundation/diyfoundation
-  prism_central_deploy/prism_central_deploy
   AD/AD
+  prism_central_deploy/prism_central_deploy
+  
 
 .. toctree::
   :maxdepth: 2
@@ -17,7 +18,8 @@
   :hidden:
 
   xray/xray
-  prism_central_features/prism_central_features
+  prism_central_dashboards_reports/prism_central_dashboards_reports
+  prism_central_planning/prism_central_planning
 
 .. toctree::
   :maxdepth: 2
