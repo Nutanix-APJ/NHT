@@ -1,7 +1,7 @@
 .. _diyfoundation:
 
 ---------------------
-Foundation a cluster
+Foundation
 ---------------------
 
 Overview
