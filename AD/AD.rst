@@ -1,7 +1,7 @@
 .. _AD_deploy:
 
 ---------------------------------
-Network setting and AD depolyment
+AD
 ---------------------------------
 
 Overview
