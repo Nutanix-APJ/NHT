@@ -21,13 +21,6 @@
   prism_central_dashboards_reports/prism_central_dashboards_reports
   prism_central_planning/prism_central_planning
 
-.. toctree::
-  :maxdepth: 2
-  :caption: BCA
-  :name: _labs
-  :hidden:
-
-  BCA/BCA
 
 .. toctree::
   :maxdepth: 2

@@ -1,7 +1,7 @@
 .. _AD_deploy:
 
 ---------------------------------
-AD deployment
+AD Deployment
 ---------------------------------
 
 Overview

@@ -9,18 +9,6 @@ Overview
 
 In this module you are going to deploy the Wordpress on the Kubernetes Cluster you've created earlier (using MySQL as the database layer).
 
-.. note::
-
-	**Make sure you have the pre-requirements installed and ready for running!**
-	If you are not sure please follow :ref:`install_wget` and :ref:`install_kubectl` to make sure you have the required applications available.
-
-In this lab we will download the kubeconfig, interact with our cluster from the command line with kubectl, and deploy the Wordpress application.
-
-.. note::
-
-	All the screenshots have been created using a Windows machine. This due to the fact that most of the tools that are used for this module are not easy to be installed/used. Also the directory in which is being run from commands is the Downloads directory of the logged in user.
-
-
 Configure kubeconfig using Linux
 +++++++++++++++++
 
@@ -47,58 +35,6 @@ Run this command to verify the successful connection to the Kubernetes cluster i
 
 .. image:: images/karbon_deploy_application_34.png
 
-
-Use kubectl command
-+++++++++++++++++++
-
-Now that you have defined the kubeconfig file, you should be able to connect to the kubernetes cluster.
-
-
-Cluster and client version
-..........................
-
-To see the version of the kubernetes client and server run:
-
-.. code-block:: bash
-
-	kubectl version
-
-.. image:: images/karbon_deploy_application_5.png
-
-Cluster info
-............
-
-To see the information of the kubernetes cluster run:.
-
-.. code-block:: bash
-
-	kubectl cluster-info
-
-This will provide information on where the **Kubernetes Master** is running and the **KubeDNS URL**.
-
-.. image:: images/karbon_deploy_application_6.png
-
-Cluster nodes
-.............
-
-To see which master and worker nodes are in the kubernetes cluster run:
-
-.. code-block:: bash
-
-	kubectl get nodes
-
-.. image:: images/karbon_deploy_application_7.png
-
-Running pods
-............
-
-If you are interested in all the pods that are running after the installation of the kubernetes cluster run:
-
-.. code-block:: bash
-
-	kubectl get pods --all-namespaces
-
-.. image:: images/karbon_deploy_application_8.png
 
 Deploy Wordpress
 ++++++++++++++++

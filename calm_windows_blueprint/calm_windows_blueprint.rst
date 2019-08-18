@@ -1,7 +1,7 @@
 .. _calm_windows_blueprint:
 
 -----------------------
-Calm: Windows Blueprint
+Calm: Windows AD
 -----------------------
 
 Overview
