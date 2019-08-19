@@ -59,7 +59,7 @@
   :name: _labs
   :hidden:
 
-   Frame/frame
+  Frame/frame
 
 .. toctree::
   :maxdepth: 2
