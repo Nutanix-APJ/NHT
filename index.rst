@@ -7,7 +7,6 @@
   :hidden:
 
   diyfoundation/diyfoundation
-  AD/AD
   prism_central_deploy/prism_central_deploy
   
 
@@ -59,16 +58,16 @@
   :name: _labs
   :hidden:
 
-  Frame/frame
+  Frame/Frame
 
 .. toctree::
   :maxdepth: 2
   :caption: Appendix
   :name: _labs
   :hidden:
-
+  
+  AD/AD
   tools_vms/windows_tools_vm
-  tools_vms/linux_tools_vm
 
 
 .. _getting_started:
