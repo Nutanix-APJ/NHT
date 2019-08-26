@@ -22,15 +22,16 @@ Click **default** in the project list
 
 .. figure:: images/581enable8.png
 
-Under **Infrastructure**, fill out the following fields:
-- **Select which resources you want this project to consume** - Local only
+Under **Infrastructure**, fill out the following fields and click **comfirm** :
+- **Select which resources you want this project to consume** - Nutanix
 - **AHV Cluster** - *<POCxx-ABC>*
+- Under **Network**, select the **Primary** and if available, the **Secondary** networks. 
 
-Under **Network**, select the **Primary** and if available, the **Secondary** networks. Select :fa:`star` for the **Primary** network to make it the default virtual network for VMs in the **default** project.
+Select :fa:`star` for the **Primary** network to make it the default virtual network for VMs in the **default** project.
 
 Click **Save**.
 
-.. figure:: images/enable7.png
+.. figure:: images/581enable81.png
 
 Takeaways
 +++++++++
