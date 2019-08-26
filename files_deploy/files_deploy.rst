@@ -11,8 +11,20 @@ Overview
 
   Estimated time to complete: **45 mins**
 
-In this exercise you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters. You will configure SMB share, and familiarize yourself with new features of the AFS offering.
+Traditionally, file storage has been yet another silo within IT, introducing unnecessary complexity and suffering from the same issues of scale and lack of continuous innovation seen in SAN storage. Nutanix believes there is no room for silos in the Enterprise Cloud. By approaching file storage as an app, running in software on top of a proven HCI core, Nutanix Files delivers high performance, scalability, and rapid innovation through One Click management.
 
+In this lab you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters. You will configure SMB share, and familiarize yourself with new features of the AFS offering.
+
+Lab Setup
+++++++++
+
+This lab requires applications provisioned as part of the `Windows Tools VM`_and `AD Deployment`_. You can use the Windows VM and AD deployed early in Calm lab.
+
+If you have not yet deployed this VM, see the linked steps before proceeding with the lab.
+
+.. _Windows Tools VM: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/tools_vms/windows_tools_vm/#
+
+.. _AD Deployment: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/AD/AD/
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
