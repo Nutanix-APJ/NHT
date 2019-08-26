@@ -18,13 +18,14 @@ In this lab you will use Prism to deploy Files, a native, distributed file serve
 Lab Setup
 ++++++++
 
-This lab requires applications provisioned as part of the `Windows Tools VM`_and `AD Deployment`_. You can use the Windows VM and AD deployed early in Calm lab.
-
-If you have not yet deployed this VM, see the linked steps before proceeding with the lab.
+This lab requires applications provisioned as part of the `Windows Tools VM`_ and `AD Deployment`_. 
 
 .. _Windows Tools VM: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/tools_vms/windows_tools_vm/#
 
 .. _AD Deployment: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/AD/AD/
+
+You can use the Windows VM and AD deployed early in Calm lab. If you have not yet deployed these VMs, see the linked steps before proceeding with the lab.
+
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
