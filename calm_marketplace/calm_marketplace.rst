@@ -17,7 +17,7 @@ Publishing Blueprints from Marketplace Manager
 
 By default, Calm comes pre-seeded with validated Blueprints for multiple open source and enterprise applications. Marketplace Manager acts as a staging area for publishing default and user-created Blueprints to your local Marketplace. The Marketplace acts as an application store, providing end users with a catalog of available applications.
 
-From **Prism Central > Apps**, select |mktmgr-icon| **Marketplace Manager** from the sidebar.
+From **Prism Central > Apps**, select **Marketplace Manager** from the sidebar.
 
 Under **Marketplace Blueprints**, select **Mongo**.
 

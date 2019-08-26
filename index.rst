@@ -8,6 +8,7 @@
 
   diyfoundation/diyfoundation
   prism_central_deploy/prism_central_deploy
+  AD/AD
   
 
 .. toctree::
@@ -28,6 +29,7 @@
   :hidden:
 
   calm_enable/calm_enable
+  calm_projects/calm_projects
   calm_marketplace/calm_marketplace
   calm_windows_blueprint/calm_windows_blueprint
  
@@ -66,7 +68,6 @@
   :name: _labs
   :hidden:
   
-  AD/AD
   tools_vms/windows_tools_vm
 
 

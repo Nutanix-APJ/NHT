@@ -71,11 +71,16 @@ Fill out the following fields, leave others as default and click **Deploy**:
 
 .. figure:: images/5.png
 
+.. note::
+
 After Prism Central VM is successfully deployed, open \https://*<PC VM IP>*:9440 (\https://10.42.xx.39:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - default with capital N
 - change password to **techX2019!**
+
+Test if you can login Prism Central with the new password.
+
 
 Prism Central Registration
 +++++++++++++++++++++

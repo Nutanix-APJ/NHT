@@ -45,7 +45,7 @@ Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D
 - **Username** - admin
 - **Password** - techX2019!
 
-Configue the  **Primary** and **Secondary** networks to 1 node cluster.
+Check whether **Primary** network already existing, if not
 
 Click **Virtual Networks > Create Network**.
 
@@ -53,6 +53,8 @@ Fill out the following fields and click **Save**:
 
 - **Name** - Primary
 - **VLAD ID** - 0
+
+Then, configue the **Secondary** networks to 1 node cluster.
 
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 
