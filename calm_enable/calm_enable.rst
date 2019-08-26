@@ -33,6 +33,13 @@ You should get verification that Calm is enabling, which will take 5 to 10 minut
 Adding Active Directory
 +++++++++++++++++++++++
 
+This lab requires `AD Deployment`_. 
+
+.. _AD Deployment: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/AD/AD/
+
+If you have not yet deployed the VM, see the linked steps before proceeding with the lab.
+
+
 While we're waiting for Calm to enable, we'll add an Active Directory server.  While this isn't required for basic Calm use, it is required to do any Role Based Access Control, so it's a good idea to get set up.
 
 Click the **Gear Icon** and then click **Authentication**.
