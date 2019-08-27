@@ -24,28 +24,17 @@ Under **Marketplace Blueprints**, select **Mongo**.
 .. note::
 The Blueprint description contains key information including licensing, hardware requirements, OS, supported platforms, and limitations.
 
-Select the **Calm** project from the right-hand side drop down and Click **Publish**.
+Select the **Default** project from the right-hand side drop down and Click **Apply** and then click**Publish**.
 
 .. figure:: images/marketplace_p1_1.png
 
 Wait for the Blueprint **Status** to appear as **Published**.
 
-.. figure:: images/marketplace_p1_2.png
-
-Under **Projects Shared With**, select the **Calm** Project and click **Apply**.
-
-.. figure:: images/marketplace_p1_3.png
-
-.. note::
-
-  If the **Projects Shared With** drop down menu is unavailable, refresh your browser.
 
 Cloning Blueprints from Marketplace
 ...................................
 
-From **Prism Central > Apps**, select |mkt-icon| **Marketplace** from the sidebar. All Blueprints published in Marketplace Manager are visible here.
-
-.. figure:: images/marketplace_p1_4.png
+From **Prism Central > Apps**, select **Marketplace** from the sidebar. All Blueprints published in Marketplace Manager are visible here.
 
 Select the **Mongo** Blueprint and click **Clone**.
 
@@ -57,13 +46,17 @@ Select the **Mongo** Blueprint and click **Clone**.
 
 Fill out the following fields and click **Clone**:
 
-- **Blueprint Name** - MongoDB*<INITIALS>*
-- **Project** - Calm
+- **Blueprint Name** - MongoDB-*<INITIALS>*
+- **Project** - Default
 
 Editing Cloned Blueprint
 ........................
 
-Select |bp-icon| **Blueprints** from the sidebar and click your **MongoDB<INITIALS>** Blueprint to open the Blueprint Editor.
+Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, paste download address *https://s3.amazonaws.com/get-ahv-images/CentOS7.qcow2* and click **Upload file**
+
+.. figure:: images/marketplace_p1_51.png
+
+After uploading successfully, go back to Calm page and select **Blueprints** from the sidebar and click your **MongoDB-<INITIALS>** Blueprint to open the Blueprint Editor.
 
 .. figure:: images/marketplace_p1_6.png
 
@@ -73,7 +66,7 @@ Click :fa:`exclamation-circle` to review the list of errors that would prevent a
 
 Click **Credentials** and select **CENTOS (Default)**.
 
-Fill out the following fields and click **Back**:
+Fill out the following fields and click **Save** and **Back**:
 
 - **Username** - root
 - **Secret** - Password
