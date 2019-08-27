@@ -85,7 +85,7 @@ Click **Save**.
 
 If there is a warning about account UUID , delete AWS option at the bottom.
 
-. figure:: images/marketplace_p1_71.png
+.. figure:: images/marketplace_p1_71.png
 
 Clear all errors and click **Launch**. Specify a unique **Application Name** (e.g. MongoDB-<INITIALS>-app) and click **Create**.
 
