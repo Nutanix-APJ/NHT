@@ -7,10 +7,15 @@ Calm: Marketplace
 Overview
 ++++++++
 
+
+  Estimated time to complete: **35 MINUTES**
+
+  In this exercise you will learn how to manage Calm Blueprints within the Nutanix Marketplace. As part of the exercise you will publish a pre-configured Blueprint to the local Marketplace, clone the Blueprint from the Marketplace for editing, and launch the application.
+
+
 Calm Marketplace 
 +++++++++++++++++
 
-In this exercise you will learn how to manage Calm Blueprints within the Nutanix Marketplace. As part of the exercise you will publish a pre-configured Blueprint to the local Marketplace, clone the Blueprint from the Marketplace for editing, and launch the application.
 
 Publishing Blueprints from Marketplace Manager
 ..............................................
@@ -24,7 +29,7 @@ Under **Marketplace Blueprints**, select **Mongo**.
 .. note::
 The Blueprint description contains key information including licensing, hardware requirements, OS, supported platforms, and limitations.
 
-Select the **Default** project from the right-hand side drop down and Click **Apply** and then click**Publish**.
+Select the **Default** project from the right-hand side drop down and Click **Apply** and then click **Publish**.
 
 .. figure:: images/marketplace_p1_1.png
 
@@ -52,7 +57,7 @@ Fill out the following fields and click **Clone**:
 Editing Cloned Blueprint
 ........................
 
-Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, fill out download address *https://s3.amazonaws.com/get-ahv-images/CentOS7.qcow2* and click **Upload file**
+Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, fill out download address *https://s3.amazonaws.com/get-ahv-images/CentOS7.qcow2* and click **Upload file**, **Next** and **Save**.
 
 .. figure:: images/marketplace_p1_51.png
 
@@ -102,8 +107,3 @@ Takeaways
 - Developers can publish Blueprints to the Marketplace for fast and easy consumption by users.
 - Blueprints can be launched directly from the Marketplace with no additional configuration from users, delivering a public cloud-like SaaS experience for end users.
 - Administrators have control over what Blueprints are published to the Marketplace and which projects have access to published Blueprints.
-
-.. |proj-icon| image:: ../images/projects_icon.png
-.. |mktmgr-icon| image:: ../images/marketplacemanager_icon.png
-.. |mkt-icon| image:: ../images/marketplace_icon.png
-.. |bp-icon| image:: ../images/blueprints_icon.png

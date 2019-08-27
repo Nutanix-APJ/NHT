@@ -1,8 +1,8 @@
 .. _calm_enable:
 
-------------
-Calm: Enable
-------------
+---------------------------------
+Calm: Enable and Create Projects
+---------------------------------
 
 Overview
 ++++++++

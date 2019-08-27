@@ -1,7 +1,7 @@
 .. _calm_windows_blueprint:
 
 -----------------------
-Calm: Windows AD
+Calm: Windows blueprint with AD
 -----------------------
 
 Overview
@@ -9,26 +9,24 @@ Overview
 
 .. note::
 
-  This blueprint does assume some basic Microsoft Sysprep knowledge, specifically around an `unattended XML answer file`_.
-  Estimated time to complete: **60 MINUTES**
+  Estimated time to complete: **45 MINUTES**
 
-.. _unattended XML answer file: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep
+  In this exercise you will create a Nutanix Calm Blueprint based on a Microsoft Windows 10 image.  The image will be sysprepped with an unattended XML answer file, and then will be added to a Domain via a Powershell script.  We'll also add a script to remove the computer from the Domain upon deletion.
 
-Up to this point, we've been working with Linux based User VMs, and consequently, SSH.  We'll now explore deploying a Windows based VM, and modifying it with a Powershell script, all natively via Nutanix Calm.
 
-Creating Blueprint (Windows)
-++++++++++++++++++++++++++++
-
-In this exercise you will create a Nutanix Calm Blueprint based on a Microsoft Windows 10 image.  The image will be sysprepped with an unattended XML answer file, and then will be added to a Domain via a Powershell script.  We'll also add a script to remove the computer from the Domain upon deletion.
+Creating Blueprint 
+++++++++++++++++++
 
 Creating Blueprint
 ..................
 
-From **Prism Central > Calm**, select **Blueprints** from the sidebar and click **+ Create Application Blueprint**.
+From **Prism Central > Calm**, select **Blueprints** from the sidebar and click **+ Create Application Blueprint**, choose **Multi VM/Pod Blueprint**.
 
-Specify **Windows<INITIALS>** in the **Blueprint Name** field.
-Enter a **Description** in the Description field.
-Select **Calm** from the **Project** drop down menu and click **Proceed**.
+Specify **Windows-<INITIALS>** in the **Blueprint Name** field.
+Enter a **Win10 added to AD** in the Description field
+Select **Default** from the **Project** drop down menu and click **Proceed**.
+
+.. figure:: images/windows0.png
 
 Click **Credentials >** :fa:`plus-circle` and enter **both** of the following credentials:
 
@@ -54,7 +52,7 @@ Click **Save**, and then **Back**.
 Setting Variables
 .................
 
-As we've seen in previous labs, variables improve the extensibility of Blueprints.  For this Blueprint, we'll want to define the domain name that the Windows VM will join to, and the IP of the Active Directory server.  We'll leave both the **Secret** and **Runtime** variables **un-checked**.
+Variables improve the extensibility of Blueprints.  For this Blueprint, we'll want to define the domain name that the Windows VM will join to, and the IP of the Active Directory server.  We'll leave the **Secret** variables **un-checked**.
 
 In the **Configuration Pane** under **Variable List**, fill out the following fields:
 
@@ -63,7 +61,7 @@ In the **Configuration Pane** under **Variable List**, fill out the following fi
 +------------------------+------------------------------------+
 | DOMAIN                 | ntnxlab.local                      |
 +------------------------+------------------------------------+
-| AD\_IP                 | <DC-VM-IP> (10.X.X.40)             |
+| AD\_IP                 | <DC-VM-IP> (10.42.xx.yz)           |
 +------------------------+------------------------------------+
 
 .. figure:: images/windows2.png
@@ -73,11 +71,20 @@ Click **Save**.
 Adding Windows Service
 ......................
 
+Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, fill out download address *https://s3.amazonaws.com/get-ahv-images/Windows10-1709.qcow2* and click **Upload file** , **Next** and **Save**.
+
+.. figure:: images/windows22.png
+
+After uploading successfully, go back to Calm page and select **Blueprints** from the sidebar and click your ****Windows-<INITIALS>**** Blueprint to open the Blueprint Editor.
+
+
 In **Application Overview > Services**, click :fa:`plus-circle`.
 
 Note that **Service1** appears in the **Workspace** and the **Configuration Pane** reflects the configuration of the selected Service.
 
-Fill out the following fields:
+.. figure:: images/windows21.png
+
+Fill out the following fields on the right side:
 
 - **Service Name** - Windows10
 - **Name** - Windows10_AHV
@@ -180,7 +187,7 @@ Fill out the following fields:
   .. figure:: images/windows3.png
 
 - Select :fa:`plus-circle` under **Network Adapters (NICs)**
-- **NIC** - Primary
+- **NIC 1** - Secondary
 - **Credential** - Select WIN_VM_CRED and leave the rest of the fields as default
 
   .. figure:: images/windows4.png
@@ -194,7 +201,7 @@ With the Windows10 service icon selected in the workspace window, scroll to the 
 
 On the Blueprint Canvas section, a **Package Install** field will pop up next to the Windows10 Service tile:
 
-.. figure:: images/windows5.png
+.. figure:: images/windows51.png
 
 Click on the **+ Task** button, and fill out the following fields on the **Configuration Panel** on the right:
 
@@ -202,6 +209,8 @@ Click on the **+ Task** button, and fill out the following fields on the **Confi
 - **Type** - Execute
 - **Script Type** - Powershell
 - **Credential** - WIN_VM_CRED
+
+.. figure:: images/windows5.png
 
 Copy and paste the following script into the **Script** field:
 
@@ -269,6 +278,8 @@ Package Uninstall
 .................
 
 Select the Windows10 service icon in the workspace window again and scroll to the top of the **Configuration Panel**, click **Package**.
+
+.. figure:: images/windows51.png
 
 - **Click** - Configure Uninstall
 - **Click** - + Task
@@ -345,7 +356,9 @@ Next, select your VM as shown above, then click the **Actions** button near the 
 
 .. figure:: images/windows8.png
 
-At this point you're welcome to run the **Delete** action to clean up your application and underlying VM.  Alternatively, you could run the **Soft Delete** action, which deletes the application from Calm's point of view, but **leaves** the underlying VM(s) up and running.  This is useful when the VM will be used and managed perpetually by an end user, and isn't needed to be managed by Calm.
+At this point you're welcome to run the **Delete** action to clean up your application and underlying VM.  Alternatively, you could run the **Soft Delete** action, which deletes the application from Calm's point of view, but **leaves** the underlying VM(s) up and running. This is useful when the VM will be used and managed perpetually by an end user, and isn't needed to be managed by Calm.
+
+Here, we keep the Window VM as a Window tool VM for future Files lab.
 
 Takeaways
 +++++++++
