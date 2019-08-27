@@ -348,11 +348,11 @@ Note the status changes to **Running** after the Blueprint has been successfully
 Verification
 ............
 
-Once the application is in a **Running** state, click on the **Services** tab, then select the **Windows10** service.  On the pane that opens to the right, copy the **Name** of the VM (it should be named something like Win-0-123456-789012).  Next, click on the **Explore** tab at the very top of Prism Central, ensure **VMs** is selected on the left side, and paste in the name of your VM to filter.
+Once the application is in a **Running** state, click on the **Services** tab, then select the **Windows10** service.  On the pane that opens to the right, copy the **Name** of the VM (it should be named something like Win-0-123456-789012).  Next, paste the VM name in the Searching box at the very top of Prism Central and click Enter.
 
 .. figure:: images/windows7.png
 
-Next, select your VM as shown above, then click the **Actions** button near the top, and then select **Launch Console**.  You should now be able to access your Windows VM.
+Next, click **Launch Console**.  You should now be able to access your Windows VM.
 
 .. figure:: images/windows8.png
 

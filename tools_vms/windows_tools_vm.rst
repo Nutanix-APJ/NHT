@@ -7,17 +7,7 @@ Windows Tools VM
 Overview
 +++++++++
 
-This Windows Server 2012 R2 image comes pre-installed with a number of tools, including:
-
-- Microsoft Remote Server Administration Tools (RSAT)
-- PuTTY, CyberDuck, WinSCP
-- Sublime Text 3, Visual Studio Code
-- OpenOffice
-- Python
-- pgAdmin
-- Chocolatey Package Manager
-
-Deploy this VM on your assigned cluster if directed to do so as part of **Lab Setup**.
+Deploy this Windows 10 VM on your assigned cluster if directed to do so as part of **Lab Setup**.
 
 .. raw:: html
 
@@ -39,7 +29,7 @@ Fill out the following fields:
 - Select **+ Add New Disk**
     - **Type** - DISK
     - **Operation** - Clone from Image Service
-    - **Image** - ToolsVM.qcow2
+    - **Image** - Windows10-1709.qcow2
     - Select **Add**
 
 - Select **Add New NIC**

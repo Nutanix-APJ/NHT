@@ -24,7 +24,7 @@ This lab requires applications provisioned as part of the `Windows Tools VM`_ an
 
 .. _AD Deployment: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/AD/AD/
 
-You can use the Windows VM and AD deployed early in Calm lab. If you have not yet deployed these VMs, see the linked steps before proceeding with the lab.
+You can use the Windows 10 VM launched from blueprint early in Calm lab. If you have not yet deployed these VMs, see the linked steps before proceeding with the lab.
 
 
 Deploy Acropolis File Services
@@ -77,7 +77,7 @@ Fill out the following fields and click **Next**:
 
  Files requires n (n, being the number of FSVMs) IP addresses on the Client network: 1 IP address per FSVM.
 
-Select the **Rx-Automation-Network** VLAN for the Storage Network. Click **Next**.
+Select the **Primary** VLAN for the Storage Network. Click **Next**.
 
 Fill out the following fields and click **Next**:
 
