@@ -4,11 +4,7 @@
 Xi Frame
 --------
 
-*The estimated time to complete this lab is 60 minutes.*
-
-.. raw:: html
-
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/01AVwtFeX9w?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*The estimated time to complete this lab is 30 minutes.*
 
 Overview
 ++++++++
