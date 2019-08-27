@@ -52,7 +52,7 @@ Fill out the following fields and click **Clone**:
 Editing Cloned Blueprint
 ........................
 
-Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, paste download address *https://s3.amazonaws.com/get-ahv-images/CentOS7.qcow2* and click **Upload file**
+Navigate to **Virtual Infrastructure** click **Images**, click **Add Images**. Select **URL** as Image resource, fill out download address *https://s3.amazonaws.com/get-ahv-images/CentOS7.qcow2* and click **Upload file**
 
 .. figure:: images/marketplace_p1_51.png
 
@@ -83,7 +83,11 @@ Repeat these steps for the **Mongo_Router** and **Mongo_ReplicaSet** Services.
 
 Click **Save**.
 
-Click **Launch**. Specify a unique **Application Name** (e.g. MongoDB*<INITIALS>*-1) and click **Create**.
+If there is a warning about account UUID , delete AWS option at the bottom.
+
+. figure:: images/marketplace_p1_71.png
+
+Clear all errors and click **Launch**. Specify a unique **Application Name** (e.g. MongoDB-<INITIALS>-app) and click **Create**.
 
 .. figure:: images/marketplace_p1_8.png
 
