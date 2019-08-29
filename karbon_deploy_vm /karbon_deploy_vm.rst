@@ -9,14 +9,11 @@ Overview
 
 .. note::
 
-  Estimated time to complete: **45 MINUTES**
+  Estimated time to complete: **15 MINUTES**
 
-  In this exercise you will create a Nutanix Calm Blueprint based on a Microsoft Windows 10 image.  The image will be sysprepped with an unattended XML answer file, and then will be added to a Domain via a Powershell script
-
-.. note::
+  In this exercise you will create a Kubernetes client from Nutanix Calm Blueprint and verify the result.
 
   
-
 UPLOAD CALM BLUEPRINT
 ++++++++++++++++++++++
   
