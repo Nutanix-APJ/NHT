@@ -55,7 +55,5 @@ Wait until you see the status changed to downloaded
 
 .. image:: images/karbon_deploy_cvm_6.png
 
-You can now start creating the cluster, click **+ Create Kubernetes Clusters**
 
-.. image:: images/karbon_deploy_cvm_7.png
 
