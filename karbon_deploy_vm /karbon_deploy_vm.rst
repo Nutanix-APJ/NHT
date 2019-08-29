@@ -17,7 +17,7 @@ Overview
 UPLOAD CALM BLUEPRINT
 ++++++++++++++++++++++
   
-Download the Calm blueprint in https://matthewnutanixpublic.s3.us-east-2.amazonaws.com/Karbon101/Kubectl_client.json
+Download the Calm blueprint from *https://matthewnutanixpublic.s3.us-east-2.amazonaws.com/Karbon101/Kubectl_client.json*
 
 Open the Chrome browser.  Click on Save As. Save the file as Kubectl.json to local disk.
 
@@ -65,14 +65,14 @@ Click on “Open Terminal”
 
 You can now start creating the cluster, click **+ Create Kubernetes Clusters**
 
-.. image:: images/karbon_deploy_cvm_7.png
+.. image:: images/karbon_deploy_vm_7.png
 
 Select the credential (Ubuntu Credential).  Click on Proceed
 
-.. image:: images/karbon_deploy_cvm_8.png
+.. image:: images/karbon_deploy_vm_8.png
 
 Key in “which kubectl”
 
-.. image:: images/karbon_deploy_cvm_9.png
+.. image:: images/karbon_deploy_vm_9.png
 
 The command here is to verify kubeclt is installed and to confirm the location so that it can be made executable.
