@@ -1,8 +1,8 @@
 .. _karbon_enable:
 
---------------------------------
-Images Upload and Karbon Enable 
---------------------------------
+-----------------------
+Enable and Upload image
+-----------------------
 
 Overview
 ++++++++

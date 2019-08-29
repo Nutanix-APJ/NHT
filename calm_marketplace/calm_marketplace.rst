@@ -1,7 +1,7 @@
 .. _calm_marketplace:
 
 -----------------
-Calm: Marketplace
+Marketplace
 -----------------
 
 Overview
