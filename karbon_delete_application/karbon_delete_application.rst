@@ -1,7 +1,7 @@
 .. _karbon_delete_application:
 
 -----------------------------
-Karbon: Delete an Application
+Delete an Application
 -----------------------------
 
 Overview

@@ -1,7 +1,7 @@
 .. _karbon_deploy_application:
 
 -----------------------------
-Karbon: Deploy an Application
+Deploy an Application
 -----------------------------
 
 Overview

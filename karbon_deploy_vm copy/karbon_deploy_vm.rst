@@ -1,8 +1,8 @@
-.. _karbon_delete_application:
+.. _karbon_enable:
 
------------------------------
-Karbon: Images Upload and Karbon Enable
------------------------------
+--------------------------------
+Images Upload and Karbon Enable 
+--------------------------------
 
 Overview
 ++++++++
@@ -13,8 +13,8 @@ In this lab we will deploy..
 
   The following actions **can not** be undone!!! If running this in a production environment be very careful.
 
-KUBECTL image upload
-++++++++++++++++++++
+UBUNTU OS Image upload
+++++++++++++++++++++++
   
 Open a terminal and SSH to POCxx-ABC CVM, enter CVM credentials then execute following commands
   
@@ -24,17 +24,16 @@ Open a terminal and SSH to POCxx-ABC CVM, enter CVM credentials then execute fol
 
  acli image.create ubu-template.qcow2 container="Images" image_type="kIsoImage" source_url="https://testisos.s3-ap-southeast-1.amazonaws.com/ubu-template.qcow2
 
- 
-Wait till you see Complete
-
-.. image:: images/karbon_deploy_cvm_0.png
-
 Login in to Prism Central, navigate to Images, click **import Images**，select cluster POCxx-ABC and choose the image you uploaded through SSH, click **Save**. I will see ubu-template image in the list.
 
 .. image:: images/karbon_deploy_cvm_1.png
 
 Enable Karbon
 +++++++++++++
+
+Navigate to **Administrator** -> **LCM** to see current Karbon version, if it is not 1.0.1, upgrade to the latest 1.0.1 version.
+
+.. image:: images/karbon_deploy_cvm_8.png
 
 Navigate to **Service** -> **Karbon**
 
@@ -60,10 +59,3 @@ You can now start creating the cluster, click **+ Create Kubernetes Clusters**
 
 .. image:: images/karbon_deploy_cvm_7.png
 
-
-
-Upload blueprint
-+++++++++++++++++++++++
-
-Takeaways
-+++++++++

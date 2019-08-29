@@ -1,7 +1,7 @@
 .. _karbon_create_cluster:
 
 -------------------------------------
-Karbon: Creating a Kubernetes Cluster
+Creating a Kubernetes Cluster
 -------------------------------------
 
 Overview
