@@ -1,8 +1,8 @@
 .. _karbon_deploy_vm:
 
----------------------------
-Deploy KUBECTL from Calm 
----------------------------
+-------------------------
+Install KUBECTL from Calm 
+-------------------------
 
 Overview
 ++++++++
