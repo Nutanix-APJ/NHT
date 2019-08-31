@@ -28,6 +28,7 @@ Login in to Prism Central, navigate to Images, click **import Images**，select 
 
 .. image:: images/karbon_deploy_cvm_1.png
 
+
 Enable Karbon
 +++++++++++++
 
@@ -55,6 +56,7 @@ Wait until you see the status changed to downloaded
 
 .. image:: images/karbon_deploy_cvm_6.png
 
+
 NTP and Network for Karbon
 ++++++++++++++++++++++++++
 
@@ -66,7 +68,28 @@ Key in *0.pool.ntp.org* and click **+Add**
 
 .. image:: images/karbon_enable_9.png
 
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
+- **Username** - admin
+- **Password** - techX2019!
+
+In **Prism > Settings > Network Configuration**, click **+Create Network**.
+
+Fill out **Name** – K8snet and **vlan** – 0 , select **Eable IP address Management** and click **Save**:
+
+Fill out the following fields 
+
+- **Network IP Address** – 10.42.xx.0/25
+- **Gateway IP Address** – 10.42.xx.1
+- **Domain Name Servers** - 10.42.196.10
+
+Click **+Create Pool**, fill out the range for 10.42.xx.70 to 10.42.xx.90, select **Override DHCP Server**， and give **DHCP Server address** 10.42.xx.126 ,then click **Save**:
+
+.. image:: images/karbon_enable_10.png
+
+.. image:: images/karbon_enable_11.png
+
+.. image:: images/karbon_enable_12.png
 
 
 
