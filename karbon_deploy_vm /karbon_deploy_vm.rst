@@ -25,7 +25,9 @@ Navigate to Calm blueprint, click **Upload Blueprint**
 
 .. image:: images/karbon_deploy_vm_0.png
 
-Select Kubectl_client.json and click on Open.
+Select Kubectl_client.json and click on **Upload**.
+
+.. image:: images/karbon_deploy_vm_10.png
 
 After the blueprint was uploaded into Prism Central, check the Kubectl_client blueprint
 
@@ -35,7 +37,9 @@ Scroll down and ensure the OS image: ubu-template.qcow2 was there.  If this imag
 
 .. image:: images/karbon_deploy_vm_2.png
 
-Click on Credential.  Ensure the following credential are setup.  In the ubuntu credential, key in the nutanix/4u as password.
+For NIC1, choose **Primary**
+
+Click on Credential.  Ensure the following credential are setup.  In the ubuntu credential, key in the default password as password.
 
 .. image:: images/karbon_deploy_vm_3.png
 
@@ -45,7 +49,7 @@ LAUNCH THE BLUEPRINT
 
 Click on **Launch**
 
-Fill in the name.  Eg Kubectl_client.  Click on Create.
+Fill in the name.  *Kubectl_client*.  Click on Create.
 
 .. image:: images/karbon_deploy_vm_4.png
 
@@ -62,10 +66,6 @@ Click on Services. Click on KubectlClient.
 .. image:: images/karbon_deploy_vm_6.png
 
 Click on “Open Terminal”
-
-You can now start creating the cluster, click **+ Create Kubernetes Clusters**
-
-.. image:: images/karbon_deploy_vm_7.png
 
 Select the credential (Ubuntu Credential).  Click on Proceed
 

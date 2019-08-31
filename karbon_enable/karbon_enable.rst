@@ -55,5 +55,31 @@ Wait until you see the status changed to downloaded
 
 .. image:: images/karbon_deploy_cvm_6.png
 
+NTP and Network for Karbon
+++++++++++++++++++++++++++
+
+Prism Element and Prism Central require NTP to enable Karbon
+
+Navigate to **Prism Central Settings** -> **NTP Servers**
+
+Key in *0.pool.ntp.org* and click **+Add**
+
+.. image:: images/karbon_enable_9.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
