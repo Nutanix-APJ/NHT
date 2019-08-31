@@ -82,32 +82,71 @@ During the creation of the Kubernetes cluster there will have been created:
 .. image:: images/karbon_create_cluster_19.png
 
 
-Cluster properties
-++++++++++++++++++
+KUBECONFIG
++++++++++++
 
-In the Karbon UI, click on your cluster "wordpress-*initialsLowerCase*"
+DOWNLOAD KUBECONFIG
+.....................
+
+The objective of the Kubeconfig file is to provide the information for the Kubernetes client to connect to the Kubernetes cluster.
+Download the Kubeconfig for the newly deployed cluster 
 
 .. image:: images/karbon_create_cluster_21.png
 
-This will take you to the Summary page for your cluster.
-
 .. image:: images/karbon_create_cluster_22.png
 
-You can also click into the following to see specific information:
 
-- Storage Classes
+UPLOAD KUBECONFIG TO THE KUBECTL VM DEPLOYED WITH CALM BLUEPRINT
+.................................................................
+
+Navigate to Calm in Prism Central, click applications created through Calm.
 
 .. image:: images/karbon_create_cluster_23.png
 
-- Volume's
+Drill in to Kubectl_client.  Navigate to Services
 
 .. image:: images/karbon_create_cluster_24.png
 
-- Add-on's
+Click on Kubectl Client, find out the IP address of the KUBECTL VM in Calm
 
 .. image:: images/karbon_create_cluster_25.png
 
-You now have a running Kubernetes Cluster called "wordpress-*initialsLowerCase*".
+
+Putty and login as nutanix.  The password is default password.
+
+Upload kubeconfig file to VM with putty and run the export command “export KUBECONFIG=/path/to/kubeconfig”.
+
+
+.. image:: images/karbon_create_cluster_26.png
+
+
+Create NAMESPACE
++++++++++++++++++
+
+The objective to create namespace in Kubernetes is to segregate the deployment of the application into different namespace.  Eg.  Many WordPress application can be deployed to the same Kubernetes cluster using different namespaces.
+
+Run this command to get the current namespaces
+
+.. image:: images/karbon_create_cluster_27.png
+
+Run this command to create the unique namespace.  Eg trainee-matthew
+ 
+.. image:: images/karbon_create_cluster_28.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Takeaways
 +++++++++
