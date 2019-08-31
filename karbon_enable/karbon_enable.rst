@@ -83,7 +83,7 @@ Fill out the following fields
 - **Gateway IP Address** – 10.42.xx.1
 - **Domain Name Servers** - 10.42.196.10
 
-Click **+Create Pool**, fill out the range for 10.42.xx.70 to 10.42.xx.90, select **Override DHCP Server**， and give **DHCP Server address** 10.42.xx.126 ,then click **Save**:
+Click **+Create Pool**, fill out the range for 10.42.xx.70 to 10.42.xx.90, select **Override DHCP Server**，and click **Save**:
 
 .. image:: images/karbon_enable_10.png
 
