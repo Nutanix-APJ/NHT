@@ -22,7 +22,7 @@ Open a terminal and SSH to POCxx-ABC CVM, enter CVM credentials then execute fol
 
  ssh nutanix@10.42.xx.29    # Enter 'Y' when prompted to proceed, password: techX2019!
 
- acli image.create ubu-template.qcow2 container="Images" image_type="kIsoImage" source_url="https://testisos.s3-ap-southeast-1.amazonaws.com/ubu-template.qcow2
+ acli image.create ubu-template.qcow2 container="Images" image_type="kDiskImage" source_url="https://testisos.s3-ap-southeast-1.amazonaws.com/ubu-template.qcow2
 
 Login in to Prism Central, navigate to Images, click **import Images**，select cluster POCxx-ABC and choose the image you uploaded through SSH, click **Save**. I will see ubu-template image in the list.
 
