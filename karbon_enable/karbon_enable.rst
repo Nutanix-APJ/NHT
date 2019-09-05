@@ -7,11 +7,12 @@ Enable and Upload image
 Overview
 ++++++++
 
-In this lab we will deploy..
-
 .. note::
 
-  The following actions **can not** be undone!!! If running this in a production environment be very careful.
+  Estimated time to complete: 15 Minutes
+
+In this lab we will enable Karbon and upload ubuntu image for Kebernetes client VM, then we will prepare network for Karbon.
+
 
 UBUNTU OS Image upload
 ++++++++++++++++++++++
@@ -90,6 +91,14 @@ Click **+Create Pool**, fill out the range for 10.42.xx.70 to 10.42.xx.90, selec
 .. image:: images/karbon_enable_11.png
 
 .. image:: images/karbon_enable_12.png
+
+Open \https://*<Prism Central IP>*:9440 (\https://10.42.xx.39:9440) in your browser and log in with your credentials.
+
+Navigate to **Calm > Project** Click **default**, select **k8snet** to add it to Calm network.
+
+.. image:: images/karbon_enable_13.png
+
+Click **Save**.
 
 
 
