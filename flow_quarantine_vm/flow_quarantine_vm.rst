@@ -22,7 +22,7 @@ In this task we will place a VM into quarantine and observe the behavior of the 
 
    .. note::
 
-     If the ping is unsuccessful you may need to update your Inbound Rule for **Environment:Dev** to **AppTier:**\ *Initials*-**TMLB** to include **Any** as the **Type** and **Code** for **ICMP** traffic as shown below. Apply the updated **AppTaskMan-**\ *Initials* policy and the ping should resume.
+     If the ping is unsuccessful you may need to update your Inbound Rule for **Environment:Dev** to **AppTier:**\**TMLB**-*Initials* to include **Any** as the **Type** and **Code** for **ICMP** traffic as shown below. Apply the updated **AppTaskMan-**\ *Initials* policy and the ping should resume.
 
      .. figure:: images/41.png
 

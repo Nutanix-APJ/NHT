@@ -27,7 +27,7 @@ Creating and Assigning Categories
 
 #. Click the :fa:`plus-circle` icon beside the last value to add an additional Category value.
 
-#. Specify *Initials*-**Prod** as the value name.
+#. Specify **Prod**-*Initials* as the value name.
 
    .. figure:: images/37.png
 
@@ -39,13 +39,13 @@ Creating and Assigning Categories
 
    .. note::
 
-     If you previously created a Label for your application VMs you can also search for that label. Alternatively you can search for the **AppType:** *Initials*-**TaskMan** category from the Filters pane.
+     If you previously created a Label for your application VMs you can also search for that label. Alternatively you can search for the **AppType:** **TaskMan**-*Initials*category from the Filters pane.
 
      .. figure:: images/38.png
 
 #. Using the checkboxes, select the 4 VMs associated with the application (HAProxy, MYSQL, WebServer-0, WebServer-1) and select **Actions > Manage Categories**.
 
-#. Specify **Environment:**\ *Initials*-**Prod** in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
+#. Specify **Environment:**\ **Prod**-*Initials* in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
 
    .. figure:: images/39.png
 
@@ -58,10 +58,10 @@ Creating an Isolation Policy
 
 #. Fill out the following fields:
 
-   - **Name** - *Initials*-Isolate-dev-prod
-   - **Purpose** - *Initials* - Isolate dev from prod
+   - **Name** - Isolate-dev-prod-*Initials*
+   - **Purpose** -  Isolate dev from prod-*Initials* 
    - **Isolate This Category** - Environment:Dev
-   - **From This Category** - Environment:*Initials*-Prod
+   - **From This Category** - Environment:Prod-*Initials*
    - Do **NOT** select **Apply this isolation only within a subset of the datacenter**. This option provides additional granularity by only applying to VMs assigned a third, mutual category.
 
    .. figure:: images/40.png
@@ -79,7 +79,7 @@ Deleting a Policy
 
 #. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > Policies > Security Policies**.
 
-#. Select *Initials*-**Isolate-dev-prod** and click **Actions > Delete**.
+#. Select **Isolate-dev-prod**-*Initials* and click **Actions > Delete**.
 
 #. Type **DELETE** in the confirmation dialogue and click **OK** to disable the policy.
 
