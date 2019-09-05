@@ -68,7 +68,7 @@ Creating an Isolation Policy
 
 #. Click **Apply Now** to save the policy and begin enforcement immediately.
 
-#. Return to the *Initials*\ **-WinClient-0** console.
+#. Return to the **-WinClient-0**\ *Initials*  console.
 
    Is the Task Manager application accessible? Why not?
 
@@ -87,7 +87,7 @@ Deleting a Policy
 
      To disable the policy you can choose to enter **Monitor** mode, rather than deleting the policy completely.
 
-#. Return to the *Initials*\ **-WinClient-0** console and verify the Task Manager application is accessible again from the browser.
+#. Return to the **-WinClient-0**\ *Initials* console and verify the Task Manager application is accessible again from the browser.
 
 Takeaways
 +++++++++
