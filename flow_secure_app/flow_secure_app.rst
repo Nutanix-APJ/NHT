@@ -43,7 +43,7 @@ Prism Central uses categories as metadata to tag VMs to determine how policies w
 
 #. Click the :fa:`plus-circle` icon beside the last value to add an additional Category value.
 
-#. Specify *Initials*-**TaskMan**  as the value name.
+#. Specify **TaskMan**-*Initials*  as the value name.
 
    .. figure:: images/13.png
 
@@ -53,11 +53,11 @@ Prism Central uses categories as metadata to tag VMs to determine how policies w
 
 #. Click the :fa:`plus-circle` icon beside the last value to add an additional Category value.
 
-#. Specify *Initials*-**TMWeb**  as the value name. This category will be applied to the application's web tier.
+#. Specify **TMWeb**-*Initials*  as the value name. This category will be applied to the application's web tier.
 
-#. Click :fa:`plus-circle` and specify *Initials*-**TMDB**. This category will be applied to the application's MySQL database.
+#. Click :fa:`plus-circle` and specify **TMDB**-*Initials*. This category will be applied to the application's MySQL database.
 
-#. Click :fa:`plus-circle` and specify *Initials*-**TMLB**. This category will be applied to the application's HAProxy load balancer.
+#. Click :fa:`plus-circle` and specify **TMLB**-*Initials*. This category will be applied to the application's HAProxy load balancer.
 
    .. figure:: images/14.png
 
@@ -78,9 +78,9 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Fill out the following fields:
 
-   - **Name** - *Initials*-AppTaskMan
+   - **Name** - AppTaskMan-*Initials*
    - **Purpose** - Restrict unnecessary access to Task Manager
-   - **Secure this app** - AppType: *Initials*-TaskMan
+   - **Secure this app** - AppType: TaskMan-*Initials*
    - Do **NOT** select **Filter the app type by category**.
 
    .. figure:: images/18.png
@@ -95,9 +95,9 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Click **+ Add Tier**.
 
-#. Select **AppTier:**\ *Initials*-**TMLB** from the drop down.
+#. Select **AppTier:**\ **TMLB**-*Initials* from the drop down.
 
-#. Repeat Steps 7-8 for **AppTier:**\ *Initials*-**TMWeb** and **AppTier:**\ *Initials*-**TMDB**.
+#. Repeat Steps 7-8 for **AppTier:**\ **TMWeb**-*Initials* and **AppTier:**\ **TMDB**-*Initials*.
 
    .. figure:: images/20.png
 
@@ -113,7 +113,7 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
      Sources can also be specified by IP or subnet, but Categories allow for greater flexibility as this data can follow a VM regardless of changes to its network location.
 
-#. To create an inbound rule, select the **+** icon that appears to the left of **AppTier:**\ *Initials*-**TMLB**.
+#. To create an inbound rule, select the **+** icon that appears to the left of **AppTier:**\ **TMLB**-*Initials*.
 
    .. figure:: images/21.png
 
@@ -147,9 +147,9 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Click **Add**.
 
-#. Select the **+** icon that appears to the left of **AppTier:**\ *Initials*-**TMLB**, specify **TCP** port **22** and click **Save**.
+#. Select the **+** icon that appears to the left of **AppTier:**\ **TMLB**-*Initials*-, specify **TCP** port **22** and click **Save**.
 
-#. Repeat Step 18 for **AppTier:**\ *Initials*-**TMWeb** and **AppTier:**\ *Initials*-**TMDB** to allow Calm to communicate with the web tier and database VMs.
+#. Repeat Step 18 for **AppTier:**\ **TMWeb**-*Initials* and **AppTier:**\ **TMDB**-*Initials* to allow Calm to communicate with the web tier and database VMs.
 
    .. figure:: images/24.png
 
@@ -166,7 +166,7 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Click **Add**.
 
-#. Select the **+** icon that appears to the right of **AppTier:**\ *Initials*-**TMDB**, specify **UDP** port **53** and click **Save** to allow DNS traffic.
+#. Select the **+** icon that appears to the right of **AppTier:**\ **TMDB**-*Initials*, specify **UDP** port **53** and click **Save** to allow DNS traffic.
 
    .. figure:: images/26.png
 
@@ -176,9 +176,9 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
    .. figure:: images/27.png
 
-#. Click **AppTier:**\ *Initials*-**TMLB** and select **No** to prevent communication between VMs in this tier. There is only a single load balancer VM within the tier.
+#. Click **AppTier:**\ **TMLB**-*Initials* and select **No** to prevent communication between VMs in this tier. There is only a single load balancer VM within the tier.
 
-#. While **AppTier:**\ *Initials*-**TMLB** is still selected, click the :fa:`plus-circle` icon to the right of **AppTier:**\ *Initials*-**TMWeb** to create a tier to tier rule.
+#. While **AppTier:**\ **TMLB**-*Initials* is still selected, click the :fa:`plus-circle` icon to the right of **AppTier:**\ **TMWeb**-*Initials* to create a tier to tier rule.
 
 #. Fill out the following fields to allow communication on TCP port 80 between the load balancer and web tiers:
 
@@ -189,9 +189,9 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Click **Save**.
 
-#. Click **AppTier:**\ *Initials*-**TMWeb** and select **No** to prevent communication between VMs in this tier. While there are multiple web server VMs, they do not need to communicate with each other.
+#. Click **AppTier:**\ **TMWeb**-*Initials* and select **No** to prevent communication between VMs in this tier. While there are multiple web server VMs, they do not need to communicate with each other.
 
-#. While **AppTier:**\ *Initials*-**TMWeb** is still selected, click the :fa:`plus-circle` icon to the right of **AppTier:**\ *Initials*-**TMDB** to create another tier to tier rule.
+#. While **AppTier:**\ **TMWeb**-*Initials* is still selected, click the :fa:`plus-circle` icon to the right of **AppTier:**\ **TMDB**-*Initials* to create another tier to tier rule.
 
 #. Fill out the following fields to allow communication on TCP port 3306 to allow the database connection between the web servers and the MySQL database:
 
@@ -225,21 +225,15 @@ You will now apply the previously created categories to the VMs provisioned from
 
    .. figure:: images/16.png
 
-   .. note::
-
-     You can also use the **Label** functionality to make searching for this group of VMs faster in the future.
-
-     .. figure:: images/16b.png
-
-#. Specify **AppType:**\ *Initials*-**TaskMan** in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
+#. Specify **AppType:**\ **TaskMan**-*Initials* in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
 
 #. Select ONLY the *Initials*\ **-HAProxy** VM, select **Actions > Manage Categories**, specify the **AppTier:**\ *Initials*-**TMLB** category and click **Save**.
 
    .. figure:: images/17.png
 
-#. Repeat Step 5 to assign **AppTier:**\ *Initials*-**TMWeb** to your web tier VMs.
+#. Repeat Step 5 to assign **AppTier:**\ **TMWeb**-*Initials* to your web tier VMs.
 
-#. Repeat Step 5 to assign **AppTier:**\ *Initials*-**TMDB** to your MySQL VM.
+#. Repeat Step 5 to assign **AppTier:**\ **TMDB**-*Initials* to your MySQL VM.
 
 #. Finally, Step 5 to assign **Environment:Dev** to your Windows client VM.
 
@@ -251,13 +245,13 @@ Before applying the Flow policy, you will ensure the Task Manager application is
 Testing the Application
 .......................
 
-#. From **Prism Central > Virtual Infrastructure > VMs**, note the IP address of your *Initials*\ **-HAPROXY-0...** and *Initials*\ **-MYSQL-0...** VMs.
+#. From **Prism Central > Virtual Infrastructure > VMs**, note the IP address of your **-HAPROXY-0...**\ *Initials* and  **-MYSQL-0...**\ *Initials* VMs.
 
-#. Launch the console for your *Initials*\ **-WinClient-0** VM.
+#. Launch the console for your **-WinClient-0**-*Initials*  VM.
 
    This VM was provisioned as part of the Task Manager application blueprint.
 
-#. From the *Initials*\ **-WinClient-0** console open a browser and access \http://*HAPROXY-VM-IP*/.
+#. From the **-WinClient-0**-*Initials*  console open a browser and access \http://*HAPROXY-VM-IP*/.
 
 #. Verify that the application loads and that tasks can be added and deleted.
 
@@ -272,13 +266,13 @@ Testing the Application
 Using Flow Visualization
 ........................
 
-#. Return to **Prism Central** and select :fa:`bars` **> Virtual Infrastructure > Policies > Security Policies >**\ *Initials*-**AppTaskMan**.
+#. Return to **Prism Central** and select :fa:`bars` **> Virtual Infrastructure > Policies > Security Policies >**\ **AppTaskMan**-*Initials*.
 
 #. Verify that **Environment: Dev** appears as an inbound source. The source and line appear in yellow to indicate that traffic has been detected from your client VM.
 
    .. figure:: images/32.png
 
-#. Mouse over the line connecting **Environment: Dev** to **AppTier:**\ *Initials*-**TMLB** to view the protocol and connection information.
+#. Mouse over the line connecting **Environment: Dev** to **AppTier:**\ **TMLB**-*Initials* to view the protocol and connection information.
 
 #. Click the yellow flow line to view a graph of connection attempts over the past 24 hours.
 
@@ -292,7 +286,7 @@ Using Flow Visualization
 
 #. Click **Next** and wait for the detected traffic flows to populate.
 
-#. Mouse over the **Environment: Dev** source that connects to **AppTier:**\ *Initials*-**TMLB** and click the :fa:`check` icon that appears.
+#. Mouse over the **Environment: Dev** source that connects to **AppTier:**\ **TMLB**-*Initials* and click the :fa:`check` icon that appears.
 
    .. figure:: images/35.png
 
@@ -307,13 +301,13 @@ Applying Flow Policies
 
 In order to enforce the policy you have defined, the policy must be applied.
 
-#. Select *Initials*-**AppTaskMan**  and click **Actions > Apply**.
+#. Select **AppTaskMan**-*Initials*  and click **Actions > Apply**.
 
    .. figure:: images/36.png
 
 #. Type **APPLY** in the confirmation dialogue and click **OK** to begin blocking traffic.
 
-#. Return to the *Initials*\ **-WinClient-0** console.
+#. Return to the **-WinClient-0**-*Initials*  console.
 
    What happens to the continuous ping traffic from the Windows client to the database server? Is this traffic blocked?
 
