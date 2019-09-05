@@ -26,7 +26,7 @@ In this task we will place a VM into quarantine and observe the behavior of the 
 
      .. figure:: images/41.png
 
-#. In **Prism Central > Virtual Infrastructure > VMs**, select your *Initials*\ **-HAPROXY-0...** VM.
+#. In **Prism Central > Virtual Infrastructure > VMs**, select your **-HAPROXY-0...**\ *Initials* VM.
 
 #. Click **Actions > Quarantine VMs**.
 
