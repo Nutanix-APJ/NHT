@@ -34,7 +34,7 @@
   calm_windows_blueprint/calm_windows_blueprint
   
 
-  .. toctree::
+.. toctree::
   :maxdepth: 2
   :caption: Flow
   :name: _Flow
