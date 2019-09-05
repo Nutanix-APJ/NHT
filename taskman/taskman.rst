@@ -26,8 +26,6 @@ Click |projects| **Projects** in the left hand toolbar and select the **default*
 
 Under **AHV Cluster** verify your assigned cluster is selected from the drop-down list, otherwise select it.
 
-.. figure:: images/1.png
-
 Under **Network**, verify the **Primary** and **Secondary** networks are selected and the **Primary** network is the default. Otherwise, make the selections as shown below.
 
 .. figure:: images/2.png
