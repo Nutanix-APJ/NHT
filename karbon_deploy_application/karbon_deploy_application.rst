@@ -206,7 +206,7 @@ Putting the IP address and the service port together we can open the Wordpress U
 
 In a new Browser tab, go to \http://10.42.114.119:31800
 
-.. image:: images/karbon_deploy_application_27.png
+.. image:: images/karbon_deploy_application_28.png
 
 In the initial configuration page, provide the parameters that are asked for.
 
