@@ -12,13 +12,18 @@ In this module you are going to deploy the Wordpress on the Kubernetes Cluster y
 Configure kubeconfig using Linux
 +++++++++++++++++
 
+The objective of the Kubeconfig file is to provide the information for the Kubernetes client to connect to the Kubernetes cluster. Onto kubenetes cluster you deployed through Karbon , click **Download the Kubeconfig** from **Actions** dropoff.
+
+.. image:: images/karbon_deploy_application_30.png
+
+
 Click on “Copy the Command to Clipboard”
 
 
 .. image:: images/karbon_deploy_application_31.png
 
 
-In Calm, look at the IP address of the provisioned Kubectl client.  Putty using the IP address
+In Calm, look at the IP address of the provisioned Kubectl client. Opern Terminal and SSH using the IP address with *nutanix* and *default password*
 
 
 .. image:: images/karbon_deploy_application_32.png
@@ -32,8 +37,12 @@ Paste the command into the shell
 
 Run this command to verify the successful connection to the Kubernetes cluster in Karbon.
 
+.. code-block:: bash
+
+	kubectl get nodes
 
 .. image:: images/karbon_deploy_application_34.png
+
 
 
 Deploy Wordpress
@@ -63,25 +72,17 @@ To download the needed yaml file for wordpress mysql deployment run the followin
 
 	wget https://kubernetes.io/examples/application/wordpress/mysql-deployment.yaml
 
-.. image:: images/karbon_deploy_application_9.png
-
 To download the needed yaml file for wordpress deployment run the following command:
 
 .. code-block:: bash
 
 	wget https://kubernetes.io/examples/application/wordpress/wordpress-deployment.yaml
 
-.. image:: images/karbon_deploy_application_10.png
+.. code-block:: bash
 
-Now open the wordpress-deployment.yaml file with your preferred text editor.
+    vi wordpress-deployment.yaml
 
-.. note::
-
-  Use **WordPad** on Windows for opening and editing **YAML** files.
-
-  On Mac use **TextEdit** for opening and editing **YAML** files.
-
-Change the line that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
+Use vi to change the line that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
 
 .. note::
 
@@ -117,11 +118,15 @@ Creating the MySQL database is done by running the following command:
 
 .. code-block:: bash
 
-	kubectl create -f wordpress\mysql-deployment.yaml
+	kubectl create -f mysql-deployment.yaml
 
 .. image:: images/karbon_deploy_application_15.png
 
 This will also create persistent storage.
+
+.. code-block:: bash
+
+	kubectl get pvc
 
 .. image:: images/karbon_deploy_application_16.png
 
@@ -143,7 +148,7 @@ To create the wordpress application, run the following command:
 
 .. code-block:: bash
 
-	kubectl create -f wordpress\wordpress-deployment.yaml
+	kubectl create -f wordpress-deployment.yaml
 
 .. image:: images/karbon_deploy_application_19.png
 
@@ -154,6 +159,8 @@ You can now run the following command:
 .. code-block:: bash
 
 	kubectl get pods
+
+.. image:: images/karbon_deploy_application_20.png
 
 It will show both pods running.
 
@@ -172,19 +179,18 @@ Lets show a list of a Master and worker nodes, run the following command:
 
 	kubectl get nodes
 
-.. image:: images/karbon_deploy_application_23.png
+.. image:: images/karbon_deploy_application_23.
+
+Record down one of the worker VM name and it will be used in the next command.
 
 To get the IP address of one of the workers, run the following command:
 
 .. code-block:: bash
 
-	kubectl describe nodes | Select-String -Pattern "InternalIP"
+	kubectl describe node <worker VM name>|grep "InternalIP"
 
 .. image:: images/karbon_deploy_application_24.png
 
-Search in the information that is provided, a line that starts with **Address:** and note the **InternalIP**.
-
-.. image:: images/karbon_deploy_application_25.png
 
 As the application is running on an internal network inside the kubernetes cluster, we also need to have the service port on which the wordpress application is running.
 
@@ -196,9 +202,9 @@ To see which port number is used to for the Wordpress application, run the follo
 
 .. image:: images/karbon_deploy_application_26.png
 
-Putting the IP address and the service port together we can open the Wordpress UI. In our example 172.16.0.36:32387.
+Putting the IP address and the service port together we can open the Wordpress UI. In our example 10.42.114.119:31800.
 
-In a new Browser tab, go to \http://172.16.0.36:32387
+In a new Browser tab, go to \http://10.42.114.119:31800
 
 .. image:: images/karbon_deploy_application_27.png
 
