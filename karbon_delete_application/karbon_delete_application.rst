@@ -27,7 +27,7 @@ Run the following commands from the command line:
 
   kubectl delete mysql-pass
 
-  kubectl delete deployment -p app=wordpress
+  kubectl delete deployment -l app=wordpress
 
   kubectl delete service -l app=wordpress
 
