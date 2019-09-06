@@ -87,7 +87,7 @@ Deleting a Policy
 
      To disable the policy you can choose to enter **Monitor** mode, rather than deleting the policy completely.
 
-#. Return to the **-WinClient-0**\ *Initials* console and verify the Task Manager application is accessible again from the browser.
+#. Return to the *Initials*-**WinClient-0** console and verify the Task Manager application is accessible again from the browser.
 
 Takeaways
 +++++++++

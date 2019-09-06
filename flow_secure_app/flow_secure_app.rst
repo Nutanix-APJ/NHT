@@ -147,7 +147,7 @@ While you wait for the Task Manager application to be deployed from the Calm blu
 
 #. Click **Add**.
 
-#. Select the **+** icon that appears to the left of **AppTier:**\ **TMLB**-*Initials*-, specify **TCP** port **22** and click **Save**.
+#. Select the **+** icon that appears to the left of **AppTier:**\ **TMLB**-*Initials*, specify **TCP** port **22** and click **Save**.
 
 #. Repeat Step 18 for **AppTier:**\ **TMWeb**-*Initials* and **AppTier:**\ **TMDB**-*Initials* to allow Calm to communicate with the web tier and database VMs.
 
@@ -227,7 +227,7 @@ You will now apply the previously created categories to the VMs provisioned from
 
 #. Specify **AppType:**\ **TaskMan**-*Initials* in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
 
-#. Select ONLY the *Initials*\ **-HAProxy** VM, select **Actions > Manage Categories**, specify the **AppTier:**\ *Initials*-**TMLB** category and click **Save**.
+#. Select ONLY the  **-HAProxy**-*Initials* VM, select **Actions > Manage Categories**, specify the **AppTier:**\ **TMLB**-*Initials* category and click **Save**.
 
    .. figure:: images/17.png
 
@@ -245,13 +245,13 @@ Before applying the Flow policy, you will ensure the Task Manager application is
 Testing the Application
 .......................
 
-#. From **Prism Central > Virtual Infrastructure > VMs**, note the IP address of your **-HAPROXY-0...**\ *Initials* and  **-MYSQL-0...**\ *Initials* VMs.
+#. From **Prism Central > Virtual Infrastructure > VMs**, note the IP address of your *Initials*-**HAPROXY-0** and  *Initials*-**-MYSQL-0**  VMs.
 
-#. Launch the console for your **-WinClient-0**-*Initials*  VM.
+#. Launch the console for your *Initials*-**WinClient-0**  VM.
 
    This VM was provisioned as part of the Task Manager application blueprint.
 
-#. From the **-WinClient-0**-*Initials*  console open a browser and access \http://*HAPROXY-VM-IP*/.
+#. From the *Initials*-**WinClient-0**  console open a browser and access \http://*HAPROXY-VM-IP*/.
 
 #. Verify that the application loads and that tasks can be added and deleted.
 
@@ -307,7 +307,7 @@ In order to enforce the policy you have defined, the policy must be applied.
 
 #. Type **APPLY** in the confirmation dialogue and click **OK** to begin blocking traffic.
 
-#. Return to the **-WinClient-0**-*Initials*  console.
+#. Return to the *Initials*-**WinClient-0** console.
 
    What happens to the continuous ping traffic from the Windows client to the database server? Is this traffic blocked?
 
