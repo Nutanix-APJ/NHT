@@ -179,7 +179,7 @@ Lets show a list of a Master and worker nodes, run the following command:
 
 	kubectl get nodes
 
-.. image:: images/karbon_deploy_application_23.
+.. image:: images/karbon_deploy_application_23.png
 
 Record down one of the worker VM name and it will be used in the next command.
 
