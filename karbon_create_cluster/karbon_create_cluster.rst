@@ -75,7 +75,11 @@ During the creation of the Kubernetes cluster there will have been created:
 
 .. image:: images/karbon_create_cluster_10.png
 
+- Persistent Storage as VolumeGroup
 
+.. image:: images/karbon_create_cluster_18.png
+
+.. image:: images/karbon_create_cluster_19.png
 
 
 Takeaways
