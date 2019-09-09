@@ -82,15 +82,20 @@ To download the needed yaml file for wordpress deployment run the following comm
 
 .. image:: images/karbon_deploy_application_111.png
 
-Use vi to change the line in *wordpress-deployment.yaml* that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
+Use vi/vim or nano to change the line in *wordpress-deployment.yaml* that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
 
 .. code-block:: bash
 
-    vi wordpress-deployment.yaml
+    vim wordpress-deployment.yaml
 
 .. note::
 
-	Reason for this change is that Karbon does not (yet) support LoadBalanced.
+	vi/vim tool:  *i* for insert, *esc* for quit editing mode, *Shift : wq* for save and quit
+
+.. note::
+
+	Reason for this change is that Karbon does not (yet) support LoadBalanced. 
+
 
 .. image:: images/karbon_deploy_application_12.png
 
