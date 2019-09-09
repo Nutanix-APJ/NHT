@@ -72,7 +72,7 @@ To download the needed yaml file for wordpress mysql deployment run the followin
 
 	wget https://kubernetes.io/examples/application/wordpress/mysql-deployment.yaml
 
-	.. image:: images/karbon_deploy_application_110.png
+.. image:: images/karbon_deploy_application_110.png
 
 To download the needed yaml file for wordpress deployment run the following command:
 
@@ -80,7 +80,7 @@ To download the needed yaml file for wordpress deployment run the following comm
 
 	wget https://kubernetes.io/examples/application/wordpress/wordpress-deployment.yaml
 
-	.. image:: images/karbon_deploy_application_111.png
+.. image:: images/karbon_deploy_application_111.png
 
 Use vi to change the line in *wordpress-deployment.yaml* that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
 
@@ -206,9 +206,9 @@ To see which port number is used to for the Wordpress application, run the follo
 
 .. image:: images/karbon_deploy_application_26.png
 
-Putting the IP address and the service port together we can open the Wordpress UI. In our example 10.42.114.119:31800.
+Putting the IP address and the service port together we can open the Wordpress UI.
 
-In a new Browser tab, go to \http://10.42.114.119:31800
+Open a new browser and key in the address, in our example 10.42.114.119:31800. 
 
 .. image:: images/karbon_deploy_application_28.png
 
