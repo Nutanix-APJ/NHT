@@ -185,7 +185,7 @@ Replacing the octet(s) that correspond to your HPOC network, fill out the follow
 - **Static IP** - 10.42.xx.45 (Foundation VM IP)
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.42.xx.1
-
+- **DNS** - 10.42.196.10
 
 
 
