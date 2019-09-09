@@ -158,7 +158,7 @@ To create the wordpress application, run the following command:
 
 This will also create persistent storage and a pod.
 
-You can now run the following command:
+You can now run the following command, repeat it until you see the following results.
 
 .. code-block:: bash
 
