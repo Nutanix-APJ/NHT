@@ -25,7 +25,7 @@ Run the following commands from the command line:
 .. code-block:: bash
   :name: Delete_app
 
-  kubectl delete mysql-pass
+  kubectl delete secret mysql-pass
 
   kubectl delete deployment -l app=wordpress
 
