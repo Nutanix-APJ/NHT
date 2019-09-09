@@ -72,17 +72,21 @@ To download the needed yaml file for wordpress mysql deployment run the followin
 
 	wget https://kubernetes.io/examples/application/wordpress/mysql-deployment.yaml
 
+	.. image:: images/karbon_deploy_application_110.png
+
 To download the needed yaml file for wordpress deployment run the following command:
 
 .. code-block:: bash
 
 	wget https://kubernetes.io/examples/application/wordpress/wordpress-deployment.yaml
 
+	.. image:: images/karbon_deploy_application_111.png
+
+Use vi to change the line that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
+
 .. code-block:: bash
 
     vi wordpress-deployment.yaml
-
-Use vi to change the line that shows: **type: LoadBalancer** under **spec:** and change ``LoadBalancer`` into ``NodePort``.
 
 .. note::
 
