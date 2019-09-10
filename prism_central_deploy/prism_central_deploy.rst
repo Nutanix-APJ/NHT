@@ -35,7 +35,7 @@ VLAD ID - 0
 Click **Create Network**. Using the Cluster Details spreadsheet, fill out the following fields and click **Save**:
 
 - **Name** - Secondary
-- **VLAD ID** - *<Secondary VLAN ID>* xx1(eg. if xx=114, Sencondary VLAN is 1141)
+- **VLAD ID** - *<Secondary VLAN ID>* xx1 (xx is your cluster ID)
 
 .. figure:: images/image001.png
 
