@@ -56,7 +56,7 @@ Fill out the following fields and click **Save**:
 - **Directory Type** - Active Directory
 - **Name** - NTNXLAB
 - **Domain** - ntnxlab.local
-- **Directory URL** - ldaps://*<DC-VM-IP>* 10.42.xx.yz
+- **Directory URL** - ldap://*<DC-VM-IP>* 10.42.xx.yz
 - **Username** - Administrator@ntnxlab.local
 - **Password** - nutanix/4u
 
