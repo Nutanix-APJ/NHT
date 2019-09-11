@@ -1,7 +1,7 @@
 .. _prism_central_planning:
 
 -------------------
-Prism Pro Planning
+Prism Pro: Planning
 -------------------
 
 Overview
