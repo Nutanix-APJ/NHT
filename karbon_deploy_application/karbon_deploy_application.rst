@@ -12,6 +12,11 @@ In this module you are going to deploy the Wordpress on the Kubernetes Cluster y
 Configure kubeconfig using Linux
 +++++++++++++++++
 
+In Calm, look at the IP address of the provisioned Kubectl client. Opern Terminal and SSH using the IP address with *nutanix* and *default password*
+
+
+.. image:: images/karbon_deploy_application_32.png
+
 The objective of the Kubeconfig file is to provide the information for the Kubernetes client to connect to the Kubernetes cluster. Onto kubenetes cluster you deployed through Karbon , click **Download the Kubeconfig** from **Actions** dropoff.
 
 .. image:: images/karbon_deploy_application_30.png
@@ -21,12 +26,6 @@ Click on “Copy the Command to Clipboard”
 
 
 .. image:: images/karbon_deploy_application_31.png
-
-
-In Calm, look at the IP address of the provisioned Kubectl client. Opern Terminal and SSH using the IP address with *nutanix* and *default password*
-
-
-.. image:: images/karbon_deploy_application_32.png
 
 
 Paste the command into the shell
