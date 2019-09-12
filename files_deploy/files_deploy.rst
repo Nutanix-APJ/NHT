@@ -55,7 +55,7 @@ Fill out the following fields and click **Next**:
 .. image:: images/image010.png
 
 
-Select the **Secondary - Managed** VLAN for the Client Network. Specify your cluster's **AutoDC** VM IP as the **DNS Resolver IP**. Click **Next**.
+Select the **Secondary - UnManaged** VLAN for the Client Network. Specify your cluster's **AD** VM IP as the **DNS Resolver IP**. Click **Next**.
 
 .. note::
 
