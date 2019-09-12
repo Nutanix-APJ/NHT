@@ -90,7 +90,7 @@ Use vi/vim or nano to change the line in *wordpress-deployment.yaml* that shows:
 
 .. note::
 
-	vi/vim tool:  *i* for insert, *esc* for quit editing mode, *Shift : wq* for save and quit
+	vi/vim tool:  *i* for insert, *esc* for quit editing mode, *wq* after *Shift* + *:* for save and quit
 
 .. note::
 
