@@ -381,25 +381,6 @@ Key Use Cases
 
 - Windows app delivery into the Google ecosystem
 
-Getting Connected
-+++++++++++++++++
-
-Have a question about **Nutanix Frame**? Please reach out to the resources below:
-
-+---------------------------------------------------------------------------------+
-|  Frame Product Contacts                                                         |
-+================================+================================================+
-|  Slack Channels                |  #frame (General Frame questions)              |
-|                                |  #frame-sales (Frame deal support)             |
-+--------------------------------+------------------------------------------------+
-|  Product Management            |  Carsten Puls, carsten.puls@nutanix.com        |
-|                                |  Param Desai, param.desai@nutanix.com          |
-+--------------------------------+------------------------------------------------+
-|  Solution Architecture/Delivery|  William Wong, william.wong@nutanix.com        |
-|                                |  Jon Eugenio, jon.eugenio@nutanix.com          |
-+--------------------------------+------------------------------------------------+
-
-For sales-related questions, including requests for sales assistance or quote reviews, contact frame-sales@nutanix.com.
 
 Additional Internal Resources
 +++++++++++++++++++++++++++++
