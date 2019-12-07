@@ -24,15 +24,14 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Calm
-  :name: _calm
+  :caption: Files and block service
+  :name: _labs
   :hidden:
 
-  calm_enable_projects/calm_enable_projects
-  calm_projects/calm_projects
-  calm_marketplace/calm_marketplace
-  calm_windows_blueprint/calm_windows_blueprint
-  
+  files_deploy/files_deploy
+  files_smb/files_smb
+  Volumes/volumes
+
 
 .. toctree::
   :maxdepth: 2
@@ -44,36 +43,18 @@
   flow_secure_app/flow_secure_app
   flow_isolate_environments/flow_isolate_environments
   flow_quarantine_vm/flow_quarantine_vm
- 
-.. toctree::
-  :maxdepth: 2
-  :caption: Karbon
-  :name: _Karbon
-  :hidden:
-  
-  karbon_enable/karbon_enable
-  karbon_deploy_vm /karbon_deploy_vm
-  karbon_create_cluster/karbon_create_cluster
-  karbon_deploy_application/karbon_deploy_application
-  karbon_delete_application/karbon_delete_application
 
 .. toctree::
   :maxdepth: 2
-  :caption: Files and block service
-  :name: _labs
+  :caption: Calm
+  :name: _calm
   :hidden:
 
-  files_deploy/files_deploy
-  files_smb/files_smb
-  Volumes/volumes
+  calm_enable_projects/calm_enable_projects
+  calm_projects/calm_projects
+  calm_marketplace/calm_marketplace
+  calm_windows_blueprint/calm_windows_blueprint
 
-.. toctree::
-  :maxdepth: 2
-  :caption: VDI
-  :name: _labs
-  :hidden:
-
-  Frame/Frame
 
 .. toctree::
   :maxdepth: 2
