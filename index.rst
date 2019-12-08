@@ -67,23 +67,7 @@ Launch GlobalProtect and configure **gp.nutanix.com** as the **Portal** address.
 
   You can also leverage the legacy VPN solution, Pulse Secure. Connect and download the client from https://sslvpn.nutanix.com.
 
-Virtual Desktop Access
-.................
 
-.. note::
-
-If you are attending NHT and in a non-SE role (e.g. CSM, Services) you DO NOT have NUTANIXDC.local credentials. Alternate credentials are provided in class to access the HPOC Parallels VDI.
-  
-20 x VDI/VPN User Accounts: PHX-POC0XX-User01, PHX-POC0XX-User02 … PHX-POC0XX-User20 etc.
-VDI/VPN User Password: techX2019!
-
-xx is your cluster ID
-
-
-Parallels VDI
-1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials
-2. Select HTML5 (web browser) OR Install the Parallels Client
-3. Select a desktop or application of your choice.
   
 
 
