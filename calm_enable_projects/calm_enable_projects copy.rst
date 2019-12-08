@@ -33,6 +33,40 @@ You should get verification that Calm is enabling, which will take 5 to 10 minut
 
 .. figure:: images/581enable3.png
 
+Adding Active Directory
++++++++++++++++++++++++
+
+This lab requires `AD Deployment`_. 
+
+.. _AD Deployment: https://bootcamps.nutanix.handsonworkshops.com/workshops/503dd651-8ffc-494c-9d7a-881929ce95ae/view/AD/AD/
+
+If you have not yet deployed the VM, see the linked steps before proceeding with the lab.
+
+
+While we're waiting for Calm to enable, we'll add an Active Directory server.  While this isn't required for basic Calm use, it is required to do any Role Based Access Control, so it's a good idea to get set up.
+
+Click the **Gear Icon** and then click **Authentication**.
+
+In the pop up, click **New Directory**.
+
+.. figure:: images/581enable5.png
+
+Fill out the following fields and click **Save**:
+
+- **Directory Type** - Active Directory
+- **Name** - NTNXLAB
+- **Domain** - ntnxlab.local
+- **Directory URL** - ldap://*<DC-VM-IP>* 10.42.xx.yz
+- **Username** - Administrator@ntnxlab.local
+- **Password** - nutanix/4u
+
+.. figure:: images/581enable6.png
+
+.. figure:: images/581enable61.png
+
+Refresh the browser and select **Calm** from the navigation bar.  If Calm is still enabling, wait another minute, and try again.
+
+.. figure:: images/581enable7.png
 
 
 Creating A Project
