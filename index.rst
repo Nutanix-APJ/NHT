@@ -17,7 +17,7 @@
   :name: _labs
   :hidden:
 
-  ..xray/xray
+  xray/xray
   prism_central_dashboards_reports/prism_central_dashboards_reports
   prism_central_planning/prism_central_planning
 
