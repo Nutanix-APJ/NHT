@@ -31,6 +31,28 @@
   files_smb/files_smb
   Volumes/volumes
 
+.. toctree::
+  :maxdepth: 2
+  :caption: Flow
+  :name: _Flow
+  :hidden:
+
+  flow_enable/flow_enable
+  flow_secure_app/flow_secure_app
+  flow_isolate_environments/flow_isolate_environments
+  flow_quarantine_vm/flow_quarantine_vm
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Calm
+  :name: _calm
+  :hidden:
+
+  calm_enable_projects/calm_enable_projects
+  calm_projects/calm_projects
+  calm_marketplace/calm_marketplace
+  calm_windows_blueprint/calm_windows_blueprint
+
 
 .. toctree::
   :maxdepth: 2
