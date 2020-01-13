@@ -50,7 +50,6 @@
 
   calm_enable_projects/calm_enable_projects
   calm_projects/calm_projects
-  calm_marketplace/calm_marketplace
   calm_windows_blueprint/calm_windows_blueprint
 
 
