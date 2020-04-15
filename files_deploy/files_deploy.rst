@@ -33,12 +33,12 @@ Deploy Acropolis File Services
 Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.42.xx.37:9440) in your browser and log in with the following credentials:
 
 - **Username** - admin
-- **Password** - techX2019!
+- **Password** - techX2020!
 
 In **Prism > File Server**, click **+ File Server**.
 
 
-Firstly, download Files 3.5.1 package, click **Continue** to install File Services Software on POCxx.
+Firstly, download Files 3.6.2 package, click **Continue** to install File Services Software on POCxx.
 Secondly, add Data Services IP as 10.42.xx.38. Click Continue.
 
 
